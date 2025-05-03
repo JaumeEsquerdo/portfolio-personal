@@ -12,19 +12,17 @@ import Layout from '@/Layout'
 import ErrorPage from '@/pages/ErrorPage'
 
 
-
-
-
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Home />,
-
-    },
+    
     {
         path: '/',
         element: <Layout />,
         children: [
+            {
+                index: true, // ruta de '/'
+                element: <Home />,
+        
+            },
             {
                 path: 'proyectos',
                 element: <Proyectos />,

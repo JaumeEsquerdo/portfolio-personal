@@ -1,0 +1,12 @@
+.ProyectosWrapper{
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #050505;
+    
+}
+.Proyectos-h1{
+    color: #fff;
+}
