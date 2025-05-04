@@ -1,27 +1,17 @@
-import { Outlet, useLocation } from "react-router-dom"
-import Aside from "./components/Aside"
-import { AnimatePresence } from "framer-motion";
-import PageTransition from "./components/PageTransition";
-
+import { Outlet, useLocation } from "react-router-dom";
+import Aside from "./components/Aside";
 
 function Layout() {
   const location = useLocation();
-  
-
-
 
   return (
     <>
-      <AnimatePresence exitBeforeEnter>
-        <PageTransition key={location.pathname}>
-          {location.pathname !== '/' && <Aside />}
-          <Outlet />
-        </PageTransition>
-      </AnimatePresence>
-
+      {location.pathname !== '/' && <Aside />}
+      <Outlet />
 
     </>
-  )
+
+  );
 }
 
-export default Layout
+export default Layout;
