@@ -9,9 +9,11 @@
 .Body{
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  /* scroll-behavior: smooth; */
+
 }
 
 .Root{
@@ -19,4 +21,28 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.ScrollContainer{
+  height: auto;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.ScrollSection{
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  all: unset; /* Elimina todos los estilos predeterminados */
+  background: none; /* Elimina el fondo predeterminado */
+  border: none; /* Elimina el borde predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+  font: inherit; /* Hereda el estilo de la fuente del elemento padre */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  cursor: pointer; /* Asegura que el cursor sea un puntero cuando se pase por encima */
 }

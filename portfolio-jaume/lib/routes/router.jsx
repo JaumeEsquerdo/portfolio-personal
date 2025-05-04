@@ -1,52 +1,22 @@
 import { createBrowserRouter } from 'react-router'
 
 // importe de páginas
-import Home from '@/pages/Home'
-import Proyectos from '@/pages/Proyectos'
-import Habilidades from '@/pages/Habilidades'
-import SobreMi from '@/pages/SobreMi'
-import Contacto from '@/pages/Contacto'
+import {Home} from '@/pages/Home'
+
 
 // importe de páginas especiales
-import Layout from '@/Layout'
+// import Layout from '@/Layout'
 import ErrorPage from '@/pages/ErrorPage'
 
 
 const router = createBrowserRouter([
-    
+
     {
         path: '/',
-        element: <Layout />,
-        children: [
-            {
-                index: true, // ruta de '/'
-                element: <Home />,
-        
-            },
-            {
-                path: 'proyectos',
-                element: <Proyectos />,
-            },
-            {
-                path: 'habilidades-estudios',
-                element: <Habilidades />,
-            },
-            {
-                path: 'sobre-mi',
-                element: <SobreMi />,
-            },
-            {
-                path: 'contacto',
-                element: <Contacto />,
-            }
+        element: <Home />,
+        errorElement: <ErrorPage />
+    }
 
-        ]
-    }
-    ,
-    {
-        path: '*',
-        element: <ErrorPage />
-    }
 
 ])
 export default router

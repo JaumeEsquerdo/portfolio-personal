@@ -1,4 +1,5 @@
-.Portfolio {
+.Portfolio-home {
+    scroll-snap-align: start;
     display: flex;
 
     justify-content: space-around;
@@ -10,7 +11,7 @@
     overflow: hidden;
 }
 
-.Portfolio::before {
+.Portfolio-home::before {
     content: '';
     position: absolute;
     top: 0;
@@ -18,8 +19,10 @@
     width: 200%;
     /* permitir margen de movimiento al estar por fuera */
     height: 200%;
-    background: radial-gradient(circle, #9a5b5b 12%, transparent 14%); /* se crea con un 8% de tamaño y  */
-    background-size: 2px; /* al no tenner altura el ciruclo se convierte en un pixel rojo y el patron al ser super grande se ve como una linea (tendria altura poniendo dos valores 20px 20px por ej)*/
+    background: radial-gradient(circle, #9a5b5b 12%, transparent 14%);
+    /* se crea con un 8% de tamaño y  */
+    background-size: 2px;
+    /* al no tenner altura el ciruclo se convierte en un pixel rojo y el patron al ser super grande se ve como una linea (tendria altura poniendo dos valores 20px 20px por ej)*/
 
     opacity: 0;
     transition: opacity 0.4s ease-out, transform 1s linear;
@@ -28,13 +31,14 @@
 
 }
 
-.Portfolio:hover::before {
+.Portfolio-home:hover::before {
     opacity: 0.25;
     transform: translate(-10%, -10%) rotate(5deg);
 }
 
 
 .PortfolioPresentation {
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

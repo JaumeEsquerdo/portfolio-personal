@@ -1,6 +1,9 @@
 const SobreMi = () => {
     return ( <>
-    SobreMi</> );
+
+<div >SobreMi</div>
+
+    </> );
 }
  
 export default SobreMi;
