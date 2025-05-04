@@ -6,6 +6,7 @@ import Contacto from "./Contacto";
 
 export const Home = () => {
     // Referencias para cada sección
+    const inicioRef = useRef(null)
     const proyectosRef = useRef(null);
     const habilidadesRef = useRef(null);
     const sobreMiRef = useRef(null);
@@ -20,7 +21,7 @@ export const Home = () => {
 
     return (
         <div className="ScrollContainer">
-            <section id="inicio" className="Portfolio-home">
+            <section id="inicio" ref={inicioRef} className="Portfolio-home">
                 <div className="HomeWrapper">
                     <aside className="HomeAside">
                         <ul className="HomeAside-ul">
