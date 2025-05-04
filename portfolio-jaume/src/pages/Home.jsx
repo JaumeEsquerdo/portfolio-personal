@@ -5,6 +5,7 @@ import SobreMi from "./SobreMi";
 import Contacto from "./Contacto";
 
 export const Home = () => {
+
     // Referencias para cada sección
     const inicioRef = useRef(null)
     const proyectosRef = useRef(null);
@@ -12,7 +13,7 @@ export const Home = () => {
     const sobreMiRef = useRef(null);
     const contactoRef = useRef(null);
 
-    // Función de scroll suave
+    // Función de scroll suave segun ref
     const handleSmoothScroll = (ref) => {
         if (ref.current) {
             ref.current.scrollIntoView({ behavior: "smooth" });

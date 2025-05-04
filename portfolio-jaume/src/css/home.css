@@ -1,5 +1,5 @@
 .Portfolio-home {
-    scroll-snap-align: start;
+    scroll-snap-align: start; /* necessario para el scroll de la pantalla inicio, los demas lo tienen en index.css con un css comun */
     display: flex;
 
     justify-content: space-around;
