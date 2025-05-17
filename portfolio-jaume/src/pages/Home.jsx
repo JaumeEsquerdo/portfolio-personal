@@ -3,6 +3,8 @@ import Proyectos from "./Proyectos";
 import Habilidades from "./Habilidades";
 import SobreMi from "./SobreMi";
 import Contacto from "./Contacto";
+import { FramerMagnetic } from '@/components/FramerMagnetic';
+
 
 export const Home = () => {
 
@@ -26,6 +28,7 @@ export const Home = () => {
                 <div className="HomeWrapper">
                     <aside className="HomeAside">
                         <ul className="HomeAside-ul">
+
                             <li><a href="https://github.com/JaumeEsquerdo" className="HomeAside-link" target="_blank" rel="noopener noreferrer">Github</a></li>
                             <li><a href="https://www.linkedin.com/in/jaume-esquerdo/" className="HomeAside-link" target="_blank" rel="noopener noreferrer">Li</a></li>
                             <li><a className="HomeAside-link" target="_blank" rel="noopener noreferrer">CV</a></li>
@@ -41,10 +44,25 @@ export const Home = () => {
 
                 <nav className="PortfolioPresentation-nav">
                     {/* Enlaces para el scroll suave */}
-                    <button className="PortfolioPresentation-link" onClick={() => handleSmoothScroll(proyectosRef)}>PROYECTOS</button>
-                    <button className="PortfolioPresentation-link" onClick={() => handleSmoothScroll(habilidadesRef)}>HABILIDADES <span className="estudios">ESTUDIOS</span></button>
-                    <button className="PortfolioPresentation-link" onClick={() => handleSmoothScroll(sobreMiRef)}>SOBRE MÍ</button>
-                    <button className="PortfolioPresentation-link" onClick={() => handleSmoothScroll(contactoRef)}>CONTACTO</button>
+                    <FramerMagnetic>
+                        <button className="PortfolioPresentation-link" onClick={() => handleSmoothScroll(proyectosRef)}>PROYECTOS</button>
+
+                    </FramerMagnetic>
+
+                    <FramerMagnetic>
+
+                        <button className="PortfolioPresentation-link" onClick={() => handleSmoothScroll(habilidadesRef)}>HABILIDADES <span className="estudios">ESTUDIOS</span></button>
+                    </FramerMagnetic>
+
+                    <FramerMagnetic>
+
+                        <button className="PortfolioPresentation-link" onClick={() => handleSmoothScroll(sobreMiRef)}>SOBRE MÍ</button>
+                    </FramerMagnetic>
+                    <FramerMagnetic>
+
+                        <button className="PortfolioPresentation-link" onClick={() => handleSmoothScroll(contactoRef)}>CONTACTO</button>
+                    </FramerMagnetic>
+
                 </nav>
             </section>
 

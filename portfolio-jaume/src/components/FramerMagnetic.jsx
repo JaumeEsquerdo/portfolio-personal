@@ -34,7 +34,7 @@ export const FramerMagnetic = ({ children }) => {
             onMouseLeave={mouseLeave}
             ref={ref}
             animate={{ x, y }}
-            transition={{ type: 'spring', stiffness: 150, damping: 15, mass: 0.3 }}
+            transition={{ type: 'spring', stiffness: 110, damping: 15, mass: 0.8 }}
 
         >
             {
