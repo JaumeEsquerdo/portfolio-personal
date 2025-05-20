@@ -11,23 +11,10 @@ const Proyectos = () => {
             <div className='Proyectos-container'>
 
 
-                <div className='Proyecto'>
+                <article className='Proyecto'>
                     <h2>Proyecto titulo 1</h2>
                     <button>Link al proyecto</button>
-                </div>
-
-
-                <div className='Proyecto'>
-                    <h2>Proyecto titulo 2</h2>
-                    <button>Link al proyecto</button>
-                </div>
-
-
-
-                <div className='Proyecto'>
-                    <h2>Proyecto titulo 3</h2>
-                    <button>Link al proyecto</button>
-                </div>
+                </article>
 
             </div>
         </div>
