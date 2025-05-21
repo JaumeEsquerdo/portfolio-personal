@@ -1,9 +1,15 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Proyectos from "./Proyectos";
 import Habilidades from "./Habilidades";
 import SobreMi from "./SobreMi";
 import Contacto from "./Contacto";
 import { FramerMagnetic } from '@/components/FramerMagnetic';
+
+
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
+
 
 
 export const Home = () => {
@@ -15,15 +21,85 @@ export const Home = () => {
     const sobreMiRef = useRef(null);
     const contactoRef = useRef(null);
 
+    // ref para el contenedor del scroll
+    const scrollContainerRef = useRef(null);
+
+
+    // array de secciones para navegación con wheel
+    const sectionRefs = [
+        inicioRef,
+        proyectosRef,
+        habilidadesRef,
+        sobreMiRef,
+        contactoRef
+    ]
+
+
+    //estado para saber que sección está activa
+    const [ currentSection, setCurrentSection] = useState(0)
+
+
+
+
+
     // Función de scroll suave segun ref
     const handleSmoothScroll = (ref) => {
-        if (ref.current) {
-            ref.current.scrollIntoView({ behavior: "smooth" });
+        if (ref.current && scrollContainerRef.current) {
+            gsap.to(scrollContainerRef.current, {
+                duration: 2.2,
+                scrollTo: { y: ref.current, offsetY: 0 },
+                ease: "power2.inOut",
+            });
+
+            const index = sectionRefs.findIndex((r)=> r=== ref)
+            // si no encuentra  NO csonicidencia el index es -1 y entonces no se ejecuta el setCurrentSection 
+            if (index !== -1) setCurrentSection(index) // ssincroniza el scrol de botones con el manual de wheel
         }
     };
 
+    // scroll automatico con la rueda
+    useEffect(()=>{
+        const onWheel  = (e ) =>{
+            e.preventDefault();
+
+            if(e.deltaY > 0 && currentSection < sectionRefs.length - 1){
+                setCurrentSection((prev) => prev + 1);
+
+                // cuando se hace scroll hacia arriba el deltaY es negativo...
+            } else if(e.deltaY < 0 && currentSection > 0){
+                setCurrentSection((prev) => prev -1)
+            }
+        }
+
+        const container = scrollContainerRef.current;
+
+        if(container){
+            // hace con passive false q se use e.preventDefault() para bloquear el scroll nativo
+            // onWheel  es la función que se ejecuta al hacer scroll con el wheel
+            container.addEventListener('wheel', onWheel , {passive: false})
+        }
+
+        // limpieza
+        return () =>{
+            if(container){
+                container.removeEventListener('wheel', onWheel )
+            }
+        }
+    }, [currentSection])
+
+    // animacion de gsap para el scroll manual
+    useEffect(()=>{
+        if (scrollContainerRef.current && sectionRefs[currentSection]?.current){
+            gsap.to(scrollContainerRef.current,{
+                duration: 1.2,
+                scrollTo:{ y: sectionRefs[currentSection].current},
+                ease: '`power2.inOut'
+            })
+        }
+    },[currentSection])
+
     return (
-        <div className="ScrollContainer">
+        <main className=" ScrollContainer" ref={scrollContainerRef}>
             <section id="inicio" ref={inicioRef} className="Portfolio-home">
                 <div className="HomeWrapper">
                     <aside className="HomeAside">
@@ -82,6 +158,6 @@ export const Home = () => {
             <section id="contacto" className="ScrollSection Portfolio-contacto" ref={contactoRef}>
                 <Contacto />
             </section>
-        </div>
+        </main>
     );
 };

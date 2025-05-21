@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,30 +6,33 @@
   list-style: none;
 }
 
-.Body{
+.Body {
   height: 100vh;
   width: 100vw;
-  
+
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   /* scroll-behavior: smooth; */
 
 }
 
-.Root{
+.Root {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.ScrollContainer{
+
+
+.ScrollContainer {
   height: auto;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; YA NO LO NECESITO PORQ IMPORTO GSAP*/
 }
-.ScrollSection{
+
+.ScrollSection {
   scroll-snap-align: start;
   height: 100vh;
   display: flex;
@@ -38,11 +41,18 @@
 }
 
 button {
-  all: unset; /* Elimina todos los estilos predeterminados */
-  background: none; /* Elimina el fondo predeterminado */
-  border: none; /* Elimina el borde predeterminado */
-  padding: 0; /* Elimina el relleno predeterminado */
-  font: inherit; /* Hereda el estilo de la fuente del elemento padre */
-  color: inherit; /* Hereda el color del texto del elemento padre */
-  cursor: pointer; /* Asegura que el cursor sea un puntero cuando se pase por encima */
+  all: unset;
+  /* Elimina todos los estilos predeterminados */
+  background: none;
+  /* Elimina el fondo predeterminado */
+  border: none;
+  /* Elimina el borde predeterminado */
+  padding: 0;
+  /* Elimina el relleno predeterminado */
+  font: inherit;
+  /* Hereda el estilo de la fuente del elemento padre */
+  color: inherit;
+  /* Hereda el color del texto del elemento padre */
+  cursor: pointer;
+  /* Asegura que el cursor sea un puntero cuando se pase por encima */
 }
