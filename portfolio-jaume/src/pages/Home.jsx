@@ -40,10 +40,6 @@ export const Home = () => {
     const [isScrollingWithLink, setIsScrollingWithLink] = useState(false);
 
 
-
-
-
-
     // Función de scroll suave segun ref
     const handleSmoothScroll = (ref) => {
         if (ref.current && scrollContainerRef.current) {
@@ -52,13 +48,11 @@ export const Home = () => {
             // si no encuentra  NO csonicidencia el index es -1 y entonces no se ejecuta el setCurrentSection 
             if (index !== -1) setCurrentSection(index) // ssincroniza el scrol de botones con el manual de wheel
 
-
-
             gsap.to(scrollContainerRef.current, {
                 duration: 1.8,
-                scrollTo: { y: ref.current, offsetY: 0 },
-                ease: "power2.inOut",
-                onComplete: () => setIsScrollingWithLink(false)
+                scrollTo: { y: ref.current, offsetY: 0 }, // el y significa hasta q elemento final hacer el scroll y elc offsetY : 0 significa q llegue hasta arriba del contenedor
+                ease: "power2.inOut", // curva aceleracion gsap
+                onComplete: () => setIsScrollingWithLink(false) // poner en off el setIsScrollWithLink para permitir el scroll manual sin conflictos
             });
 
         }
