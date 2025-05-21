@@ -36,7 +36,9 @@ export const Home = () => {
 
 
     //estado para saber que sección está activa
-    const [ currentSection, setCurrentSection] = useState(0)
+    const [currentSection, setCurrentSection] = useState(0)
+    const [isScrollingWithLink, setIsScrollingWithLink] = useState(false);
+
 
 
 
@@ -45,58 +47,70 @@ export const Home = () => {
     // Función de scroll suave segun ref
     const handleSmoothScroll = (ref) => {
         if (ref.current && scrollContainerRef.current) {
-            gsap.to(scrollContainerRef.current, {
-                duration: 2.2,
-                scrollTo: { y: ref.current, offsetY: 0 },
-                ease: "power2.inOut",
-            });
-
-            const index = sectionRefs.findIndex((r)=> r=== ref)
+            setIsScrollingWithLink(true)
+            const index = sectionRefs.findIndex((r) => r === ref)
             // si no encuentra  NO csonicidencia el index es -1 y entonces no se ejecuta el setCurrentSection 
             if (index !== -1) setCurrentSection(index) // ssincroniza el scrol de botones con el manual de wheel
+
+
+
+            gsap.to(scrollContainerRef.current, {
+                duration: 1.8,
+                scrollTo: { y: ref.current, offsetY: 0 },
+                ease: "power2.inOut",
+                onComplete: () => setIsScrollingWithLink(false)
+            });
+
         }
     };
 
     // scroll automatico con la rueda
-    useEffect(()=>{
-        const onWheel  = (e ) =>{
+    useEffect(() => {
+        const onWheel = (e) => {
             e.preventDefault();
 
-            if(e.deltaY > 0 && currentSection < sectionRefs.length - 1){
+
+            if (isScrollingWithLink) return //evitar doble scroll
+
+            if (e.deltaY > 0 && currentSection < sectionRefs.length - 1) {
                 setCurrentSection((prev) => prev + 1);
 
                 // cuando se hace scroll hacia arriba el deltaY es negativo...
-            } else if(e.deltaY < 0 && currentSection > 0){
-                setCurrentSection((prev) => prev -1)
+            } else if (e.deltaY < 0 && currentSection > 0) {
+                setCurrentSection((prev) => prev - 1)
             }
         }
 
         const container = scrollContainerRef.current;
 
-        if(container){
+        if (container) {
             // hace con passive false q se use e.preventDefault() para bloquear el scroll nativo
             // onWheel  es la función que se ejecuta al hacer scroll con el wheel
-            container.addEventListener('wheel', onWheel , {passive: false})
+            container.addEventListener('wheel', onWheel, { passive: false })
         }
 
         // limpieza
-        return () =>{
-            if(container){
-                container.removeEventListener('wheel', onWheel )
+        return () => {
+            if (container) {
+                container.removeEventListener('wheel', onWheel)
             }
         }
-    }, [currentSection])
+    }, [currentSection, isScrollingWithLink])
 
     // animacion de gsap para el scroll manual
-    useEffect(()=>{
-        if (scrollContainerRef.current && sectionRefs[currentSection]?.current){
-            gsap.to(scrollContainerRef.current,{
+    useEffect(() => {
+        if (isScrollingWithLink) return //evitar doble scroll
+
+
+        // necesario entrar al .current del ref para q funcione, ya que devuelve un  objeto!
+        if (scrollContainerRef.current && sectionRefs[currentSection]?.current) {
+            gsap.to(scrollContainerRef.current, {
                 duration: 1.2,
-                scrollTo:{ y: sectionRefs[currentSection].current},
-                ease: '`power2.inOut'
+                scrollTo: { y: sectionRefs[currentSection].current },
+                ease: 'power2.inOut'
             })
         }
-    },[currentSection])
+    }, [currentSection, isScrollingWithLink])
 
     return (
         <main className=" ScrollContainer" ref={scrollContainerRef}>
