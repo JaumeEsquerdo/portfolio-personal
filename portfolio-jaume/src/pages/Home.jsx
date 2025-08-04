@@ -123,7 +123,7 @@ export const Home = () => {
                 <div className="PortfolioPresentation">
                     <h1 className="PortfolioPresentation-h1">JAUME ESQUERDO RAMIS</h1>
                     <h3 className="PortfolioPresentation-h3">Estudiante front developer y fullstack</h3>
-                    <h3 className="PortfolioPresentation-h3">Actualmente realizando el máster de ‘Bootcamp de Desarrollo Web, UX y UI’ por CEI : Centro de Estudios de Innovación </h3>
+                    <h3 className="PortfolioPresentation-h3">Actualmente he realizado el máster de ‘Bootcamp de Desarrollo Web, UX y UI’ por CEI : Centro de Estudios de Innovación </h3>
                 </div>
 
                 <nav className="PortfolioPresentation-nav">
