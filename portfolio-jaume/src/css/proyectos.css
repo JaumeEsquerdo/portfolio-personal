@@ -4,7 +4,9 @@
     justify-content: space-around;
     align-items: center;
     padding: 80px;
+    height: auto;
     min-height: 100vh;
+
     /* background-color: #050505; */
     
 }
@@ -14,6 +16,7 @@
 
 .Proyectos-container{
     display: flex;
+    flex-direction: column;
     gap: 40px;
 }
 .Proyecto{

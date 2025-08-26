@@ -1,15 +1,16 @@
+/* Contenedor principal de Home */
 .Portfolio-home {
-    scroll-snap-align: start;
-    /* necessario para el scroll de la pantalla inicio, los demas lo tienen en index.css con un css comun */
     display: flex;
-
     justify-content: space-around;
     gap: 100px;
     height: 100vh;
+    max-width: 100vw;
     max-height: 100vh;
     background-color: #ECE7E1;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* bloqueos por la animacion de barra roja q sobresale */
 }
 
 .Portfolio-home::before {
@@ -18,18 +19,13 @@
     top: 0;
     left: 0;
     width: 200%;
-    /* permitir margen de movimiento al estar por fuera */
     height: 200%;
     background: radial-gradient(circle, #9a5b5b 12%, transparent 14%);
-    /* se crea con un 8% de tamaño y  */
     background-size: 2px;
-    /* al no tenner altura el ciruclo se convierte en un pixel rojo y el patron al ser super grande se ve como una linea (tendria altura poniendo dos valores 20px 20px por ej)*/
-
     opacity: 0;
     transition: opacity 0.4s ease-out, transform 1s linear;
     z-index: 0;
     pointer-events: none;
-
 }
 
 .Portfolio-home:hover::before {
@@ -37,9 +33,8 @@
     transform: translate(-10%, -10%) rotate(5deg);
 }
 
-
+/* PortfolioPresentation: info principal */
 .PortfolioPresentation {
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -48,7 +43,6 @@
     height: 75%;
     pointer-events: none;
 }
-
 
 .PortfolioPresentation-h1 {
     font-weight: 400;
@@ -73,29 +67,23 @@
 .PortfolioPresentation-link {
     display: inline-block;
     width: fit-content;
-
     color: #333;
     font-size: 6rem;
     font-family: "Newsreader", serif;
     font-optical-sizing: auto;
-    /* text-align: center; */
-
-    transition:
-        /* transform 0.6s ease-in-out, */
-        color 0.6s ease-in-out;
+    transition: color 0.6s ease-in-out;
 }
 
 .PortfolioPresentation-link:hover {
-    /* transform: skewX(-3deg); */
     color: #555;
 }
+
 
 .estudios {
     color: #555;
 }
 
-/* aside del home */
-
+/* Aside del Home */
 .HomeWrapper {
     display: flex;
     min-height: 100vh;
@@ -112,7 +100,6 @@
     justify-content: center;
     padding: 2rem 0;
     flex-shrink: 0;
-    /* para q no se reduzca en pantallas pequeñas */
     gap: 80px;
 }
 
@@ -125,13 +112,11 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1rem;
-
 }
 
 .HomeAside-link {
     color: #333;
     transition: color 0.6s ease-in-out;
-
 }
 
 .HomeAside-link:hover {
@@ -143,8 +128,3 @@
     height: 55%;
     background-color: #333;
 }
-
-/* @keyframes fondo-movil{
-    0% {transform: translate(0, 0) rotate(0deg)}
-    100% { transform: translate(-10%, -10%) rotate(5deg);}
-} */

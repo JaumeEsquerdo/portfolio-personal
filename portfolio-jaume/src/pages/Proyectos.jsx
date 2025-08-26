@@ -15,6 +15,26 @@ const Proyectos = () => {
                     <h2>Proyecto titulo 1</h2>
                     <button>Link al proyecto</button>
                 </article>
+                <article className='Proyecto'>
+                    <h2>Proyecto titulo 1</h2>
+                    <button>Link al proyecto</button>
+                </article>
+                <article className='Proyecto'>
+                    <h2>Proyecto titulo 1</h2>
+                    <button>Link al proyecto</button>
+                </article>
+                <article className='Proyecto'>
+                    <h2>Proyecto titulo 1</h2>
+                    <button>Link al proyecto</button>
+                </article>
+                <article className='Proyecto'>
+                    <h2>Proyecto titulo 1</h2>
+                    <button>Link al proyecto</button>
+                </article>
+                <article className='Proyecto'>
+                    <h2>Proyecto titulo 1</h2>
+                    <button>Link al proyecto</button>
+                </article>
 
             </div>
         </div>
