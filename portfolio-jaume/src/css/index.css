@@ -37,6 +37,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #ECE7E1;
   /* justify-content: center; */
 }
 
