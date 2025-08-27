@@ -45,11 +45,7 @@ button {
   all: unset;
   /* Elimina todos los estilos predeterminados */
   background: none;
-  /* Elimina el fondo predeterminado */
   border: none;
-  /* Elimina el borde predeterminado */
-  padding: 0;
-  /* Elimina el relleno predeterminado */
   font: inherit;
   /* Hereda el estilo de la fuente del elemento padre */
   color: inherit;
