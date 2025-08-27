@@ -1,7 +1,7 @@
 .ProyectosWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     max-width: 100vw;
@@ -10,11 +10,41 @@
 }
 
 .Proyectos-h1 {
+    font-size: 2.625rem;
     color: #333;
 }
 
 .Proyectos-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 40px;
+    margin: 40px;
+    width: 100%;
+    padding: 0 120px;
+}
+
+/* proyecto individualmente */
+
+.Proyecto-card {
+    /* linea separadora en top de cada proyecto */
+    border-top: 1px solid #ccc;
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+.Proyecto-track {
+    display: flex;
+    transition: transform .8s ease-out;
+    transform: translateX(0);
+}
+
+.Proyecto-card.is-hovered .Proyecto-track {
+    transform: translateX(-50%);
+}
+
+.Proyecto-panel {
+    /* tamaño del panel ni se agranda ni se encoge, exactamente el 50% */
+    flex: 0 0 50%;
+    padding: 0 1rem;
 }
