@@ -10,13 +10,14 @@ const Proyectos = () => {
             numero: "01",
             titulo: "Modernidad Mediterránea – Revista",
             descripcion:
-                "Página estilo blog interactivo para inspirar el uso del diseño moderno mediterráneo, creada como proyecto final del bootcamp.",
-            tecnologias: ["HTML", "CSS", "JavaScript (vanilla)"],
-            metodologia: "SUITCSS (CSS modular)", // campo opcional
+                "Página estilo blog interactivo para inspirar el uso del diseño moderno mediterráneo, creada como proyecto final del bootcamp y desplegada online como mi primer proyecto publicado.",
+            herramientas: ["HTML", "CSS", "JavaScript (vanilla)", "SUITCSS (CSS modular)"],
             stack: "Frontend",
             imagen: "/img/modernidad-mediterranea.png",
             enlace: "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
-        }, ,
+            deploy: "https://jaumeesquerdo.github.io/Modernidad-Mediterranea---revista/index.html",
+            destacado: "Primer proyecto desplegado",
+        },
         {
             id: 2,
             numero: "02",
@@ -55,9 +56,11 @@ const Proyectos = () => {
                         titulo={proyecto.titulo}
                         descripcion={proyecto.descripcion}
                         imagen={proyecto.imagen}
-                        tipo={proyecto.tipo}
-                        tecnologias={proyecto.tecnologias}
+                        stack={proyecto.stack}
+                        herramientas={proyecto.herramientas}
                         enlace={proyecto.enlace}
+                        destacado={proyecto.destacado}
+                        deploy={proyecto.deploy}
                     />
                 ))}
 

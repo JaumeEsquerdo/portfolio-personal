@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-const Proyecto = ({ numero, titulo, descripcion, imagen, tecnologias, tipo, enlace }) => {
+
+const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, enlace, destacado, deploy }) => {
     const [hovered, setHovered] = useState(false);
 
     return (
@@ -26,21 +27,31 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, tecnologias, tipo, enla
                     <h3 className="Proyecto-titulo">{titulo}</h3>
                     <p className="Proyecto-descripcion">{descripcion}</p>
 
+                    <p className="Proyecto-destacado">
+                        <strong>Destacado:</strong> {destacado}
+                    </p>
                     <p className="Proyecto-tecnologias">
-                        <strong>Tecnologías:</strong> {tecnologias}
+                        <strong>Herramientas:</strong> {herramientas}
                     </p>
 
-                    {tipo && (
-                        <p className="Proyecto-tipo">
-                            <strong>Tipo:</strong> {tipo}
-                        </p>
-                    )}
+                    <p className="Proyecto-tipo">
+                        <strong>Tipo:</strong> {stack}
+                    </p>
+
+
+                    <p className="Proyecto-enlance">
+                        <strong>GitHub:</strong> <a>{enlace}
+                        </a> </p>
+
+                    <p className="Proyecto-enlace">
+                        <strong>Deploy:</strong> <a>{deploy}
+                        </a> </p>
                 </div>
 
                 {/* Panel 3: CTA grande VER MI PROYECTO */}
                 <a
                     className="Proyecto-panel Proyecto-panel--cta"
-                    href={enlace}
+                    href={deploy}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`Ver proyecto ${titulo}`}
