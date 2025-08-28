@@ -37,11 +37,35 @@ const Proyectos = () => {
         {
             id: 3,
             numero: "03",
-            titulo: "Arquitectura Mediterránea",
-            descripcion: "Proyecto educativo sobre el estilo moderno mediterráneo.",
-            imagen: "/img/proyecto3.jpg",
-            tecnologias: ["React", "Tailwind", "Node.js"],
-            tipo: "frontend y backend"
+            titulo: "Sushiro – Fullstack",
+            descripcion:
+                "Aplicación para un restaurante con selector de mesa, menú interactivo, carrito y zona admin para login y subida de imágenes. Proyecto Fullstack completo con cliente sin login basado en mesa y sesión.",
+            herramientas: [
+                "React (Vite)",
+                "Framer Motion",
+                "CSS (SUIT CSS)",
+                "Node.js",
+                "Express",
+                "MongoDB/Mongoose",
+                "JWT",
+                "Multer",
+                "dotenv",
+                "CORS"
+            ],
+            stack: "Fullstack",
+            imagen: "/img/sushiro-fullstack.png",
+            enlace: [
+                {
+                    tipo: "Frontend",
+                    url: "https://github.com/JaumeEsquerdo/Sushiro-frontend"
+                },
+                {
+                    tipo: "Backend",
+                    url: "https://github.com/JaumeEsquerdo/Sushiro-backend"
+                }
+            ],
+            deploy: "https://sushiro-frontend.vercel.app/",
+            destacado: "Fullstack con login en mesa e integración de API para la relación con los productos/compras."
         },
     ];
 
