@@ -1,5 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
+import { SiGithubpages } from "react-icons/si";
 
 
 const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, enlace, destacado, deploy }) => {
@@ -27,26 +30,34 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                     <h3 className="Proyecto-titulo">{titulo}</h3>
                     <p className="Proyecto-descripcion">{descripcion}</p>
 
-                    <p className="Proyecto-destacado">
+                    <p className="Proyecto-texto Proyecto-destacado">
                         <strong>Destacado:</strong> {destacado}
                     </p>
-                    <p className="Proyecto-tecnologias">
+                    <p className="Proyecto-texto Proyecto-tecnologias">
                         <strong>Herramientas:</strong> {herramientas}
                     </p>
-
-                    <p className="Proyecto-tipo">
+                    <p className="Proyecto-texto Proyecto-tipo">
                         <strong>Tipo:</strong> {stack}
                     </p>
 
+                    <div className="Proyecto-enlacesContainer">
+                        
+                            <a className="Proyecto-enlace" href={enlace} target="_blank"><FaGithub size={25} /> Repositorio del código</a>
+                        
 
-                    <p className="Proyecto-enlance">
-                        <strong>GitHub:</strong> <a>{enlace}
-                        </a> </p>
+                        {deploy && (
 
-                    <p className="Proyecto-enlace">
-                        <strong>Deploy:</strong> <a>{deploy}
-                        </a> </p>
+                            <a className="Proyecto-enlace" href={deploy} target="_blank" rel="noopener noreferrer">
+                                {deploy.includes("vercel") && <SiVercel size={25} />}
+                                {deploy.includes("github.io") && <SiGithubpages size={45} />}
+                                <span> Despliegue del proyecto</span>
+                            </a>
+
+                        )}
+                    </div>
+
                 </div>
+
 
                 {/* Panel 3: CTA grande VER MI PROYECTO */}
                 <a

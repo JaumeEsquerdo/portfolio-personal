@@ -88,19 +88,52 @@
 
 /* parte de descripción del proyecto */
 
+.Proyecto-texto {
+    margin: 0.5rem 0;
+    /* espacio entre líneas */
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333;
 
+}
+
+.Proyecto-descripcion {
+    font-size: 1rem;
+    color: #444;
+}
+
+.Proyecto-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+}
+.Proyecto-enlacesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.Proyecto-enlace {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #0366d6;
+    display: inline-flex;
+    align-items: center;
+    gap: 2.4rem;
+}
 
 /* parte ultima del slider de proyecto VER PROYECTO */
-.Proyecto-panel--cta{
+.Proyecto-panel--cta {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
-.Proyecto-cta-text{
+.Proyecto-cta-text {
     font-size: 60px;
 }
 
-.Proyecto-cta-arrow{
+.Proyecto-cta-arrow {
     font-size: 60px;
 }
