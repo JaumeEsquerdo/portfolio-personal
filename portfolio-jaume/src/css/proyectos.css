@@ -107,20 +107,25 @@
     margin-bottom: 0.75rem;
     font-weight: bold;
 }
-.Proyecto-enlacesContainer{
+
+.Proyecto-enlacesContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 12px;
+    width: 280px;
+    margin-left: auto;
+    /* empujar contenido a la derecha gracias a flex y marign left auto */
 }
 
 .Proyecto-enlace {
     font-size: 1.1rem;
     text-decoration: none;
     color: #0366d6;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 2.4rem;
+    width: 100%;
 }
 
 /* parte ultima del slider de proyecto VER PROYECTO */

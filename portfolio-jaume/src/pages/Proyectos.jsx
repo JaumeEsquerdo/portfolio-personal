@@ -67,7 +67,19 @@ const Proyectos = () => {
             deploy: "https://sushiro-frontend.vercel.app/",
             destacado: "Fullstack con login en mesa e integración de API para la relación con los productos/compras."
         },
-        {id:4}
+         {
+            id: 4,
+            numero: "04",
+            titulo: "Modernidad Mediterránea – Revista",
+            descripcion:
+                "Página estilo blog interactivo para inspirar el uso del diseño moderno mediterráneo, creada como proyecto final del bootcamp y desplegada online como mi primer proyecto publicado.",
+            herramientas: ["HTML", "CSS", "JavaScript (vanilla)", "SUITCSS (CSS modular)"],
+            stack: "Frontend",
+            imagen: "/img/modernidad-mediterranea.png",
+            enlace: "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
+            deploy: "https://jaumeesquerdo.github.io/Modernidad-Mediterranea---revista/index.html",
+            destacado: "Primer proyecto desplegado",
+        },
     ];
 
 
