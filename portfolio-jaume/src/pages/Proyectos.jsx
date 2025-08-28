@@ -67,6 +67,7 @@ const Proyectos = () => {
             deploy: "https://sushiro-frontend.vercel.app/",
             destacado: "Fullstack con login en mesa e integración de API para la relación con los productos/compras."
         },
+        {id:4}
     ];
 
 
