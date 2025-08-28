@@ -19,14 +19,21 @@ const Proyectos = () => {
             destacado: "Primer proyecto desplegado",
         },
         {
-            id: 2,
-            numero: "02",
-            titulo: "Restaurante Gourmet",
-            descripcion: "Web ficticia de un restaurante con reservas y carta online.",
-            imagen: "/img/proyecto2.jpg",
-            tecnologias: ["HTML", "CSS", "JavaScript"],
-            tipo: "frontend"
-        },
+            "id": 2,
+            "numero": "02",
+            "titulo": "Turistea Villajoyosa – Fullstack",
+            "descripcion": "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
+            "herramientas": ["React", "Node.js", "Express", "MongoDB", "Vite", "CSS Modules"],
+            "stack": "Fullstack",
+            "imagen": "/img/turistea-villajoyosa.png",
+            "enlace": [
+                { "tipo": "Frontend", "url": "https://github.com/JaumeEsquerdo/front-proyecto-final-fullstack" },
+                { "tipo": "Backend", "url": "https://github.com/JaumeEsquerdo/backend-proyecto-final-fullstack" }
+            ],
+            "deploy": "https://turistea-villajoyosa.vercel.app/",
+            "destacado": "Proyecto final del módulo FullStack de CEI Valencia"
+        }
+        ,
         {
             id: 3,
             numero: "03",
