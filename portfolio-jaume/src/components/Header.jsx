@@ -1,17 +1,44 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../css/header.css";
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+    const menuRef = useRef(null);
+    const buttonRef = useRef(null); // referencia al botón hamburguesa -> evita que al hacer clic en él se dispare el "clic fuera" y se cierre el menú
 
+
+
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (
+                menuRef.current &&
+                !menuRef.current.contains(e.target) && // clic fuera del menú
+                buttonRef.current &&
+                !buttonRef.current.contains(e.target) //click fuera del button (para no romper la logica de este boton)
+            ) {
+                setOpen(false);
+            }
+        };
+
+        if (open) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [open]);
 
     return (
         <header className="Header">
             <h1 className="Header-h1">Portfolio Jaume Esquerdo Ramis</h1>
             {/* Botón Hamburguesa */}
             <button
+                ref={buttonRef}
                 className="Hamburguesa"
                 onClick={() => setOpen(!open)}
                 aria-label="Abrir menú"
@@ -33,6 +60,7 @@ const Header = () => {
 
             {/* Menú desplegable */}
             <motion.nav
+                ref={menuRef}
                 className="Menu"
                 initial={{ x: "100%" }}
                 animate={{ x: open ? 0 : "100%" }}

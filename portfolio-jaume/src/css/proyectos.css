@@ -10,10 +10,22 @@
     overflow-x: hidden;
 
 }
-
-.Proyectos-h1 {
+.Proyectos-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Proyectos-h2 {
     font-size: 2.625rem;
     color: #333;
+}
+
+.Proyectos-h3{
+    color: #666;;
+    font-size: 1.1rem;
+    width: 80%;
 }
 
 .Proyectos-container {
@@ -37,7 +49,7 @@
 
 .Proyecto-track {
     display: flex;
-    transition: transform .8s ease-out;
+    transition: transform 1.2s ease-out;
     transform: translateX(0);
 }
 
