@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaArrowRight } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
 import { SiGithubpages } from "react-icons/si";
 
@@ -91,7 +91,7 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                     aria-label={`Ver proyecto ${titulo}`}
                 >
                     <span className="Proyecto-cta-text">Ver Proyecto</span>
-                    <span className="Proyecto-cta-arrow">→</span>
+                    <span className="Proyecto-cta-arrow"> <FaArrowRight /></span>
                 </a>
             </div>
         </article>

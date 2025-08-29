@@ -128,11 +128,21 @@
     width: 100%;
 }
 
+.Proyecto-enlace:hover {
+    color: #053c7b;
+}
+
 /* parte ultima del slider de proyecto VER PROYECTO */
 .Proyecto-panel--cta {
     display: flex;
     gap: 20px;
     justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.Proyecto-panel--cta:hover{
+    color: #053c7b;
 }
 
 .Proyecto-cta-text {
@@ -140,5 +150,9 @@
 }
 
 .Proyecto-cta-arrow {
-    font-size: 60px;
+    font-size: 42px;
+    /* color: #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
