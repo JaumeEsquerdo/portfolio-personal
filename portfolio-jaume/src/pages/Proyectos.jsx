@@ -25,7 +25,7 @@ const Proyectos = () => {
                 "CORS"
             ],
             stack: "Fullstack",
-            imagen: "/img/sushiro-fullstack.png",
+            imagen: "/img/sushiro-fondo.png",
             enlace: [
                 {
                     tipo: "Frontend",
@@ -54,7 +54,7 @@ const Proyectos = () => {
                 "JSON local como fuente de datos"
             ],
             stack: "Frontend",
-            imagen: "/img/hotel-six-senses.png",
+            imagen: "/img/hotel-sixSenses-fondo.png",
             enlace: [
                 {
                     tipo: "Frontend",
@@ -74,7 +74,7 @@ const Proyectos = () => {
             descripcion: "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
             herramientas: ["React (Vite)", "Node.js", "CSS (SUIT CSS)", "React Router DOM", "Express", "MongoDB", "Vite", "CSS Modules"],
             stack: "Fullstack",
-            imagen: "/img/turistea-villajoyosa.png",
+            imagen: "/img/turistea-fondo.png",
             enlace: [
                 { tipo: "Frontend", url: "https://github.com/JaumeEsquerdo/front-proyecto-final-fullstack" },
                 { tipo: "Backend", url: "https://github.com/JaumeEsquerdo/backend-proyecto-final-fullstack" }
