@@ -13,9 +13,10 @@ const Proyectos = () => {
                 "Aplicación para un restaurante con selector de mesa, menú interactivo, carrito y zona admin para login y subida de imágenes. Proyecto Fullstack completo con cliente sin login basado en mesa y sesión.",
             herramientas: [
                 "React (Vite)",
-                "Framer Motion",
-                "CSS (SUIT CSS)",
                 "Node.js",
+                "CSS (SUIT CSS)",
+                "React Router DOM",
+                "Framer Motion",
                 "Express",
                 "MongoDB/Mongoose",
                 "JWT",
@@ -45,8 +46,8 @@ const Proyectos = () => {
             descripcion:
                 "Rediseño minimalista de una página web para hotel vacacional, con estética refinada, navegación intuitiva y responsive layout, simulando una experiencia visual limpia y elegante.",
             herramientas: [
-                "React",
-                "Vite",
+                "React (Vite)",
+                "Node.js",
                 "CSS (SUIT CSS)",
                 "React Router DOM",
                 "React Datepicker",
@@ -60,26 +61,26 @@ const Proyectos = () => {
                     url: "https://github.com/JaumeEsquerdo/proyecto-hotel-six-senses"
                 }
             ],
-            deploy: "https://hotel-six-senses.vercel.app/",  // actualízalo si ya está desplegado
+            deploy: "https://proyecto-hotel-six-senses-ca2t.vercel.app/",  // actualízalo si ya está desplegado
             destacado: "Rediseño visual minimalista con React + Vite, navegación y datos locales"
         }
 
         ,
 
         {
-            "id": 3,
-            "numero": "03",
-            "titulo": "Turistea Villajoyosa – Fullstack",
-            "descripcion": "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
-            "herramientas": ["React", "Node.js", "Express", "MongoDB", "Vite", "CSS Modules"],
-            "stack": "Fullstack",
-            "imagen": "/img/turistea-villajoyosa.png",
-            "enlace": [
-                { "tipo": "Frontend", "url": "https://github.com/JaumeEsquerdo/front-proyecto-final-fullstack" },
-                { "tipo": "Backend", "url": "https://github.com/JaumeEsquerdo/backend-proyecto-final-fullstack" }
+            id: 3,
+            numero: "03",
+            titulo: "Turistea Villajoyosa – Fullstack",
+            descripcion: "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
+            herramientas: ["React (Vite)", "Node.js", "CSS (SUIT CSS)", "React Router DOM", "Express", "MongoDB", "Vite", "CSS Modules"],
+            stack: "Fullstack",
+            imagen: "/img/turistea-villajoyosa.png",
+            enlace: [
+                { tipo: "Frontend", url: "https://github.com/JaumeEsquerdo/front-proyecto-final-fullstack" },
+                { tipo: "Backend", url: "https://github.com/JaumeEsquerdo/backend-proyecto-final-fullstack" }
             ],
-            "deploy": "https://turistea-villajoyosa.vercel.app/",
-            "destacado": "Proyecto final del módulo FullStack de CEI Valencia"
+            deploy: "https://front-proyecto-final-fullstack.vercel.app/",
+            destacado: "Proyecto final del módulo FullStack de CEI Valencia"
         },
         {
             id: 4,
