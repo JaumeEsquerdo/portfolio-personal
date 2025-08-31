@@ -7,6 +7,11 @@
 
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* 
 * {
   outline: 1px solid rgba(0, 255, 0, 0.2);
@@ -17,9 +22,8 @@
 }
 
 .Body {
-  height: 100%;
   width: 100%;
-
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   /* scroll-behavior: smooth; */
