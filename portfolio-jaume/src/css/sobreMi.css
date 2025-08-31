@@ -3,31 +3,30 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 4rem 2.5rem;
     background-color: var(--bg-sections);
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .SobreMi-img {
     flex: 1;
-    border-radius: 1rem;
+    max-width: 420px;
     object-fit: cover;
+    min-width: 0
 }
 
 .SobreMi-texto {
-    flex: 1;
+    flex: 1.4;
+    word-break: break-word;
+    min-width: 0
 }
 
-.SobreMi-texto h3 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--brand, #333);
-}
 
 .SobreMi-p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
     color: #444;
@@ -35,16 +34,25 @@
 }
 
 .SobreMi-ul {
-    margin: 1rem 0 2rem 1.2rem;
-    padding: 0;
+    margin: 1rem 0 2rem 0;
+    padding-left: 1.2rem;
 }
 
 .SobreMi-li {
     font-size: 1.05rem;
     line-height: 1.6;
     margin-bottom: 0.8rem;
+    list-style: square;
 }
 
+.SobreMi-a {
+    color: #333;
+    transition: color 0.2s ease-out;
+}
+
+.SobreMi-a:hover {
+    color: #053c7b;
+}
 
 @media (max-width: 768px) {
     .SobreMi {
@@ -58,6 +66,6 @@
 
     .SobreMi-texto {
         text-align: left;
-        
+
     }
 }
