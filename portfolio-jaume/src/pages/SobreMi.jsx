@@ -11,7 +11,7 @@ const SobreMi = () => {
 
                 <p className="SobreMi-p">Desde que inicié mi formación en desarrollo web en 2024, he ido descubriendo lo que más me atrae del desarrollo: combinar la parte <strong>visual del frontend</strong> con la <strong>lógica</strong> que hay detrás para que todo funcione. Me siento especialmente cómodo trabajando con <strong>React</strong> y explorando nuevas herramientas como <strong>Framer Motion</strong>, que me ha permitido experimentar con animaciones e interfaces más dinámicas.</p>
 
-                <p className="SobreMi-p">Como desarrollador <strong>fullstack en formación</strong>, también me motiva seguir creciendo en <strong>backend</strong>En mis proyectos he trabajado con <strong>Node.js y MongoDB (Mongoose)</strong>, y aunque toqué MySQL/SQLite ha sido con Mongo donde he podido construir proyectos más sólidos y completos.</p>
+                <p className="SobreMi-p">Como desarrollador <strong>fullstack en formación</strong>, también me motiva seguir creciendo en <strong>backend</strong>. En mis proyectos he trabajado con <strong>Node.js y MongoDB (Mongoose)</strong>, y aunque toqué MySQL/SQLite ha sido con Mongo donde he podido construir proyectos más sólidos y completos.</p>
 
                 <p className="SobreMi-p">De los proyectos que he desarrollado, me siento especialmente orgulloso de:</p>
                 <ul className="SobreMi-ul">
