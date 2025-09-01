@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 4rem 2.5rem;
+    padding: 4rem;
     background-color: var(--bg-sections);
     height: 100%;
     overflow-x: hidden;
@@ -20,7 +20,7 @@
 }
 
 .SobreMi-texto {
-    flex: 1.4;
+    flex: 1.5;
     word-break: break-word;
     min-width: 0
 }

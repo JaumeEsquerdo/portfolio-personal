@@ -52,7 +52,7 @@
 
 .Proyecto-track {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -68,6 +68,8 @@
     /* marco uniforme */
     overflow: hidden;
     display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
 }
 
 .Proyecto-numero {
@@ -83,6 +85,11 @@
 
 
 /* parte de descripción del proyecto */
+.Proyecto-panel--texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 .Proyecto-texto {
     margin: 0.5rem 0;
@@ -99,9 +106,15 @@
 }
 
 .Proyecto-titulo {
+    color: #333;
     font-size: 1.4rem;
     margin-bottom: 0.75rem;
     font-weight: bold;
+    transition: color 0.3s ease-out;
+}
+
+.Proyecto-titulo:hover {
+    color: #053c7b;
 }
 
 .Proyecto-enlacesContainer {

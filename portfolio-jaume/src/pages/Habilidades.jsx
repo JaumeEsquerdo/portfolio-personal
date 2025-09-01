@@ -1,9 +1,11 @@
+import '@/css/habilidades.css'
+
 const Habilidades = () => {
     return ( <>
 
-    <div>
-        habilidades
-    </div>
+    <main className='Habilidades'>
+
+    </main>
     </> );
 }
  

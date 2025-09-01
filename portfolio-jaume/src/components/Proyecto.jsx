@@ -16,7 +16,7 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                 <div className="Proyecto-panel Proyecto-panel--media">
                     <span className="Proyecto-numero">{numero}</span>
                     <a href={deploy} target="_blank" rel="noopener noreferrer">
-                        <img src={imagen} alt={titulo} className="Proyecto-img" />ç
+                        <img src={imagen} alt={titulo} className="Proyecto-img" />
                     </a>
                 </div>
 
@@ -31,7 +31,7 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                         <strong>Destacado:</strong> {destacado}
                     </p>
                     <p className="Proyecto-texto Proyecto-tecnologias">
-                        <strong>Herramientas:</strong> {herramientas}
+                        <strong>Herramientas:</strong> {herramientas.join(", ")}
                     </p>
                     <p className="Proyecto-texto Proyecto-tipo">
                         <strong>Tipo:</strong> {stack}
