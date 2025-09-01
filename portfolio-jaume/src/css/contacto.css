@@ -24,6 +24,9 @@
 }
 
 .Contacto-link {
+    position: relative;
+    display: inline-block;
+    /* para q el underline se ajuste al ancho del texto */
     font-size: 1.125rem;
     margin-top: 8px;
     color: #333;
@@ -32,6 +35,21 @@
 
 .Contacto-link:hover {
     color: #053c7b;
+}
+
+.Contacto-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #053c7b;
+    transition: width 0.2s ease;
+}
+
+.Contacto-link:hover::after{
+    width: 100%;
 }
 
 .Contacto-p {

@@ -115,12 +115,36 @@
 }
 
 .HomeAside-link {
+    position: relative;
+    display: inline-block;
+
     color: #333;
     transition: color 0.2s ease-in-out;
 }
 
 .HomeAside-link:hover {
     color: #a54949;
+}
+
+.HomeAside-link:after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    /* se coloca a la derecha del texto doblado */
+    top: 0;
+    height: 0;
+    width: 2px;
+    background: #a54949;
+    transition: height 0.2s ease;
+}
+
+.HomeAside-link:hover:after {
+    height: 100%;
+    /* crece en vertical acompañando al texto */
+}
+
+.Contacto-link:hover::after {
+    width: 100%;
 }
 
 .HomeAside-line {
