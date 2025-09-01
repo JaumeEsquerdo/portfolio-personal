@@ -135,7 +135,15 @@
 
 
 /* parte ultima del slider de proyecto VER PROYECTO */
-.Proyecto-panel--cta {
+.Proyecto-panel--cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Proyecto-cta {
+    position: relative;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -144,8 +152,23 @@
     transition: color 0.2s ease-out;
 }
 
-.Proyecto-panel--cta:hover{
+.Proyecto-cta:hover{
     color: #053c7b;
+}
+
+.Proyecto-cta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #053c7b;
+    transition: width 0.2s ease;
+}
+
+.Proyecto-cta:hover::after{
+    width: 100%;
 }
 
 .Proyecto-cta-text {

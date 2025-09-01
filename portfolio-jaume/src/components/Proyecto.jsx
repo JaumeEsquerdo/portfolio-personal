@@ -83,16 +83,19 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
 
 
                 {/* Panel 3: CTA grande VER MI PROYECTO */}
-                <a
-                    className="Proyecto-panel Proyecto-panel--cta"
-                    href={deploy}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Ver proyecto ${titulo}`}
-                >
-                    <span className="Proyecto-cta-text">Ver Proyecto</span>
-                    <span className="Proyecto-cta-arrow"> <FaArrowRight /></span>
-                </a>
+                <div className="Proyecto-panel Proyecto-panel--cta">
+                    <a
+                        className="Proyecto-cta"
+                        href={deploy}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Ver proyecto ${titulo}`}
+                    >
+                        <span className="Proyecto-cta-text">Ver Proyecto</span>
+                        <span className="Proyecto-cta-arrow"> <FaArrowRight /></span>
+                    </a>
+                </div>
+
             </div>
         </article>
     );
