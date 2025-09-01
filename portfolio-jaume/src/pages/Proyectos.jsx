@@ -72,7 +72,7 @@ const Proyectos = () => {
             numero: "03",
             titulo: "Turistea Villajoyosa – Fullstack",
             descripcion: "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
-            herramientas: ["React (Vite)", "Node.js", "CSS (SUIT CSS)", "React Router DOM", "Express", "MongoDB", "Vite", "CSS Modules"],
+            herramientas: ["React (Vite)", "Node.js", "CSS (SUIT CSS)", "React Router DOM", "Express", "MongoDB", "Vite", "React Calendar"],
             stack: "Fullstack",
             imagen: "/img/turistea-fondo.png",
             enlace: [
