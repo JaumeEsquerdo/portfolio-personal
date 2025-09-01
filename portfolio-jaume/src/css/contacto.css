@@ -1,0 +1,46 @@
+.Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    flex: 1;
+    gap: 4rem;
+    background-color: var(--bg-sections);
+    padding: 4rem 2.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.Contacto-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.Contacto-title {
+    font-size: 2.5rem;
+}
+
+.Contacto-link {
+    font-size: 1.125rem;
+    margin-top: 8px;
+    color: #333;
+    transition: color 0.2s ease-out;
+}
+
+.Contacto-link:hover {
+    color: #053c7b;
+}
+
+.Contacto-p {
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #333;
+    /* transition: color 0.2s ease-out; */
+}
+
+/* .Contacto-p:hover {
+    color: #053c7b;
+} */

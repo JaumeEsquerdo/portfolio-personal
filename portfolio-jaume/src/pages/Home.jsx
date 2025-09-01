@@ -9,13 +9,13 @@ export const Home = () => {
                 <aside className="HomeAside">
                     <ul className="HomeAside-ul">
                         <li>
-                            <Link href="https://github.com/JaumeEsquerdo" target="_blank" rel="noopener noreferrer">Github</Link>
+                            <Link className="HomeAside-link" href="https://github.com/JaumeEsquerdo" target="_blank" rel="noopener noreferrer">Github</Link>
                         </li>
                         <li>
-                            <Link href="https://www.linkedin.com/in/jaume-esquerdo/" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
+                            <Link className="HomeAside-link" href="https://www.linkedin.com/in/jaume-esquerdo/" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
                         </li>
                         <li>
-                            <Link target="_blank" rel="noopener noreferrer">CV</Link>
+                            <Link className="HomeAside-link" target="_blank" rel="noopener noreferrer">CV</Link>
                         </li>
                     </ul>
                     <div className="HomeAside-line"></div>
