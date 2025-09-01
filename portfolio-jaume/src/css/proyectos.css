@@ -52,6 +52,7 @@
 
 .Proyecto-track {
     display: flex;
+    align-items: center;
 }
 
 
@@ -128,30 +129,11 @@
     color: #053c7b;
 }
 
-
-/* parte ultima del slider de proyecto VER PROYECTO */
-.Proyecto-panel--cta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.Proyecto-cta {
+.Proyecto-enlace--texto {
     position: relative;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    color: #333;
-    transition: color 0.3s ease-out;
 }
 
-.Proyecto-cta:hover{
-    color: #053c7b;
-}
-
-.Proyecto-cta::after {
+.Proyecto-enlace--texto::after {
     content: "";
     position: absolute;
     left: 0;
@@ -162,18 +144,7 @@
     transition: width 0.3s ease;
 }
 
-.Proyecto-cta:hover::after{
+/* si el <a> con clase Proyecto-enlace recibe hover, entonces expande el ::after Proyecto-enlace--texto a dentro */
+.Proyecto-enlace:hover .Proyecto-enlace--texto::after {
     width: 100%;
-}
-
-.Proyecto-cta-text {
-    font-size: 60px;
-}
-
-.Proyecto-cta-arrow {
-    font-size: 42px;
-    /* color: #333; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

@@ -49,7 +49,7 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <FaGithub size={25} /> Repositorio {item.tipo}
+                                    <FaGithub size={25} /><span className="Proyecto-enlace--texto">Repositorio {item.tipo}</span>
                                 </a>
                             ))
                         ) : (
@@ -60,7 +60,7 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <FaGithub size={25} /> Repositorio del código
+                                <FaGithub size={25} /><span className="Proyecto-enlace--texto">Repositorio del código</span>
                             </a>
                         )}
 
@@ -70,7 +70,7 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                             <a className="Proyecto-enlace" href={deploy} target="_blank" rel="noopener noreferrer">
                                 {deploy.includes("vercel") && <SiVercel size={25} />}
                                 {deploy.includes("github.io") && <SiGithubpages size={45} />}
-                                <span> Ver proyecto</span>
+                                <span className="Proyecto-enlace--texto"> Ver proyecto</span>
                             </a>
 
                         )}
