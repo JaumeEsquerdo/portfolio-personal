@@ -21,6 +21,7 @@
 
 .Contacto-title {
     font-size: 3.25rem;
+    pointer-events: none;
 }
 
 .Contacto-link {
