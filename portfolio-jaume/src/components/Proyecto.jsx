@@ -15,12 +15,16 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                 {/* Panel 1: Imagen + número */}
                 <div className="Proyecto-panel Proyecto-panel--media">
                     <span className="Proyecto-numero">{numero}</span>
-                    <img src={imagen} alt={titulo} className="Proyecto-img" />
+                    <a href={deploy} target="_blank" rel="noopener noreferrer">
+                        <img src={imagen} alt={titulo} className="Proyecto-img" />ç
+                    </a>
                 </div>
 
                 {/* Panel 2: Texto (título, desc, tecnologías, tipo) */}
                 <div className="Proyecto-panel Proyecto-panel--texto">
-                    <h3 className="Proyecto-titulo">{titulo}</h3>
+                    <a href={deploy} target="_blank" rel="noopener noreferrer">
+                        <h3 className="Proyecto-titulo">{titulo}</h3>
+                    </a>
                     <p className="Proyecto-descripcion">{descripcion}</p>
 
                     <p className="Proyecto-texto Proyecto-destacado">
