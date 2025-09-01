@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 
 /* se busca comparar a que distancia, en píxeles, está el cursor del centro del div, y para moverlo se usa animate = {{x, y}}  */
+/* En palabras: mueve el div desde su centro hacia el cursor suavemente, calculando la diferencia entre el centro del div y la posición del mouse, */
 
 export const FramerMagnetic = ({ children }) => {
     /* recibe children, es decir, cualquier contenido que metas dentro de este componente. */
@@ -31,7 +32,7 @@ export const FramerMagnetic = ({ children }) => {
         /* Calcula la diferencia entre el cursor y el centro del elemento. Así obtienes una coordenada relativa al centro, para un "efecto imán" hacia el puntero. */
         setPosition({ x, y })
 
-    } 
+    }
 
     const mouseLeave = () => {
         setPosition({ x: 0, y: 0 })
