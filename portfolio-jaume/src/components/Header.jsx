@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <header className="Header">
-            <h1 className="Header-h1">Portfolio Jaume Esquerdo Ramis</h1>
+            <h1 className="Header-h1">Portfolio - Jaume Esquerdo Ramis</h1>
             {/* Botón Hamburguesa */}
             <button
                 ref={buttonRef}
