@@ -1,22 +1,15 @@
 import React from "react";
-import { useState } from "react";
 import { FaGithub, FaArrowRight } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
 import { SiGithubpages } from "react-icons/si";
 
 
 const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, enlace, destacado, deploy }) => {
-    const [hovered, setHovered] = useState(false);
+
 
     return (
         <article
-            className={`Proyecto-card ${hovered ? "is-hovered" : ""}`}
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            /* para q tabule y funcione tmb el efecto hover */
-            onFocus={() => setHovered(true)}
-            onBlur={() => setHovered(false)}
-            tabIndex={0}
+            className={`Proyecto-card`}
         >
             <div className="Proyecto-track">
                 {/* Panel 1: Imagen + número */}
@@ -73,7 +66,7 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                             <a className="Proyecto-enlace" href={deploy} target="_blank" rel="noopener noreferrer">
                                 {deploy.includes("vercel") && <SiVercel size={25} />}
                                 {deploy.includes("github.io") && <SiGithubpages size={45} />}
-                                <span> Despliegue del proyecto</span>
+                                <span> Ver proyecto</span>
                             </a>
 
                         )}
@@ -81,20 +74,6 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
 
                 </div>
 
-
-                {/* Panel 3: CTA grande VER MI PROYECTO */}
-                <div className="Proyecto-panel Proyecto-panel--cta">
-                    <a
-                        className="Proyecto-cta"
-                        href={deploy}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`Ver proyecto ${titulo}`}
-                    >
-                        <span className="Proyecto-cta-text">Ver Proyecto</span>
-                        <span className="Proyecto-cta-arrow"> <FaArrowRight /></span>
-                    </a>
-                </div>
 
             </div>
         </article>

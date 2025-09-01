@@ -52,13 +52,8 @@
 
 .Proyecto-track {
     display: flex;
-    transition: transform 1.2s ease-out;
-    transform: translateX(0);
 }
 
-.Proyecto-card.is-hovered .Proyecto-track {
-    transform: translateX(-50%);
-}
 
 .Proyecto-panel {
     /* tamaño del panel ni se agranda ni se encoge, exactamente el 50% */
