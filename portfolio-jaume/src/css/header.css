@@ -99,14 +99,18 @@
     color: #a54949;
 }
 
-/* Link activo (NavLink) */
-.Menu-navlink.Active::after {
+.Menu-navlink::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -4px;
-    width: 100%;
+    width: 0;
     height: 2px;
     background-color: #a54949;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease-out;
+}
+
+.Menu-navlink:hover::after,
+.Menu-navlink.Active::after {
+    width: 100%;
 }

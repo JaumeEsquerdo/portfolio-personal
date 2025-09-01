@@ -119,7 +119,7 @@
     display: inline-block;
 
     color: #333;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .HomeAside-link:hover {
@@ -135,7 +135,7 @@
     height: 0;
     width: 2px;
     background: #a54949;
-    transition: height 0.2s ease;
+    transition: height 0.3s ease;
 }
 
 .HomeAside-link:hover:after {

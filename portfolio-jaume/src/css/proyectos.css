@@ -126,7 +126,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    transition: color 0.2s ease-out;
+    transition: color 0.3s ease-out;
 }
 
 .Proyecto-enlace:hover {
@@ -149,7 +149,7 @@
     justify-content: center;
     align-items: center;
     color: #333;
-    transition: color 0.2s ease-out;
+    transition: color 0.3s ease-out;
 }
 
 .Proyecto-cta:hover{
@@ -164,7 +164,7 @@
     width: 0;
     height: 2px;
     background: #053c7b;
-    transition: width 0.2s ease;
+    transition: width 0.3s ease;
 }
 
 .Proyecto-cta:hover::after{
