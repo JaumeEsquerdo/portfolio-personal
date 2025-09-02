@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 4rem;
+    padding: 0 2.5rem;
     background-color: var(--bg-sections);
     height: 100%;
     overflow-x: hidden;
@@ -14,13 +14,13 @@
 
 .SobreMi-img {
     flex: 1;
-    max-width: 420px;
+    max-width: 50%;
     object-fit: cover;
     min-width: 0
 }
 
 .SobreMi-texto {
-    flex: 1.5;
+    flex: 1;
     word-break: break-word;
     min-width: 0
 }

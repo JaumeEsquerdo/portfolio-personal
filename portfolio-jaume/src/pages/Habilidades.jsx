@@ -28,14 +28,19 @@ const Habilidades = () => {
                 <h2 className="Estudios-title">Estudios</h2>
 
                 <div className='Estudios-div'>
-                    <h3 className='Estudios-h3'>Bootcamp en Desarrollo Web, UX y UI — CEI Valencia</h3>
+                    <h3 className='Estudios-h3'>
+                        <a className='Estudios-a' href="https://cei.es/cei-curso/bootcamp-de-desarrollo-web/" target="_blank" rel="noopener noreferrer">
+                            Bootcamp en Desarrollo Web, UX y UI — CEI Valencia </a></h3>
                     <p className="Estudios-p">
                         2024 - 2025<br />
                     </p>
                 </div>
 
                 <div className='Estudios-div'>
-                    <h3 className='Estudios-h3'>Máster Internacional en Posicionamiento Web SEO — ESNECA Business School</h3>
+                    <h3 className='Estudios-h3'>
+                        <a className='Estudios-a' href="https://www.esneca.com/formacion/master-internacional-posicionamiento-web-seo/" target="_blank" rel="noopener noreferrer">
+                            Máster Internacional en Posicionamiento Web SEO — ESNECA Business School</a></h3>
+
                     <p className="Estudios-p">2023</p>
                 </div>
 
@@ -47,7 +52,7 @@ const Habilidades = () => {
                     <h3 className='Estudios-h3'>Ciclo Formativo de Grado Superior en Gestión de Alojamientos Turísticos — IES Mediterrània</h3>
                 </div>
             </div>
-        </main>
+        </main >
     </>);
 }
 
