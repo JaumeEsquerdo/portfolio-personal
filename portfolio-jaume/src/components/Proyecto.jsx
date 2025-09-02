@@ -25,15 +25,15 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
                     <a className="Proyecto-a" href={deploy} target="_blank" rel="noopener noreferrer">
                         <h3 className="Proyecto-titulo">{titulo}</h3>
                     </a>
-                    <p className="Proyecto-descripcion">{descripcion}</p>
+                    <p className="Proyecto-texto">{descripcion}</p>
 
-                    <p className="Proyecto-texto Proyecto-destacado">
+                    <p className="Proyecto-texto">
                         <strong>Destacado:</strong> {destacado}
                     </p>
-                    <p className="Proyecto-texto Proyecto-tecnologias">
+                    <p className="Proyecto-texto">
                         <strong>Herramientas:</strong> {herramientas.join(", ")}
                     </p>
-                    <p className="Proyecto-texto Proyecto-tipo">
+                    <p className="Proyecto-texto">
                         <strong>Tipo:</strong> {stack}
                     </p>
 

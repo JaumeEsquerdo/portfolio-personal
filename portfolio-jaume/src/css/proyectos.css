@@ -95,15 +95,10 @@
 .Proyecto-texto {
     margin: 0.5rem 0;
     /* espacio entre líneas */
-    font-size: 0.95rem;
     line-height: 1.4;
-    color: var(--color-text);
-
-}
-
-.Proyecto-descripcion {
     font-size: 1rem;
     color: var(--color-title-sec);
+
 }
 
 .Proyecto-titulo {
@@ -119,7 +114,7 @@
     color: var(--color-hover-a-blue);
 }
 
-.Proyecto-a{
+.Proyecto-a {
     width: fit-content;
 }
 
