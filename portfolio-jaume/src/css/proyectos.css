@@ -110,11 +110,16 @@
     font-size: 1.4rem;
     margin-bottom: 0.75rem;
     font-weight: bold;
+    width: fit-content;
     transition: color 0.3s ease-out;
 }
 
 .Proyecto-titulo:hover {
     color: #053c7b;
+}
+
+.Proyecto-a{
+    width: fit-content;
 }
 
 .Proyecto-enlacesContainer {

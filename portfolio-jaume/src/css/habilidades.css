@@ -1,13 +1,61 @@
-.Habilidades{
-        display: flex;
-    align-items: center;
+.Habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
     flex: 1;
-    gap: 2rem;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 4rem;
+    gap: 4rem;
     background-color: var(--bg-sections);
+    padding: 0 2.5rem;
     height: 100%;
-    overflow-x: hidden;
+    width: 100%;
+}
+
+.Habilidades-block,
+.Estudios-block {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.Habilidades-title,
+.Estudios-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-weight: 600;
+    color: #111;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.Habilidades-div,
+.Estudios-div {
+    margin-bottom: 1.5rem;
+}
+
+.Habilidades-h3,
+.Estudios-h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.Habilidades-p,
+.Estudios-p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .Habilidades {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

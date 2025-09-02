@@ -22,7 +22,7 @@ const Proyecto = ({ numero, titulo, descripcion, imagen, herramientas, stack, en
 
                 {/* Panel 2: Texto (título, desc, tecnologías, tipo) */}
                 <div className="Proyecto-panel Proyecto-panel--texto">
-                    <a href={deploy} target="_blank" rel="noopener noreferrer">
+                    <a className="Proyecto-a" href={deploy} target="_blank" rel="noopener noreferrer">
                         <h3 className="Proyecto-titulo">{titulo}</h3>
                     </a>
                     <p className="Proyecto-descripcion">{descripcion}</p>
