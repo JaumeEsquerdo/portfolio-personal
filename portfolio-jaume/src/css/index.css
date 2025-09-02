@@ -19,6 +19,12 @@ body {
 
 :root {
   --bg-sections: #f2f2f2;
+  --color-hover-a--blue: #053c7b;
+  --color-hover-a--red: #a54949;
+  --color-main-bg: #ECE7E1;
+  --color-title: #111;
+  --color-text: #333;
+  --color-text-sec: #666;
 }
 
 .Body {
