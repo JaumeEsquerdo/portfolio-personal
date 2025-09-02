@@ -1,15 +1,12 @@
 .SobreMi {
     display: flex;
-    align-items: center;
     flex: 1;
     gap: 2rem;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 2.5rem;
+    padding: 2rem 2.5rem;
     background-color: var(--bg-sections);
-    height: 100%;
-    overflow-x: hidden;
 }
 
 .SobreMi-img {
@@ -30,7 +27,7 @@
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
-    color: #444;
+    color: var(--color-text);
     /* tono gris para suavizar */
 }
 
@@ -47,12 +44,12 @@
 }
 
 .SobreMi-a {
-    color: #333;
+    color: var(--color-text);
     transition: color 3s ease-out;
 }
 
 .SobreMi-a:hover {
-    color: #053c7b;
+    color: var(--color-hover-a-blue);
 }
 
 @media (max-width: 768px) {

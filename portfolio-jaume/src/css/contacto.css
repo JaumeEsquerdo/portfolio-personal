@@ -1,12 +1,12 @@
 .Contacto {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
     flex: 1;
     gap: 4rem;
     background-color: var(--bg-sections);
-    padding: 0 2.5rem;
+    padding: 2rem 2.5rem;
     height: 100%;
     width: 100%;
 }
@@ -33,12 +33,12 @@ display: flex;
     /* para q el underline se ajuste al ancho del texto */
     font-size: 1.125rem;
     margin-top: 8px;
-    color: #333;
+    color: var(--color-text);
     transition: color 0.3s ease-out;
 }
 
 .Contacto-link:hover {
-    color: #053c7b;
+    color: var(--color-hover-a-blue);
 }
 
 .Contacto-link::after {
@@ -48,7 +48,7 @@ display: flex;
     bottom: -2px;
     width: 0;
     height: 2px;
-    background: #053c7b;
+    background: var(--color-hover-a-blue);
     transition: width 0.3s ease;
 }
 
@@ -59,7 +59,7 @@ display: flex;
 .Contacto-p {
     font-size: 1rem;
     margin-top: 8px;
-    color: #333;
+    color: var(--color-text);
     /* transition: color 0.3s ease-out; */
 }
 
