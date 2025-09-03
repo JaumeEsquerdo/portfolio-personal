@@ -20,12 +20,13 @@
 }
 
 .Proyectos-h2 {
-    font-size: 2.625rem;
+    font-size: 1.8rem;
+    font-weight: 600;
     color: var(--color-title);
 }
 
 .Proyectos-h3 {
-    color: var(--color-text);
+    color: var(--color-text-sec);
     font-size: 1.1rem;
     max-width: 60ch;
     /* maximo 60 caracteres */
@@ -194,12 +195,17 @@
 
 @media (max-width: 768px) {
 
+    .Proyectos-header{
+        align-items: start;
+    }
+
     .Proyectos-container {
         padding: 0;
     }
 
     .Proyectos-h3 {
         max-width: 40ch;
+        font-size: 1rem;
     }
 
     .Proyecto-panel--media {
@@ -217,7 +223,7 @@
     }
 
     .ProyectosWrapper {
-        padding: 1rem 1.2rem;
+        padding: 1.8rem 1.2rem;
     }
 
     .Proyecto-enlace {

@@ -21,6 +21,11 @@
     align-items: start;
 }
 
+/* para cuadrar con margenes y padding generales de las otras page con bastante contenido */
+.Estudios-block{
+    margin-bottom: 40px;
+}
+
 .Habilidades-title,
 .Estudios-title {
     font-size: 1.8rem;
@@ -72,7 +77,8 @@
 @media (max-width: 768px) {
     .Habilidades {
         gap: 2rem;
-        padding: 1rem 1.2rem;
+        padding: 1.8rem 1.2rem;
+        
     }
     .Habilidades-block, .Estudios-block{
         width: 100%;

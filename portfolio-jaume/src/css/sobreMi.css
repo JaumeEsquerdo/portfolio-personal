@@ -11,9 +11,11 @@
 
 .SobreMi-img {
     flex: 1;
-    max-width: 50%;
+    max-width: 500px;
+    width: 100%;
     object-fit: cover;
-    min-width: 0
+    min-width: 0;
+    padding: 1rem;
 }
 
 .SobreMi-texto {
@@ -55,15 +57,19 @@
 @media (max-width: 768px) {
     .SobreMi {
         flex-direction: column-reverse;
+        align-items: center;
         text-align: center;
+        padding: 1.8rem 1.2rem;
     }
 
     .SobreMi-img {
-        max-width: 250px;
+        max-width: 400px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
     }
 
     .SobreMi-texto {
         text-align: left;
-
     }
 }
