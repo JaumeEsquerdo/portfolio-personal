@@ -6,6 +6,7 @@
     background-color: var(--bg-sections);
     max-width: 100%;
     padding: 2rem;
+    
 }
 
 .Header-h1 {
@@ -128,5 +129,6 @@
 
     .Header {
         gap: 40px;
+        padding: 1rem 1.2rem;
     }
 }

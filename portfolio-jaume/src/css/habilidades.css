@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    justify-content: space-between;
+    justify-content: center;
     flex: 1;
     gap: 4rem;
     background-color: var(--bg-sections);
     padding: 2rem 2.5rem;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -63,10 +63,19 @@
     color: var(--color-text-sec);
 }
 
+/* @media (max-width: 1024px){
+    .Habilidades{
+        justify-content: center;
+    }
+} */
 
 @media (max-width: 768px) {
     .Habilidades {
-        flex-direction: column;
         gap: 2rem;
+        padding: 1rem 1.2rem;
     }
+    .Habilidades-block, .Estudios-block{
+        width: 100%;
+    }
+
 }
