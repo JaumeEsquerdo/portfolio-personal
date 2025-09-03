@@ -150,3 +150,138 @@
     height: 55%;
     background-color: var(--color-text);
 }
+
+@media (max-width: 1024px) {
+
+    .Portfolio-home {
+        gap: 25px;
+        align-items: flex-end;
+    }
+
+    .PortfolioPresentation-link {
+        font-size: 3rem;
+    }
+
+    .PortfolioPresentation-nav {
+        justify-content: end;
+        gap: 40px;
+        width: 40vw;
+        padding-bottom: 4rem;
+    }
+
+    .PortfolioPresentation {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Portfolio-home::before {
+        background: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Portfolio-home {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 0;
+        height: 100vh;
+        min-height: 100vh;
+        justify-content: space-between;
+    }
+
+    /* Desactivar el efecto hover de puntos en móvil */
+    .Portfolio-home:hover::before {
+        opacity: 0;
+        transform: none;
+    }
+
+    /* Reorganizar el orden de los elementos */
+    .HomeWrapper {
+        order: 3;
+        /* El aside va al final */
+        min-height: auto;
+        width: 100%;
+    }
+
+    .PortfolioPresentation {
+        order: 1;
+        /* La presentación va primero */
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 2rem 20px;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .PortfolioPresentation-nav {
+        order: 2;
+        /* La navegación va segunda */
+        width: 100%;
+        height: auto;
+        padding: 2rem 20px;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .HomeAside {
+        position: static;
+        /* Quitar sticky */
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem 0;
+        gap: 0;
+    }
+
+    .HomeAside-ul {
+        /* Resetear todos los efectos de escritura vertical */
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+        transform: none;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .HomeAside-link:after {
+        left: 0;
+        top: 100%;
+        /* Debajo del texto */
+        height: 2px;
+        width: 0;
+        transition: width 0.3s ease;
+    }
+
+    .HomeAside-link:hover:after {
+        width: 100%;
+        height: 2px;
+    }
+
+    .HomeAside-line {
+        display: none;
+        /* Ocultar la línea vertical en móvil */
+    }
+
+    .PortfolioPresentation-h3 {
+        font-size: 16px;
+        padding: 0;
+        padding-top: 8px;
+        line-height: 1.5;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .PortfolioPresentation-link {
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {}
