@@ -6,7 +6,7 @@
     background-color: var(--bg-sections);
     max-width: 100%;
     padding: 2rem;
-    
+
 }
 
 .Header-h1 {
@@ -14,6 +14,14 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+.Header-name {
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+}
+
+
 
 /* Botón Hamburguesa */
 .Hamburguesa {
@@ -124,7 +132,15 @@
     }
 
     .Header-name {
-        display: block
+        /* en movil con text decoration para q siga el borde del nombre al texto, y no rompa con el salto de linea de los apellidos */
+        border: 0;
+        padding: 0;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        /* grosor */
+        text-underline-offset: 6px;
+        /* separación d la linea respecto a las letras */
+        text-decoration-color: #ccc;
     }
 
     .Header {
