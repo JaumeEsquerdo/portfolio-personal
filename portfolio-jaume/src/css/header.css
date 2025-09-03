@@ -115,3 +115,18 @@
 .Menu-navlink.Active::after {
     width: 100%;
 }
+
+
+@media (max-width: 768px) {
+    .Header-h1 {
+        font-size: 1.1;
+    }
+
+    .Header-name {
+        display: block
+    }
+
+    .Header {
+        gap: 40px;
+    }
+}
