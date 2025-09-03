@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     flex: 1;
-    gap: 2rem;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -12,10 +11,8 @@
 
 .SobreMi-imgContainer {
     /* tamaño exacto 50% */
-    flex: 0 0 50%;
-    width: 100%;
+    width: 50%;
     min-width: 0;
-    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +25,7 @@
 }
 
 .SobreMi-texto {
-    flex: 0 0 50%;
+    width: 50%;
     word-break: break-word;
     /* min width 0 para q pueda alargar la caja hacia abajo y no romper el diseño */
     min-width: 0;
@@ -64,12 +61,29 @@
     color: var(--color-hover-a-blue);
 }
 
+@media (max-width: 1024px) {
+    .SobreMi {
+        flex-direction: column-reverse;
+        gap: 1.2rem;
+    }
+
+    .SobreMi-texto {
+        width: 100%;
+        text-align: left;
+    }
+
+    .SobreMi-imgContainer {
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .SobreMi {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         padding: 1.8rem 1.2rem;
+        gap: 2rem;
     }
 
     .SobreMi-img {
@@ -80,6 +94,11 @@
     }
 
     .SobreMi-texto {
+        width: 100%;
         text-align: left;
+    }
+
+    .SobreMi-imgContainer {
+        width: 100%;
     }
 }
