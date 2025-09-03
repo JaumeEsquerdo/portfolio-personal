@@ -69,15 +69,16 @@
 
 
 
-@media (max-width: 768px){
-.Contacto-block{
-    width: 100%;
-}
+@media (max-width: 768px) {
+    .Contacto-block {
+        width: 100%;
+    }
 
-.Contacto-title{
-    font-size: 2.75rem;
-}
-.Contacto{
-    padding: 1.8rem 1.2rem;
-}
+    .Contacto-title {
+        font-size: 2.75rem;
+    }
+
+    .Contacto {
+        padding: 2rem 1.2rem;
+    }
 }
