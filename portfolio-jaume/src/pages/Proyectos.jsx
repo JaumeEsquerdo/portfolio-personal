@@ -102,7 +102,7 @@ const Proyectos = () => {
         <section className="ProyectosWrapper">
             <header className='Proyectos-header'>
 
-                <h2 className='Proyectos-h2'>Mis proyectos</h2>
+                <h2 className='Proyectos-h2'>Proyectos</h2>
                 <h3 className='Proyectos-h3'>Estos proyectos han sido diseñados y desarrollados por mí, en algunos casos utilizando imágenes o fragmentos de contenido como referencia, pero siempre creando el layout, la estructura y, cuando ha sido necesario, también el backend desde cero.</h3>
             </header>
 

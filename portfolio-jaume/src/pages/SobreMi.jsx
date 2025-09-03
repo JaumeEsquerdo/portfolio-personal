@@ -4,7 +4,10 @@ const SobreMi = () => {
     return (<>
 
         <section className="SobreMi">
-            <img className='SobreMi-img' src="/img/sushiro-fondo.png" alt="foto de perfil" />
+            <div className='SobreMi-imgContainer'>
+                <img className='SobreMi-img' src="/img/sushiro-fondo.png" alt="foto de perfil" />
+            </div>
+
 
             <div className='SobreMi-texto'>
                 <p className="SobreMi-p">Con una base previa en turismo y marketing digital, decidí redirigir mi carrera hacia el <strong>desarrollo web fullstack</strong>, un campo donde he encontrado un reto creativo y técnico que me motiva cada día.</p>

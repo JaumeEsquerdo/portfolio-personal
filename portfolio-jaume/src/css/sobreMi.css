@@ -1,5 +1,6 @@
 .SobreMi {
     display: flex;
+    justify-content: space-between;
     flex: 1;
     gap: 2rem;
     width: 100%;
@@ -9,19 +10,28 @@
     background-color: var(--bg-sections);
 }
 
-.SobreMi-img {
-    flex: 1;
-    max-width: 500px;
+.SobreMi-imgContainer {
+    /* tamaño exacto 50% */
+    flex: 0 0 50%;
     width: 100%;
-    object-fit: cover;
     min-width: 0;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SobreMi-img {
+    max-width: 500px;
+    object-fit: cover;
+
 }
 
 .SobreMi-texto {
-    flex: 1;
+    flex: 0 0 50%;
     word-break: break-word;
-    min-width: 0
+    /* min width 0 para q pueda alargar la caja hacia abajo y no romper el diseño */
+    min-width: 0;
 }
 
 
