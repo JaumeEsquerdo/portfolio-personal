@@ -41,19 +41,20 @@ const Header = () => {
                 ref={buttonRef}
                 className="Hamburguesa"
                 onClick={() => setOpen(!open)}
-                aria-label="Abrir menú"
-            /* aria label es una descripcion alternativa por accesibilidad */
             >
                 <motion.span
                     animate={open ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+                    transition={{ duration: 0.5 }}
                     className="line"
                 />
                 <motion.span
                     animate={open ? { opacity: 0 } : { opacity: 1 }}
+                    transition={{ duration: 0.5 }}
                     className="line"
                 />
                 <motion.span
                     animate={open ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+                    transition={{ duration: 0.5 }}
                     className="line"
                 />
             </button>
