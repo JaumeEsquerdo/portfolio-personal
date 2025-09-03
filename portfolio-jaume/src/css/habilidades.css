@@ -21,10 +21,7 @@
     align-items: start;
 }
 
-/* para cuadrar con margenes y padding generales de las otras page con bastante contenido */
-.Estudios-block{
-    margin-bottom: 40px;
-}
+
 
 .Habilidades-title,
 .Estudios-title {
@@ -78,10 +75,16 @@
     .Habilidades {
         gap: 2rem;
         padding: 1.8rem 1.2rem;
-        
+
     }
-    .Habilidades-block, .Estudios-block{
+
+    .Habilidades-block,
+    .Estudios-block {
         width: 100%;
     }
 
+    /* para cuadrar con margenes y padding generales de las otras page con bastante contenido */
+    .Estudios-block {
+        margin-bottom: 40px;
+    }
 }

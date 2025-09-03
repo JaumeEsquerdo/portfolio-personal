@@ -88,8 +88,7 @@
 }
 
 .HomeAside {
-    position: sticky;
-    top: 0;
+    position: static;
     height: 100vh;
     width: 60px;
     display: flex;
@@ -226,8 +225,6 @@
     }
 
     .HomeAside {
-        position: static;
-        /* Quitar sticky */
         height: auto;
         width: 100%;
         flex-direction: row;

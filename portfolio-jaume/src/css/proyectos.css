@@ -39,7 +39,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    margin: 40px 0;
+
     width: 100%;
     padding: 0 40px;
 }
@@ -195,12 +195,13 @@
 
 @media (max-width: 768px) {
 
-    .Proyectos-header{
+    .Proyectos-header {
         align-items: start;
     }
 
     .Proyectos-container {
         padding: 0;
+        margin: 40px 0;
     }
 
     .Proyectos-h3 {
@@ -233,7 +234,8 @@
         overflow-wrap: break-word;
         white-space: normal;
     }
-    .Proyecto-enlacesContainer{
+
+    .Proyecto-enlacesContainer {
         margin-left: 0;
     }
 }
