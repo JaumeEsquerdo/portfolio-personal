@@ -19,7 +19,7 @@
 }
 
 .SobreMi-img {
-    max-width: 500px;
+    max-width: 400px;
     object-fit: cover;
 
 }
@@ -87,7 +87,7 @@
     }
 
     .SobreMi-img {
-        max-width: 400px;
+        max-width: 320px;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
