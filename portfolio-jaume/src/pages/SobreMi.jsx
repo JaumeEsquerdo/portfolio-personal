@@ -5,7 +5,7 @@ const SobreMi = () => {
 
         <section className="SobreMi">
             <div className='SobreMi-imgContainer'>
-                <img className='SobreMi-img' src="/img/sushiro-fondo.png" alt="foto de perfil" />
+                <img className='SobreMi-img' src="/img/perfil-img.JPG" alt="foto de perfil" />
             </div>
 
 
