@@ -15,7 +15,7 @@ export const Home = () => {
                             <a className="HomeAside-link" href="https://www.linkedin.com/in/jaume-esquerdo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </li>
                         <li>
-                            <a className="HomeAside-link" target="_blank" rel="noopener noreferrer">CV</a>
+                            <a className="HomeAside-link" href="/CV-jaume.pdf" target="_blank" rel="noopener noreferrer">CV</a>
                         </li>
                     </ul>
                     <div className="HomeAside-line"></div>

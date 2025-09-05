@@ -15,7 +15,7 @@ const Contacto = () => {
                 <h2 className="Contacto-title">Enlaces</h2>
                 <a className='Contacto-link' href="https://github.com/JaumeEsquerdo" target="_blank">GitHub</a>
                 <a className='Contacto-link' href="https://www.linkedin.com/in/jaume-esquerdo/" target="_blank">LinkedIn</a>
-                <a className='Contacto-link' href="/cv.pdf" target="_blank">Ver CV</a>
+                <a className='Contacto-link' href="/CV-jaume.pdf" target="_blank">Ver CV</a>
             </div>
         </main>
 
