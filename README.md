@@ -12,6 +12,8 @@ Me apasiona combinar la parte **visual del frontend** con la **lógica del backe
 - **Herramientas y diseño**: Git · GitHub · VS Code · Figma · Trello  
 
 ## Proyectos destacados
+Aquí dejo una selección de mis proyectos propios más representativos hasta ahora:
+
 - **[Sushiro – Fullstack](https://sushiro-frontend.vercel.app/)** → App para restaurante con menú interactivo, carrito y panel admin.  
 - **[Hotel Six Senses – Rediseño Frontend](https://proyecto-hotel-six-senses-ca2t.vercel.app/)** → Rediseño minimalista con navegación intuitiva y responsive.  
 - **[Turistea Villajoyosa – Fullstack](https://front-proyecto-final-fullstack.vercel.app/)** → Web turística con rutas, puntos de interés y panel admin.  
