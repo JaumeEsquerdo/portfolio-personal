@@ -150,6 +150,15 @@
     background-color: var(--color-text);
 }
 
+@media (max-width: 1280px){
+    .Portfolio-home{
+        gap: 30px;
+    }
+    .PortfolioPresentation-link{
+        font-size: 4rem;
+    }
+}
+
 @media (max-width: 1024px) {
 
     .Portfolio-home {
