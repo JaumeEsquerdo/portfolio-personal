@@ -9,7 +9,7 @@ const Habilidades = () => {
 
                 <div className='Habilidades-div'>
                     <h3 className='Habilidades-h3'>Frontend</h3>
-                    <p className='Habilidades-p'>HTML5 · CSS3 (BEM, SUIT CSS, CSS Modules) · JavaScript (ES6+) · React (Vite) · React Router DOM · Framer Motion</p>
+                    <p className='Habilidades-p'>HTML5 · CSS3 (BEM, SUIT CSS, CSS Modules) · JavaScript (ES6+) · React (Vite) · React Context API · React Router DOM · Framer Motion</p>
                 </div>
 
                 <div className='Habilidades-div'>
