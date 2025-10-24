@@ -11,8 +11,8 @@ const Habilidades = () => {
             <h3 className="Habilidades-h3">Frontend</h3>
             <p className="Habilidades-p">
               HTML5 · CSS3 (BEM, SUIT CSS, CSS Modules) · JavaScript (ES6+) ·
-              TypeScript · React (Vite, Context API, Router DOM) · Framer Motion
-              · React Testing Library · Jest · Vitest
+              TypeScript · React (Vite, Context API, Router DOM) · Next.js ·
+              Framer Motion · React Testing Library · Jest · Vitest
             </p>
           </div>
 
