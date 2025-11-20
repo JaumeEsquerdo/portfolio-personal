@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaArrowRight } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
 import { SiGithubpages } from "react-icons/si";
+import { ImageProject } from "./ImageProject.jsx";
 
 const Proyecto = ({
   numero,
@@ -20,14 +21,8 @@ const Proyecto = ({
         {/* Panel 1: Imagen + número */}
         <div className="Proyecto-panel Proyecto-panel--media">
           <span className="Proyecto-numero">{numero}</span>
-          <a
-            className="Proyecto-imgLink"
-            href={deploy}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={imagen} alt={titulo} className="Proyecto-img" />
-          </a>
+
+          <ImageProject imagen={imagen} deploy={deploy} titulo={titulo} />
         </div>
 
         {/* Panel 2: Texto (título, desc, tecnologías, tipo) */}
