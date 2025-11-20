@@ -1,104 +1,112 @@
 .SobreMi {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 2rem 2.5rem;
-    background-color: var(--bg-sections);
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  background-color: var(--bg-sections);
 }
 
 .SobreMi-imgContainer {
-    /* tamaño exacto 50% */
-    width: 50%;
-    min-width: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* tamaño exacto 50% */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
+.Sobremi-SkeletonImg {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .SobreMi-img {
-    max-width: 400px;
-    object-fit: cover;
-
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 
 .SobreMi-texto {
-    width: 50%;
-    word-break: break-word;
-    /* min width 0 para q pueda alargar la caja hacia abajo y no romper el diseño */
-    min-width: 0;
+  width: 50%;
+  word-break: break-word;
+  /* min width 0 para q pueda alargar la caja hacia abajo y no romper el diseño */
+  min-width: 0;
 }
 
-
 .SobreMi-p {
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-    color: var(--color-text);
-    /* tono gris para suavizar */
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  /* tono gris para suavizar */
 }
 
 .SobreMi-ul {
-    margin: 1rem 0 2rem 0;
-    padding-left: 1.2rem;
+  margin: 1rem 0 2rem 0;
+  padding-left: 1.2rem;
 }
 
 .SobreMi-li {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
-    list-style: square;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  list-style: square;
 }
 
 .SobreMi-a {
-    color: var(--color-text);
-    transition: color 3s ease-out;
+  color: var(--color-text);
+  transition: color 3s ease-out;
 }
 
 .SobreMi-a:hover {
-    color: var(--color-hover-a-blue);
+  color: var(--color-hover-a-blue);
 }
 
 @media (max-width: 1024px) {
-    .SobreMi {
-        flex-direction: column-reverse;
-        gap: 1.2rem;
-    }
+  .SobreMi {
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+  }
 
-    .SobreMi-texto {
-        width: 100%;
-        text-align: left;
-    }
+  .SobreMi-texto {
+    width: 100%;
+    text-align: left;
+  }
 
-    .SobreMi-imgContainer {
-        width: 100%;
-    }
+  .SobreMi-imgContainer {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-    .SobreMi {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-        padding: 2rem 1.2rem;
-        gap: 2rem;
-    }
+  .SobreMi {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.2rem;
+    gap: 2rem;
+  }
 
-    .SobreMi-img {
-        max-width: 320px;
-        width: 100%;
-        padding: 0;
-        margin-bottom: 40px;
-    }
+  .SobreMi-img {
+    max-width: 320px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 40px;
+  }
 
-    .SobreMi-texto {
-        width: 100%;
-        text-align: left;
-    }
+  .SobreMi-texto {
+    width: 100%;
+    text-align: left;
+  }
 
-    .SobreMi-imgContainer {
-        width: 100%;
-    }
+  .SobreMi-imgContainer {
+    width: 100%;
+  }
 }
