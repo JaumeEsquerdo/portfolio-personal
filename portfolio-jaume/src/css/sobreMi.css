@@ -19,17 +19,18 @@
   overflow: hidden;
 }
 
+.SobreMi-img,
 .Sobremi-SkeletonImg {
   max-width: 400px;
   height: auto;
+}
+.Sobremi-SkeletonImg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .SobreMi-img {
-  max-width: 400px;
-  height: auto;
   object-fit: cover;
 }
 
