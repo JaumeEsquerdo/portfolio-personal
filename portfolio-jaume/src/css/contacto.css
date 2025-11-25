@@ -1,84 +1,78 @@
 .Contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    flex: 1;
-    gap: 4rem;
-    background-color: var(--bg-sections);
-    padding: 2rem 2.5rem;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  flex: 1;
+  gap: 4rem;
+  background-color: var(--bg-sections);
+  padding: 2rem 2.5rem;
+  height: 100%;
+  width: 100%;
 }
 
 .Contacto-block {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .Contacto-title {
-    font-size: 3.25rem;
-    pointer-events: none;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5rem;
+  font-size: 3.25rem;
+  pointer-events: none;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
 }
 
 .Contacto-link {
-    position: relative;
-    display: inline-block;
-    /* para q el underline se ajuste al ancho del texto */
-    font-size: 1.125rem;
-    margin-top: 8px;
-    color: var(--color-text);
-    transition: color 0.3s ease-out;
+  position: relative;
+  display: inline-block;
+  /* para q el underline se ajuste al ancho del texto */
+  font-size: 1.125rem;
+  margin-top: 8px;
+  color: var(--color-text);
+  transition: color 0.3s ease-out;
 }
 
 .Contacto-link:hover {
-    color: var(--color-hover-a-blue);
+  color: var(--color-a-hover);
 }
 
 .Contacto-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background: var(--color-hover-a-blue);
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: var(--color-a-hover);
+  transition: width 0.3s ease;
 }
 
 .Contacto-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .Contacto-p {
-    font-size: 1rem;
-    margin-top: 8px;
-    color: var(--color-text);
-    /* transition: color 0.3s ease-out; */
+  font-size: 1rem;
+  margin-top: 8px;
+  color: var(--color-text);
+  /* transition: color 0.3s ease-out; */
 }
 
-/* .Contacto-p:hover {
-    color: #053c7b;
-} */
-
-
-
 @media (max-width: 768px) {
-    .Contacto-block {
-        width: 100%;
-    }
+  .Contacto-block {
+    width: 100%;
+  }
 
-    .Contacto-title {
-        font-size: 2.75rem;
-    }
+  .Contacto-title {
+    font-size: 2.75rem;
+  }
 
-    .Contacto {
-        padding: 2rem 1.2rem;
-    }
+  .Contacto {
+    padding: 2rem 1.2rem;
+  }
 }

@@ -1,298 +1,295 @@
 /* Contenedor principal de Home */
 .Portfolio-home {
-    display: flex;
-    justify-content: space-around;
-    gap: 100px;
-    height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
-    background-color: var(--color-main-bg);
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    /* bloqueos por la animacion de barra roja q sobresale */
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: var(--color-main-bg);
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* bloqueos por la animacion de barra roja q sobresale */
 }
 
 .Portfolio-home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, #9a5b5b 12%, transparent 14%);
-    background-size: 2px;
-    opacity: 0;
-    transition: opacity 0.4s ease-out, transform 1s linear;
-    z-index: 0;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #9a5b5b 12%, transparent 14%);
+  background-size: 2px;
+  opacity: 0;
+  transition: opacity 0.4s ease-out, transform 1s linear;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .Portfolio-home:hover::before {
-    opacity: 0.25;
-    transform: translate(-10%, -10%) rotate(5deg);
+  opacity: 0.25;
+  transform: translate(-10%, -10%) rotate(5deg);
 }
 
 /* PortfolioPresentation: info principal */
 .PortfolioPresentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 20px;
-    width: 30vw;
-    height: 75%;
-    pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px;
+  width: 30vw;
+  height: 75%;
+  pointer-events: none;
 }
 
 .PortfolioPresentation-h1 {
-    color: var(--color-text);
-    font-weight: 400;
-    font-size: 20px;
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .PortfolioPresentation-h3 {
-    color: var(--color-text);
-    padding: 8px 0;
-    font-weight: 300;
-    font-size: 16px;
+  color: var(--color-text);
+  padding: 8px 0;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .PortfolioPresentation-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 50vw;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 50vw;
+  align-items: flex-start;
 }
 
 .PortfolioPresentation-link {
-    display: inline-block;
-    width: fit-content;
-    color: var(--color-title);
-    font-size: 6rem;
-    font-family: "Newsreader", serif;
-    font-optical-sizing: auto;
-    transition: color 0.3s ease-in-out;
+  display: inline-block;
+  width: fit-content;
+  color: var(--color-title);
+  font-size: 6rem;
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  transition: color 0.3s ease-in-out;
 }
 
 .PortfolioPresentation-link:hover {
-    color: #555;
+  color: #555;
 }
-
 
 /* Aside del Home */
 .HomeWrapper {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
 }
 
 .HomeAside {
-    position: static;
-    height: 100vh;
-    width: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
-    flex-shrink: 0;
-    gap: 80px;
+  position: static;
+  height: 100vh;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  flex-shrink: 0;
+  gap: 80px;
 }
 
 .HomeAside-ul {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    transform: rotate(180deg);
-    gap: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  gap: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
 }
 
 .HomeAside-link {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 
-    color: var(--color-text);
-    transition: color 0.3s ease-in-out;
+  color: var(--color-text);
+  transition: color 0.3s ease-in-out;
 }
 
 .HomeAside-link:hover {
-    color: var(--color-hover-a-red);
+  color: var(--color-a-hover);
 }
 
 .HomeAside-link:after {
-    content: "";
-    position: absolute;
-    left: -4px;
-    /* se coloca a la derecha del texto doblado */
-    top: 0;
-    height: 0;
-    width: 2px;
-    background: var(--color-hover-a-red);
-    transition: height 0.3s ease;
+  content: "";
+  position: absolute;
+  left: -4px;
+  /* se coloca a la derecha del texto doblado */
+  top: 0;
+  height: 0;
+  width: 2px;
+  background: var(--color-a-hover);
+  transition: height 0.3s ease;
 }
 
 .HomeAside-link:hover:after {
-    height: 100%;
-    /* crece en vertical acompañando al texto */
+  height: 100%;
+  /* crece en vertical acompañando al texto */
 }
 
 .Contacto-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .HomeAside-line {
-    width: 1px;
-    height: 55%;
-    background-color: var(--color-text);
+  width: 1px;
+  height: 55%;
+  background-color: var(--color-text);
 }
 
-@media (max-width: 1280px){
-    .Portfolio-home{
-        gap: 30px;
-    }
-    .PortfolioPresentation-link{
-        font-size: 4rem;
-    }
+@media (max-width: 1280px) {
+  .Portfolio-home {
+    gap: 30px;
+  }
+  .PortfolioPresentation-link {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 1024px) {
+  .Portfolio-home {
+    gap: 25px;
+    align-items: flex-end;
+  }
 
-    .Portfolio-home {
-        gap: 25px;
-        align-items: flex-end;
-    }
+  .PortfolioPresentation-link {
+    font-size: 3rem;
+  }
 
-    .PortfolioPresentation-link {
-        font-size: 3rem;
-    }
+  .PortfolioPresentation-nav {
+    justify-content: end;
+    gap: 40px;
+    width: 40vw;
+    padding-bottom: 4rem;
+  }
 
-    .PortfolioPresentation-nav {
-        justify-content: end;
-        gap: 40px;
-        width: 40vw;
-        padding-bottom: 4rem;
-    }
-
-    .PortfolioPresentation {
-        padding-bottom: 4rem;
-        margin: 0;
-    }
-    .HomeAside{
-        padding: 4rem 0;
-        justify-content: space-between;
-    }
+  .PortfolioPresentation {
+    padding-bottom: 4rem;
+    margin: 0;
+  }
+  .HomeAside {
+    padding: 4rem 0;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 768px) {
-    .Portfolio-home::before {
-        background: none;
-        width: 100%;
-        height: 100%;
-    }
+  .Portfolio-home::before {
+    background: none;
+    width: 100%;
+    height: 100%;
+  }
 
-    .Portfolio-home {
-        flex-direction: column;
-        gap: 20px;
-        padding: 40px 0;
-        height: 100vh;
-        min-height: 100vh;
-        justify-content: space-between;
-    }
+  .Portfolio-home {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+    height: 100vh;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
 
-    /* Desactivar el efecto hover de puntos en móvil */
-    .Portfolio-home:hover::before {
-        opacity: 0;
-        transform: none;
-    }
+  /* Desactivar el efecto hover de puntos en móvil */
+  .Portfolio-home:hover::before {
+    opacity: 0;
+    transform: none;
+  }
 
-    /* Reorganizar el orden de los elementos */
-    .HomeWrapper {
-        order: 3;
-        /* El aside va al final */
-        min-height: auto;
-        width: 100%;
-    }
+  /* Reorganizar el orden de los elementos */
+  .HomeWrapper {
+    order: 3;
+    /* El aside va al final */
+    min-height: auto;
+    width: 100%;
+  }
 
-    .PortfolioPresentation {
-        order: 1;
-        /* La presentación va primero */
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 2rem 20px;
-        justify-content: flex-start;
-        text-align: center;
-    }
+  .PortfolioPresentation {
+    order: 1;
+    /* La presentación va primero */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 2rem 20px;
+    justify-content: flex-start;
+    text-align: center;
+  }
 
-    .PortfolioPresentation-nav {
-        order: 2;
-        /* La navegación va segunda */
-        width: 100%;
-        height: auto;
-        padding: 2rem 20px;
-        gap: 2rem;
-        align-items: center;
-    }
+  .PortfolioPresentation-nav {
+    order: 2;
+    /* La navegación va segunda */
+    width: 100%;
+    height: auto;
+    padding: 2rem 20px;
+    gap: 2rem;
+    align-items: center;
+  }
 
-    .HomeAside {
-        height: auto;
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        padding: 2rem 0;
-        gap: 0;
-    }
+  .HomeAside {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 0;
+  }
 
-    .HomeAside-ul {
-        /* Resetear todos los efectos de escritura vertical */
-        writing-mode: horizontal-tb;
-        text-orientation: initial;
-        transform: none;
-        flex-direction: row;
-        gap: 2rem;
-        font-size: 1rem;
-        justify-content: center;
-    }
+  .HomeAside-ul {
+    /* Resetear todos los efectos de escritura vertical */
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    transform: none;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 1rem;
+    justify-content: center;
+  }
 
-    .HomeAside-link:after {
-        left: 0;
-        top: 100%;
-        /* Debajo del texto */
-        height: 2px;
-        width: 0;
-        transition: width 0.3s ease;
-    }
+  .HomeAside-link:after {
+    left: 0;
+    top: 100%;
+    /* Debajo del texto */
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease;
+  }
 
-    .HomeAside-link:hover:after {
-        width: 100%;
-        height: 2px;
-    }
+  .HomeAside-link:hover:after {
+    width: 100%;
+    height: 2px;
+  }
 
-    .HomeAside-line {
-        display: none;
-        /* Ocultar la línea vertical en móvil */
-    }
+  .HomeAside-line {
+    display: none;
+    /* Ocultar la línea vertical en móvil */
+  }
 
-    .PortfolioPresentation-h3 {
-        font-size: 16px;
-        padding: 0;
-        padding-top: 8px;
-        line-height: 1.5;
-        max-width: 90%;
-        margin: 0 auto;
-    }
+  .PortfolioPresentation-h3 {
+    font-size: 16px;
+    padding: 0;
+    padding-top: 8px;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 
-
-    .PortfolioPresentation-link {
-        font-size: 2.5rem;
-        text-align: center;
-        width: 100%;
-        display: block;
-    }
+  .PortfolioPresentation-link {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
 }
 
 /* @media (max-width: 480px) {} */

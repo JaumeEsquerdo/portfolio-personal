@@ -67,7 +67,7 @@
 }
 
 .SobreMi-a:hover {
-  color: var(--color-hover-a-blue);
+  color: var(--color-a-hover);
 }
 
 @media (max-width: 1024px) {

@@ -1,152 +1,148 @@
 /* Contenedor Header */
 .Header {
-    position: static;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--bg-sections);
-    max-width: 100%;
-    padding: 2rem;
-
+  position: static;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-sections);
+  max-width: 100%;
+  padding: 2rem;
 }
 
 .Header-h1 {
-    color: var(--color-text);
-    font-size: 1.5rem;
-    font-weight: 500;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .Header-name {
-    display: inline-block;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 2px;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
 }
-
-
 
 /* Botón Hamburguesa */
 .Hamburguesa {
-    position: relative;
-    padding: 0.1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 22px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 12;
-    /* por encima del menú */
+  position: relative;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 12;
+  /* por encima del menú */
 }
 
 .line {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: var(--color-text);
-    border-radius: 2px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-text);
+  border-radius: 2px;
 }
 
 /* Línea superior */
 .line:nth-child(1) {
-    top: 0;
+  top: 0;
 }
 
 /* Línea central */
 .line:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Línea inferior */
 .line:nth-child(3) {
-    bottom: 0;
+  bottom: 0;
 }
 
 /* Menú desplegable */
 .Menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 60vw;
-    max-width: 320px;
-    height: 100vh;
-    background: var(--color-main-bg);
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
-    padding: 4rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  max-width: 320px;
+  height: 100vh;
+  background: var(--color-main-bg);
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
 }
 
 /* Lista */
 .Menu-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .Menu-li {
-    text-align: right;
+  text-align: right;
 }
 
 /* Links */
 .Menu-navlink {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--color-text);
-    position: relative;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-text);
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .Menu-navlink:hover {
-    color: var(--color-hover-a-red);
+  color: var(--color-a-hover);
 }
 
 .Menu-navlink::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-hover-a-red);
-    transition: width 0.3s ease-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-a-hover);
+  transition: width 0.3s ease-out;
 }
 
 .Menu-navlink:hover::after,
 .Menu-navlink.Active::after {
-    width: 100%;
+  width: 100%;
 }
 
-
 @media (max-width: 768px) {
-    .Header-h1 {
-        font-size: 1.1;
-    }
+  .Header-h1 {
+    font-size: 1.1;
+  }
 
-    .Header-name {
-        /* en movil con text decoration para q siga el borde del nombre al texto, y no rompa con el salto de linea de los apellidos */
-        border: 0;
-        padding: 0;
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        /* grosor */
-        text-underline-offset: 6px;
-        /* separación d la linea respecto a las letras */
-        text-decoration-color: #ccc;
-    }
+  .Header-name {
+    /* en movil con text decoration para q siga el borde del nombre al texto, y no rompa con el salto de linea de los apellidos */
+    border: 0;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    /* grosor */
+    text-underline-offset: 6px;
+    /* separación d la linea respecto a las letras */
+    text-decoration-color: #ccc;
+  }
 
-    .Header {
-        gap: 40px;
-        padding: 1rem 1.2rem;
-    }
+  .Header {
+    gap: 40px;
+    padding: 1rem 1.2rem;
+  }
 }

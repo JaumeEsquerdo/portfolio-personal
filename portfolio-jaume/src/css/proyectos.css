@@ -130,7 +130,7 @@
 }
 
 .Proyecto-titulo:hover {
-  color: var(--color-hover-a-blue);
+  color: var(--color-a-hover);
 }
 
 .Proyecto-a {
@@ -150,7 +150,7 @@
 .Proyecto-enlace {
   font-size: 1.1rem;
   text-decoration: none;
-  color: #0366d6;
+  color: var(--color-a);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,7 +159,7 @@
 }
 
 .Proyecto-enlace:hover {
-  color: var(--color-hover-a-blue);
+  color: var(--color-a-hover);
 }
 
 .Proyecto-enlace--texto {
@@ -173,7 +173,7 @@
   bottom: -2px;
   width: 0;
   height: 2px;
-  background: var(--color-hover-a-blue);
+  background: var(--color-a-hover);
   transition: width 0.3s ease;
 }
 

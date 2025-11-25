@@ -1,68 +1,65 @@
 .Habilidades {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    flex: 1;
-    gap: 4rem;
-    background-color: var(--bg-sections);
-    padding: 2rem 2.5rem;
-    height: auto;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  flex: 1;
+  gap: 4rem;
+  background-color: var(--bg-sections);
+  padding: 2rem 2.5rem;
+  height: auto;
+  width: 100%;
 }
 
 .Habilidades-block,
 .Estudios-block {
-
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
-
-
 
 .Habilidades-title,
 .Estudios-title {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    font-weight: 600;
-    color: var(--color-title);
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  font-weight: 600;
+  color: var(--color-title);
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
 }
 
 .Habilidades-div,
 .Estudios-div {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .Habilidades-h3,
 .Estudios-h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    color: var(--color-text);
-    transition: color 0.2s ease-out;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+  transition: color 0.2s ease-out;
 }
 
 .Estudios-a {
-    color: inherit;
-    font-weight: inherit;
-    text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
 }
 
 .Estudios-a:hover {
-    color: var(--color-hover-a-blue);
+  color: var(--color-a-hover);
 }
 
 .Habilidades-p,
 .Estudios-p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text-sec);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-sec);
 }
 
 /* @media (max-width: 1024px){
@@ -72,19 +69,18 @@
 } */
 
 @media (max-width: 768px) {
-    .Habilidades {
-        gap: 2rem;
-        padding: 2rem 1.2rem;
+  .Habilidades {
+    gap: 2rem;
+    padding: 2rem 1.2rem;
+  }
 
-    }
+  .Habilidades-block,
+  .Estudios-block {
+    width: 100%;
+  }
 
-    .Habilidades-block,
-    .Estudios-block {
-        width: 100%;
-    }
-
-    /* para cuadrar con margenes y padding generales de las otras page con bastante contenido */
-    .Estudios-block {
-        margin-bottom: 40px;
-    }
+  /* para cuadrar con margenes y padding generales de las otras page con bastante contenido */
+  .Estudios-block {
+    margin-bottom: 40px;
+  }
 }
