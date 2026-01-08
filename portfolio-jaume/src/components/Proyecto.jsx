@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaArrowRight } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
 import { SiGithubpages } from "react-icons/si";
+import { SiDribbble } from "react-icons/si";
 import { ImageProject } from "./ImageProject.jsx";
 
 const Proyecto = ({
@@ -88,6 +89,7 @@ const Proyecto = ({
               >
                 {deploy.includes("vercel") && <SiVercel size={25} />}
                 {deploy.includes("github.io") && <SiGithubpages size={45} />}
+                {deploy.includes("dribbble") && <SiDribbble size={25} />}
                 <span className="Proyecto-enlace--texto"> Ver proyecto</span>
               </a>
             )}
