@@ -79,7 +79,7 @@ const listaProyectos = [
       "React Calendar",
     ],
     stack: "Fullstack",
-    imagen: "/img/turistea-fondo.png",
+    imagen: "/img/turistea-bg.png",
     enlace: [
       {
         tipo: "Frontend",
