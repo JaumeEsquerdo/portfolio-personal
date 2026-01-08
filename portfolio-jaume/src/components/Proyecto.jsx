@@ -49,36 +49,37 @@ const Proyecto = ({
           </p>
 
           <div className="Proyecto-enlacesContainer">
-            {Array.isArray(enlace) ? (
-              // Caso en que es un array (ej: frontend + backend)
-              enlace.map((item, index) => (
+            {enlace &&
+              (Array.isArray(enlace) ? (
+                // Caso en que es un array (ej: frontend + backend)
+                enlace.map((item, index) => (
+                  <a
+                    key={index}
+                    className="Proyecto-enlace"
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub size={25} />
+                    <span className="Proyecto-enlace--texto">
+                      Repositorio {item.tipo}
+                    </span>
+                  </a>
+                ))
+              ) : (
+                // Caso en que es un único enlace
                 <a
-                  key={index}
                   className="Proyecto-enlace"
-                  href={item.url}
+                  href={enlace}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaGithub size={25} />
                   <span className="Proyecto-enlace--texto">
-                    Repositorio {item.tipo}
+                    Repositorio del código
                   </span>
                 </a>
-              ))
-            ) : (
-              // Caso en que es un único enlace
-              <a
-                className="Proyecto-enlace"
-                href={enlace}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size={25} />
-                <span className="Proyecto-enlace--texto">
-                  Repositorio del código
-                </span>
-              </a>
-            )}
+              ))}
 
             {deploy && (
               <a
