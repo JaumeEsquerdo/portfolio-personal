@@ -96,6 +96,24 @@ const listaProyectos = [
   {
     id: 4,
     numero: "04",
+    titulo: "Brava – E-commerce de Bebidas Funcionales",
+    descripcion:
+      "Diseño integral de una plataforma móvil para una marca de bebidas saludables, desarrollada como Trabajo Final de Máster (TFM). El proyecto destaca por un proceso profundo de UX Research, validando una propuesta visual inspirada en la esencia mediterránea de Valencia que equilibra bienestar, transparencia y un estilo de vida activo.",
+    herramientas: [
+      "Figma",
+      "UX Research",
+      "User Testing",
+      "Prototipado Interactivo",
+    ],
+    stack: "UX/UI Design",
+    imagen: "/img/brava-bebidas.png",
+    deploy:
+      "https://dribbble.com/shots/26962652-Brava-Dise-o-UX-UI-para-Refrescos-Saludables-App-M-vil",
+    destacado: "Proyecto final del módulo UX/UI de CEI Valencia",
+  },
+  {
+    id: 5,
+    numero: "05",
     titulo: "Modernidad Mediterránea – Revista",
     descripcion:
       "Página estilo blog interactivo para inspirar el uso del diseño moderno mediterráneo, creada como proyecto final del bootcamp y desplegada online como mi primer proyecto publicado.",
