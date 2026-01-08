@@ -58,7 +58,7 @@ const SobreMi = () => {
               <strong>
                 <a
                   className="SobreMi-a"
-                  href="https://proyecto-hotel-six-senses-ca2t.vercel.app/"
+                  href="https://hotel-six-senses.vercel.app/"
                   target="_blank"
                 >
                   Rediseño minimalista de la web del hotel Six Senses
