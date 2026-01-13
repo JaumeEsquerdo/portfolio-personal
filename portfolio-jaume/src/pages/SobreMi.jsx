@@ -23,6 +23,7 @@ const SobreMi = () => {
         </div>
 
         <div className="SobreMi-texto">
+          <h2 className="SobreMi-title">Sobre mí</h2>
           <p className="SobreMi-p">
             Con una base previa en turismo y marketing digital, decidí redirigir
             mi carrera hacia el <strong>desarrollo web fullstack</strong>, un
