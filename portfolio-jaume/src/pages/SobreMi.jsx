@@ -12,6 +12,7 @@ const SobreMi = () => {
     <>
       <motion.section
         className="SobreMi"
+        variants={container}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-100px" }}
