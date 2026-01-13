@@ -2,31 +2,16 @@ import "@/css/proyectos.css";
 import Proyecto from "@/components/Proyecto";
 import listaProyectos from "@/data/listaProyectos";
 import { motion } from "framer-motion";
+import { useFramerAnimations } from "@/hooks/useFramerAnimations";
 
-const container = {
-  hidden: {}, //inicial
-  show: {
-    transition: {
-      staggerChildren: 0.2, //escalado de 0.2s
-    },
-  },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 18 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 2.8,
-      ease: [0.22, 1, 0.36, 1],
-    },
-  },
-};
 /* margin: '-100px' para q ejecute la transición un poco antes del viewport
 y once:true, para q se ejecute solo una vez
+
+hay un variants={container} dentro del container principal para q haya un sub stagger
 */
 const Proyectos = () => {
+  const { container, item } = useFramerAnimations();
+
   return (
     <motion.section
       className="ProyectosWrapper"
@@ -47,7 +32,7 @@ const Proyectos = () => {
         </motion.h3>
       </motion.header>
 
-      <div className="Proyectos-container" variants={container}>
+      <motion.div className="Proyectos-container" variants={container}>
         {listaProyectos.map((proyecto) => (
           <motion.div key={proyecto.id} variants={item}>
             <Proyecto
@@ -63,7 +48,7 @@ const Proyectos = () => {
             />
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </motion.section>
   );
 };

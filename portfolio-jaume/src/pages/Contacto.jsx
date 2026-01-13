@@ -1,10 +1,20 @@
 import "@/css/contacto.css";
+import { motion } from "framer-motion";
+import { useFramerAnimations } from "@/hooks/useFramerAnimations";
 
 const Contacto = () => {
+  const { container, item } = useFramerAnimations();
+
   return (
     <>
-      <main className="Contacto">
-        <div className="Contacto-block">
+      <motion.main
+        className="Contacto"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        <motion.div className="Contacto-block" variants={item}>
           <h2 className="Contacto-title">Contacto</h2>
           <a className="Contacto-link" href="mailto:jaume.esquerdo@hotmail.com">
             jaume.esquerdo@hotmail.com
@@ -13,9 +23,9 @@ const Contacto = () => {
             +34 676 09 75 35
           </a>
           <p className="Contacto-p">Villajoyosa, Alicante</p>
-        </div>
+        </motion.div>
 
-        <div className="Contacto-block">
+        <motion.div className="Contacto-block" variants={item}>
           <h2 className="Contacto-title">Enlaces</h2>
           <a
             className="Contacto-link"
@@ -41,8 +51,8 @@ const Contacto = () => {
           >
             Ver CV
           </a>
-        </div>
-      </main>
+        </motion.div>
+      </motion.main>
     </>
   );
 };

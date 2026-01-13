@@ -1,14 +1,22 @@
 import "@/css/sobreMi.css";
 import Skeleton from "react-loading-skeleton";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { useFramerAnimations } from "@/hooks/useFramerAnimations";
 
 const SobreMi = () => {
   const [loaded, setLoaded] = useState(false);
+  const { container, item } = useFramerAnimations();
 
   return (
     <>
-      <section className="SobreMi">
-        <div className="SobreMi-imgContainer">
+      <motion.section
+        className="SobreMi"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        <motion.div className="SobreMi-imgContainer" variants={item}>
           {!loaded && <Skeleton className="Sobremi-SkeletonImg" />}
           <img
             onLoad={() => setLoaded(true)}
@@ -20,9 +28,9 @@ const SobreMi = () => {
             src="/img/perfil-img.JPG"
             alt="foto de perfil"
           />
-        </div>
+        </motion.div>
 
-        <div className="SobreMi-texto">
+        <motion.div className="SobreMi-texto" variants={item}>
           <h2 className="SobreMi-title">Sobre mí</h2>
           <p className="SobreMi-p">
             Con una base previa en turismo y marketing digital, decidí redirigir
@@ -101,8 +109,8 @@ const SobreMi = () => {
             disfrutar del camino, seguir explorando este mundo tecnológico y
             poco a poco ir trazando nuevas aspiraciones.
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </>
   );
 };

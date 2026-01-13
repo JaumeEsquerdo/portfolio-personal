@@ -1,10 +1,20 @@
 import "@/css/habilidades.css";
+import { motion } from "framer-motion";
+import { useFramerAnimations } from "@/hooks/useFramerAnimations";
 
 const Habilidades = () => {
+  const { container, item } = useFramerAnimations();
+
   return (
     <>
-      <main className="Habilidades">
-        <div className="Habilidades-block">
+      <motion.main
+        className="Habilidades"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        <motion.div className="Habilidades-block" variants={item}>
           <h2 className="Habilidades-title">Habilidades</h2>
 
           <div className="Habilidades-div">
@@ -30,9 +40,9 @@ const Habilidades = () => {
               Git · GitHub · VS Code · Figma · Trello
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="Estudios-block">
+        <motion.div className="Estudios-block" variants={item}>
           <h2 className="Estudios-title">Estudios</h2>
 
           <div className="Estudios-div">
@@ -78,8 +88,8 @@ const Habilidades = () => {
               Turísticos — IES Mediterrània
             </h3>
           </div>
-        </div>
-      </main>
+        </motion.div>
+      </motion.main>
     </>
   );
 };
