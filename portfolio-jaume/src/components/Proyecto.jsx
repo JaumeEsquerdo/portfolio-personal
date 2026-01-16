@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaArrowRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
 import { SiGithubpages } from "react-icons/si";
 import { SiDribbble } from "react-icons/si";
