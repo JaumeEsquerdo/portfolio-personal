@@ -132,7 +132,7 @@
   font-weight: bold;
   width: fit-content;
   transition: color 0.3s ease-out;
-  line-height: 0.85em;
+  line-height: 1.2em;
 }
 
 .Proyecto-titulo:hover {
