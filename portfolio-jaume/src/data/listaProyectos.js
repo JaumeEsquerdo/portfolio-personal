@@ -19,7 +19,7 @@ const listaProyectos = [
       "CORS",
     ],
     stack: "Fullstack",
-    imagen: "/img/sushiro-fondo.png",
+    imagen: "/img/sushiro-portada-integrada.png",
     enlace: [
       {
         tipo: "Frontend",
