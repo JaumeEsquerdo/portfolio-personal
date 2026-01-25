@@ -119,7 +119,7 @@ const listaProyectos = [
       "Página estilo blog interactivo para inspirar el uso del diseño moderno mediterráneo, creada como proyecto final del bootcamp y desplegada online como mi primer proyecto publicado.",
     herramientas: ["HTML", "CSS (SUIT CSS)", "JavaScript (vanilla)"],
     stack: "Frontend",
-    imagen: "/img/modernidad-mediterranea.png",
+    imagen: "/img/portada-mediterranea-revista.png",
     enlace:
       "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
     deploy:
