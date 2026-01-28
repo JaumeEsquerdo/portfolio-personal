@@ -11,7 +11,7 @@ export const ImageProject = ({ deploy, imagen, titulo }) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="Proyecto-imgWrapper">
+      <div className={`Proyecto-imgWrapper`}>
         {!loaded && <Skeleton className="Proyecto-skeleton" />}
         <img
           src={imagen}

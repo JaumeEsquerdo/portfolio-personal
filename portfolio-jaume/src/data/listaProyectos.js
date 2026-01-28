@@ -2,6 +2,33 @@ const listaProyectos = [
   {
     id: 1,
     numero: "01",
+    titulo: "BEARS – Frontend conceptual",
+    descripcion:
+      "Experiencia web conceptual que reflexiona sobre los límites éticos entre humanos y vida salvaje. Inspirada en encuentros reales documentados en Grizzly Man y Bear-Like, la aplicación propone un recorrido narrativo y educativo dividido en dos capas: Historia (relato filosófico) y Sobre Ellos (información estructurada sobre el oso grizzly).",
+    herramientas: [
+      "React (Vite)",
+      "TypeScript",
+      "TailwindCSS v4",
+      "React Router",
+      "Framer Motion",
+      "Context API",
+      "Custom hooks (preload)",
+    ],
+    stack: "Frontend",
+    imagen: "/img/portada-bears.png",
+    enlace: [
+      {
+        tipo: "Frontend",
+        url: "https://github.com/JaumeEsquerdo/bears-web",
+      },
+    ],
+    deploy: "https://bears-conceptual.vercel.app/",
+    destacado:
+      "Proyecto conceptual centrado en animación, narrativa interactiva y reflexión ética: precarga de imágenes, puertas animadas y navegación por secciones con transiciones fluidas.",
+  },
+  {
+    id: 2,
+    numero: "02",
     titulo: "Sushiro – Fullstack",
     descripcion:
       "Aplicación para un restaurante con selector de mesa, menú interactivo, carrito y zona admin para login y subida de imágenes. Proyecto Fullstack completo con cliente sin login basado en mesa y sesión.",
@@ -19,7 +46,7 @@ const listaProyectos = [
       "CORS",
     ],
     stack: "Fullstack",
-    imagen: "/img/sushiro-portada-integrada.png",
+    imagen: "/img/portada-sushiro.png",
     enlace: [
       {
         tipo: "Frontend",
@@ -35,8 +62,8 @@ const listaProyectos = [
       "Fullstack con login en mesa e integración de API para la relación con los productos/compras.",
   },
   {
-    id: 2,
-    numero: "02",
+    id: 3,
+    numero: "03",
     titulo: "Hotel Six Senses – Rediseño Frontend",
     descripcion:
       "Rediseño minimalista de una página web para hotel vacacional, con estética refinada, navegación intuitiva y responsive layout, simulando una experiencia visual limpia y elegante.",
@@ -50,7 +77,7 @@ const listaProyectos = [
       "JSON local como fuente de datos",
     ],
     stack: "Frontend",
-    imagen: "/img/hotel-sixSenses-fondo.png",
+    imagen: "/img/portada-hotel.png",
     enlace: [
       {
         tipo: "Frontend",
@@ -63,8 +90,8 @@ const listaProyectos = [
   },
 
   {
-    id: 3,
-    numero: "03",
+    id: 4,
+    numero: "04",
     titulo: "Turistea Villajoyosa – Fullstack",
     descripcion:
       "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
@@ -79,7 +106,7 @@ const listaProyectos = [
       "React Calendar",
     ],
     stack: "Fullstack",
-    imagen: "/img/turistea-bg.png",
+    imagen: "/img/portada-turistea.png",
     enlace: [
       {
         tipo: "Frontend",
@@ -94,8 +121,23 @@ const listaProyectos = [
     destacado: "Proyecto final del módulo FullStack de CEI Valencia",
   },
   {
-    id: 4,
-    numero: "04",
+    id: 5,
+    numero: "05",
+    titulo: "Modernidad Mediterránea – Revista",
+    descripcion:
+      "Página estilo blog interactivo para inspirar el uso del diseño moderno mediterráneo, creada como proyecto final del bootcamp y desplegada online como mi primer proyecto publicado.",
+    herramientas: ["HTML", "CSS (SUIT CSS)", "JavaScript (vanilla)"],
+    stack: "Frontend",
+    imagen: "/img/portada-modernidad.png",
+    enlace:
+      "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
+    deploy:
+      "https://jaumeesquerdo.github.io/Modernidad-Mediterranea---revista/index.html",
+    destacado: "Primer proyecto desplegado",
+  },
+  {
+    id: 6,
+    numero: "06",
     titulo: "Brava – E-commerce de Bebidas Funcionales",
     descripcion:
       "Diseño integral de una plataforma móvil para una marca de bebidas saludables, desarrollada como Trabajo Final de Máster (TFM). El proyecto destaca por un proceso profundo de UX Research, validando una propuesta visual inspirada en la esencia mediterránea de Valencia que equilibra bienestar, transparencia y un estilo de vida activo.",
@@ -106,25 +148,10 @@ const listaProyectos = [
       "Prototipado Interactivo",
     ],
     stack: "UX/UI Design",
-    imagen: "/img/brava-bebidas.png",
+    imagen: "/img/portada-brava.png",
     deploy:
       "https://dribbble.com/shots/26962652-Brava-Dise-o-UX-UI-para-Refrescos-Saludables-App-M-vil",
     destacado: "Proyecto final del módulo UX/UI de CEI Valencia",
-  },
-  {
-    id: 5,
-    numero: "05",
-    titulo: "Modernidad Mediterránea – Revista",
-    descripcion:
-      "Página estilo blog interactivo para inspirar el uso del diseño moderno mediterráneo, creada como proyecto final del bootcamp y desplegada online como mi primer proyecto publicado.",
-    herramientas: ["HTML", "CSS (SUIT CSS)", "JavaScript (vanilla)"],
-    stack: "Frontend",
-    imagen: "/img/portada-mediterranea-revista.png",
-    enlace:
-      "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
-    deploy:
-      "https://jaumeesquerdo.github.io/Modernidad-Mediterranea---revista/index.html",
-    destacado: "Primer proyecto desplegado",
   },
 ];
 

@@ -72,26 +72,30 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  padding-right: 80px;
-  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-right: clamp(12px, 2vw, 32px);
+  gap: clamp(20px, 6vw, 80px);
+  /* clamp => minimo, por donde puede fluir (IDEAL), maximo */
 }
 
 .Proyecto-numero {
   color: var(--color-text);
-  font-size: 60px;
+  font-size: clamp(42px, 5vw, 60px);
 }
 .Proyecto-imgLink {
   height: fit-content;
 }
 
 .Proyecto-imgWrapper {
-  width: 320px;
-  max-width: 440px;
-  /* max-height: 320px; */
-  aspect-ratio: 4 / 5;
+  flex: 0 0 auto;
   position: relative;
+  border-radius: 16px;
   overflow: hidden;
+  width: clamp(260px, 30vw, 520px);
+  aspect-ratio: 16 / 9;
 }
+
 .Proyecto-skeleton {
   width: 100%;
   height: 100%;
@@ -102,8 +106,9 @@
 .Proyecto-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center 36%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   /* rellena el marco sin deformarse */
 }
 
