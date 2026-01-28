@@ -23,7 +23,7 @@ export const ImageProject = ({ deploy, imagen, titulo }) => {
           onLoad={() => setLoaded(true)}
         />
         <div className="Overlay">
-          <p className="Overlay-text">Ver Proyecto</p>
+          <p className="Overlay-text">Ver proyecto</p>
         </div>
       </div>
     </a>
