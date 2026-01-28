@@ -19,7 +19,6 @@ export const ImageProject = ({ deploy, imagen, titulo }) => {
           className="Proyecto-img"
           style={{
             opacity: loaded ? 1 : 0,
-            transition: "opacity 0.3s ease-out",
           }}
           onLoad={() => setLoaded(true)}
         />
