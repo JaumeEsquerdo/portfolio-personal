@@ -94,6 +94,7 @@
   overflow: hidden;
   width: clamp(260px, 30vw, 520px);
   aspect-ratio: 16 / 9;
+  transition: transform 0.4s ease;
 }
 
 .Proyecto-skeleton {
@@ -118,6 +119,35 @@
 
 .Proyecto-imgWrapper:hover .Proyecto-img {
   transform: scale(1.05);
+}
+
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 40px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+.Overlay-text {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.Proyecto-imgWrapper:hover .Overlay {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* parte de descripción del proyecto */
