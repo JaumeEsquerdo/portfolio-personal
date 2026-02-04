@@ -2,7 +2,7 @@ const listaProyectos = [
   {
     id: 1,
     numero: "01",
-    titulo: "BEARS – Frontend conceptual",
+    titulo: "BEARS – Frontend",
     descripcion:
       "Experiencia web conceptual que reflexiona sobre los límites éticos entre humanos y vida salvaje. Inspirada en encuentros reales documentados en Grizzly Man y Bear-Like, la aplicación propone un recorrido narrativo y educativo dividido en dos capas: Historia (relato filosófico) y Sobre Ellos (información estructurada sobre el oso grizzly).",
     herramientas: [
