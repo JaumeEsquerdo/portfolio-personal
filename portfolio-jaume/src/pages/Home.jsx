@@ -48,10 +48,6 @@ export const Home = () => {
         <h3 className="PortfolioPresentation-h3">
           Desarrollador Frontend con experiencia en proyectos Fullstack
         </h3>
-        <h3 className="PortfolioPresentation-h3">
-          Actualmente he realizado el máster de ‘Bootcamp de Desarrollo Web, UX
-          y UI’ por CEI Valencia
-        </h3>
       </div>
 
       <nav className="PortfolioPresentation-nav">
