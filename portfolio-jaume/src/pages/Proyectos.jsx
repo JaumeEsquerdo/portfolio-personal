@@ -38,6 +38,7 @@ const Proyectos = () => {
             <Proyecto
               numero={proyecto.numero}
               titulo={proyecto.titulo}
+              subtitulo={proyecto.subtitulo}
               descripcion={proyecto.descripcion}
               imagen={proyecto.imagen}
               stack={proyecto.stack}

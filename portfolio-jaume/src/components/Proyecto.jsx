@@ -10,6 +10,7 @@ import { useIsDesktop } from "@/hooks/useIsDesktop.js";
 const Proyecto = ({
   numero,
   titulo,
+  subtitulo,
   descripcion,
   imagen,
   herramientas,
@@ -44,6 +45,7 @@ const Proyecto = ({
               <h3 className="Proyecto-titulo">{titulo}</h3>
             </a>
           )}
+          <h4 className="Proyecto-subtitulo">{subtitulo}</h4>
 
           <p className="Proyecto-texto Proyecto-texto--primero">
             {descripcion}

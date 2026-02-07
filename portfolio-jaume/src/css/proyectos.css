@@ -165,9 +165,9 @@
   color: var(--color-title-sec);
 }
 
-.Proyecto-texto--primero {
-  margin-top: 1.4rem;
-}
+/* .Proyecto-texto--primero {
+  margin-top: 1rem;
+} */
 
 .Proyecto-titulo {
   color: var(--color-text);
@@ -180,6 +180,12 @@
 
 .Proyecto-titulo:hover {
   color: var(--color-a-hover);
+}
+
+.Proyecto-subtitulo {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #666;
 }
 
 .Proyecto-a {
