@@ -37,7 +37,7 @@ const listaProyectos = [
     titulo: "BEARS",
     subtitulo: "Experiencia web sobre ética y vida salvaje",
     descripcion:
-      "Experiencia web conceptual que reflexiona sobre los límites éticos entre humanos y vida salvaje. Inspirada en encuentros reales documentados en Grizzly Man y Bear-Like, la aplicación propone un recorrido narrativo y educativo dividido en dos capas: Historia (relato filosófico) y Sobre Ellos (información estructurada sobre el oso grizzly).",
+      "Navegación conceptual que reflexiona sobre los límites éticos entre humanos y vida salvaje. Inspirada en encuentros reales documentados en Grizzly Man y Bear-Like, la aplicación propone un recorrido narrativo y educativo dividido en dos capas: Historia (relato filosófico) y Sobre Ellos (información estructurada sobre el oso grizzly).",
     herramientas: [
       "React (Vite)",
       "TypeScript",
@@ -91,7 +91,7 @@ const listaProyectos = [
     id: 4,
     numero: "04",
     titulo: "Sushiro",
-    subtitulo: "Carta restaurante interactiva",
+    subtitulo: "Carta de restaurante interactiva",
     descripcion:
       "Aplicación para un restaurante con selector de mesa, menú interactivo, carrito y zona admin para login y subida de imágenes. Proyecto Fullstack completo con cliente sin login basado en mesa y sesión.",
     herramientas: [
