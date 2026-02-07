@@ -74,7 +74,8 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding-right: clamp(12px, 2vw, 32px);
+  /* padding-right: clamp(12px, 2vw, 32px); */
+  padding-right: clamp(20px, 6vw, 80px);
   gap: clamp(20px, 6vw, 80px);
   /* clamp => minimo, por donde puede fluir (IDEAL), maximo */
 }
@@ -259,7 +260,6 @@
     display: flex;
     flex-direction: column;
     /* padding: 0 20px; */
-    padding-right: 40px;
   }
 
   .Proyectos-h3 {
