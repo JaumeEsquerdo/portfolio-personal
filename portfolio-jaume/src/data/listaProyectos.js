@@ -5,7 +5,7 @@ const listaProyectos = [
     titulo: "Turistea Villajoyosa",
     subtitulo: "Planificador de Actividades Turísticas",
     descripcion:
-      "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales recomendadas. Además, pueden guardar estas en el calendario o bien hacer sus propias actividades para que puedan planificar su estancia en la ciudad a su medida. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
+      "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales recomendadas. Además, pueden guardar estas en el calendario o bien hacer sus propias actividades para que puedan planificar su estancia en la ciudad a su medida. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas.",
     herramientas: [
       "React (Vite)",
       "Node.js",
