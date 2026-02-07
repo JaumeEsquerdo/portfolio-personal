@@ -84,8 +84,7 @@ const listaProyectos = [
       },
     ],
     deploy: "https://hotel-six-senses.vercel.app/",
-    destacado:
-      "Rediseño visual minimalista con React (Vite) + TypeScript, navegación y datos locales",
+    destacado: "Rediseño visual minimalista inspirado en efecto Masonry",
   },
 
   {
