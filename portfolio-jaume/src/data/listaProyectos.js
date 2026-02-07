@@ -2,6 +2,37 @@ const listaProyectos = [
   {
     id: 1,
     numero: "01",
+    titulo: "Turistea Villajoyosa – Fullstack",
+    descripcion:
+      "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
+    herramientas: [
+      "React (Vite)",
+      "Node.js",
+      "CSS (SUIT CSS)",
+      "React Router DOM",
+      "Express",
+      "MongoDB",
+      "Vite",
+      "React Calendar",
+    ],
+    stack: "Fullstack",
+    imagen: "/img/portada-turistea.png",
+    enlace: [
+      {
+        tipo: "Frontend",
+        url: "https://github.com/JaumeEsquerdo/front-proyecto-final-fullstack",
+      },
+      {
+        tipo: "Backend",
+        url: "https://github.com/JaumeEsquerdo/backend-proyecto-final-fullstack",
+      },
+    ],
+    deploy: "https://turistea-villajoyosa.vercel.app/",
+    destacado: "Proyecto final del módulo FullStack de CEI Valencia",
+  },
+  {
+    id: 2,
+    numero: "02",
     titulo: "BEARS – Frontend",
     descripcion:
       "Experiencia web conceptual que reflexiona sobre los límites éticos entre humanos y vida salvaje. Inspirada en encuentros reales documentados en Grizzly Man y Bear-Like, la aplicación propone un recorrido narrativo y educativo dividido en dos capas: Historia (relato filosófico) y Sobre Ellos (información estructurada sobre el oso grizzly).",
@@ -25,41 +56,6 @@ const listaProyectos = [
     deploy: "https://bears-conceptual.vercel.app/",
     destacado:
       "Proyecto conceptual centrado en animación, narrativa interactiva y reflexión ética: precarga de imágenes, puertas animadas y navegación por secciones con transiciones fluidas.",
-  },
-  {
-    id: 2,
-    numero: "02",
-    titulo: "Sushiro – Fullstack",
-    descripcion:
-      "Aplicación para un restaurante con selector de mesa, menú interactivo, carrito y zona admin para login y subida de imágenes. Proyecto Fullstack completo con cliente sin login basado en mesa y sesión.",
-    herramientas: [
-      "React (Vite)",
-      "Node.js",
-      "CSS (SUIT CSS)",
-      "React Router DOM",
-      "Framer Motion",
-      "Express",
-      "MongoDB/Mongoose",
-      "JWT",
-      "Multer",
-      "dotenv",
-      "CORS",
-    ],
-    stack: "Fullstack",
-    imagen: "/img/portada-sushiro.png",
-    enlace: [
-      {
-        tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/Sushiro-frontend",
-      },
-      {
-        tipo: "Backend",
-        url: "https://github.com/JaumeEsquerdo/Sushiro-backend",
-      },
-    ],
-    deploy: "https://sushiro-frontend.vercel.app/",
-    destacado:
-      "Fullstack con login en mesa e integración de API para la relación con los productos/compras.",
   },
   {
     id: 3,
@@ -92,34 +88,39 @@ const listaProyectos = [
   {
     id: 4,
     numero: "04",
-    titulo: "Turistea Villajoyosa – Fullstack",
+    titulo: "Sushiro – Fullstack",
     descripcion:
-      "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas. Proyecto final del módulo FullStack en CEI Valencia.",
+      "Aplicación para un restaurante con selector de mesa, menú interactivo, carrito y zona admin para login y subida de imágenes. Proyecto Fullstack completo con cliente sin login basado en mesa y sesión.",
     herramientas: [
       "React (Vite)",
       "Node.js",
       "CSS (SUIT CSS)",
       "React Router DOM",
+      "Framer Motion",
       "Express",
-      "MongoDB",
-      "Vite",
-      "React Calendar",
+      "MongoDB/Mongoose",
+      "JWT",
+      "Multer",
+      "dotenv",
+      "CORS",
     ],
     stack: "Fullstack",
-    imagen: "/img/portada-turistea.png",
+    imagen: "/img/portada-sushiro.png",
     enlace: [
       {
         tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/front-proyecto-final-fullstack",
+        url: "https://github.com/JaumeEsquerdo/Sushiro-frontend",
       },
       {
         tipo: "Backend",
-        url: "https://github.com/JaumeEsquerdo/backend-proyecto-final-fullstack",
+        url: "https://github.com/JaumeEsquerdo/Sushiro-backend",
       },
     ],
-    deploy: "https://front-proyecto-final-fullstack.vercel.app/",
-    destacado: "Proyecto final del módulo FullStack de CEI Valencia",
+    deploy: "https://sushiro-frontend.vercel.app/",
+    destacado:
+      "Fullstack con login en mesa e integración de API para la relación con los productos/compras.",
   },
+
   {
     id: 5,
     numero: "05",
