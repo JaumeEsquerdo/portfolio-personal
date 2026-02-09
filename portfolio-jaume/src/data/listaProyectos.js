@@ -46,6 +46,7 @@ const listaProyectos = [
       "CSS (SUIT CSS)",
       "React Router DOM",
       "React Datepicker",
+      "Testing unitario con Vitest y React Testing Library",
       "JSON local como fuente de datos",
     ],
     stack: "Frontend",
