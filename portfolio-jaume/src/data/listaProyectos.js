@@ -31,9 +31,37 @@ const listaProyectos = [
     deploy: "https://turistea-villajoyosa.vercel.app/",
     destacado: "Proyecto final del módulo FullStack de CEI Valencia",
   },
+
   {
     id: 2,
     numero: "02",
+    titulo: "Hotel Six Senses",
+    subtitulo: "Rediseño web y experiencia de reserva",
+    descripcion:
+      "Rediseño conceptual de la web de un hotel vacacional inspirado en Six Senses Ibiza. La aplicación simula una experiencia completa de reserva: exploración de habitaciones e instalaciones, detalle individual, selección de fechas y formulario de reserva con cálculo dinámico, priorizando una UI minimalista, responsive y orientada a experiencia de usuario.",
+    herramientas: [
+      "React (Vite)",
+      "TypeScript",
+      "Node.js",
+      "CSS (SUIT CSS)",
+      "React Router DOM",
+      "React Datepicker",
+      "JSON local como fuente de datos",
+    ],
+    stack: "Frontend",
+    imagen: "/img/portada-hotel.png",
+    enlace: [
+      {
+        tipo: "Frontend",
+        url: "https://github.com/JaumeEsquerdo/hotel-six-senses-typescript",
+      },
+    ],
+    deploy: "https://hotel-six-senses.vercel.app/",
+    destacado: "Rediseño visual minimalista inspirado en efecto Masonry",
+  },
+  {
+    id: 3,
+    numero: "03",
     titulo: "BEARS",
     subtitulo: "Experiencia web sobre ética y vida salvaje",
     descripcion:
@@ -58,33 +86,6 @@ const listaProyectos = [
     deploy: "https://bears-conceptual.vercel.app/",
     destacado:
       "Proyecto conceptual centrado en animación, narrativa interactiva y reflexión ética: precarga de imágenes, puertas animadas y navegación por secciones con transiciones fluidas.",
-  },
-  {
-    id: 3,
-    numero: "03",
-    titulo: "Hotel Six Senses",
-    subtitulo: "Rediseño web y experiencia de reserva",
-    descripcion:
-      "Rediseño conceptual de la web de un hotel vacacional inspirado en Six Senses Ibiza. La aplicación simula una experiencia completa de reserva: exploración de habitaciones e instalaciones, detalle individual, selección de fechas y formulario de reserva con cálculo dinámico, priorizando una UI minimalista, responsive y orientada a experiencia de usuario.",
-    herramientas: [
-      "React (Vite)",
-      "TypeScript",
-      "Node.js",
-      "CSS (SUIT CSS)",
-      "React Router DOM",
-      "React Datepicker",
-      "JSON local como fuente de datos",
-    ],
-    stack: "Frontend",
-    imagen: "/img/portada-hotel.png",
-    enlace: [
-      {
-        tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/hotel-six-senses-typescript",
-      },
-    ],
-    deploy: "https://hotel-six-senses.vercel.app/",
-    destacado: "Rediseño visual minimalista inspirado en efecto Masonry",
   },
 
   {
