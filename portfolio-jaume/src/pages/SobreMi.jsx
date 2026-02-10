@@ -35,7 +35,7 @@ const SobreMi = () => {
           <h2 className="SobreMi-title">Sobre mí</h2>
           <p className="SobreMi-p">
             Con una base previa en turismo y marketing digital, decidí redirigir
-            mi carrera hacia el <strong>desarrollo web fullstack</strong>, un
+            mi carrera hacia el <strong>desarrollo web frontend</strong>, un
             campo donde he encontrado un reto creativo y técnico que me motiva
             cada día.
           </p>
@@ -51,9 +51,8 @@ const SobreMi = () => {
           </p>
 
           <p className="SobreMi-p">
-            Como desarrollador <strong>fullstack en formación</strong>, también
-            me motiva seguir creciendo en <strong>backend</strong>. En mis
-            proyectos he trabajado con{" "}
+            Como desarrollador, también me motiva seguir creciendo en{" "}
+            <strong>backend</strong>. En mis proyectos he trabajado con{" "}
             <strong>Node.js y MongoDB (Mongoose)</strong>, y aunque toqué
             MySQL/SQLite ha sido con Mongo donde he podido construir proyectos
             más sólidos y completos.
