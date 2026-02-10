@@ -5,7 +5,7 @@ const listaProyectos = [
     titulo: "Turistea Villajoyosa",
     subtitulo: "Planificador de Actividades Turísticas",
     descripcion:
-      "Aplicación web fullstack que permite a los visitantes descubrir Villajoyosa a través de rutas turísticas, puntos de interés y experiencias locales recomendadas. Además, pueden guardar estas en el calendario o bien hacer sus propias actividades para que puedan planificar su estancia en la ciudad a su medida. Incluye un panel administrador para la gestión de contenidos y un flujo de reservas.",
+      "Desarrollé una arquitectura robusta que permite a los usuarios personalizar itinerarios sobre su estancia en Villajoyosa mediante un calendario dinámico y a los administradores gestionar contenidos en tiempo real. Enfocado en la escalabilidad del código y una navegación fluida, integrando lógica de backend",
     herramientas: [
       "React (Vite)",
       "Node.js",
@@ -13,7 +13,6 @@ const listaProyectos = [
       "React Router DOM",
       "Express",
       "MongoDB",
-      "Vite",
       "React Calendar",
     ],
     stack: "Fullstack",
@@ -29,7 +28,8 @@ const listaProyectos = [
       },
     ],
     deploy: "https://turistea-villajoyosa.vercel.app/",
-    destacado: "Proyecto final del módulo FullStack de CEI Valencia",
+    destacado:
+      "Proyecto de mayor complejidad técnica con integración completa de API REST y base de datos",
   },
 
   {
