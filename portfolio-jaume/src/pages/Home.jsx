@@ -46,7 +46,7 @@ export const Home = () => {
       <div className="PortfolioPresentation">
         <h1 className="PortfolioPresentation-h1">JAUME ESQUERDO RAMIS</h1>
         <h3 className="PortfolioPresentation-h3">
-          Con base Fullstack y especialización en desarrollo Frontend con React,
+          Con base Fullstack y especialización en Desarrollo Frontend con React,
           creo experiencias web intuitivas, atractivas y responsive, cuidando
           las buenas prácticas y pensando en la escalabilidad
         </h3>
