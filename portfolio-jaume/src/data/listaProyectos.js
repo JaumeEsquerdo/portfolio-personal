@@ -2,6 +2,61 @@ const listaProyectos = [
   {
     id: 1,
     numero: "01",
+    titulo: "Hotel Six Senses",
+    subtitulo: "Rediseño web y experiencia de reserva",
+    descripcion:
+      "Rediseño conceptual de la web de un hotel vacacional inspirado en Six Senses Ibiza. La aplicación simula una experiencia completa de reserva: exploración de habitaciones e instalaciones, detalle individual, selección de fechas y formulario de reserva con cálculo dinámico, priorizando una UI minimalista, responsive y orientada a experiencia de usuario.",
+    herramientas: [
+      "React (Vite)",
+      "TypeScript",
+      "Node.js",
+      "CSS (SUIT CSS)",
+      "React Router DOM",
+      "React Datepicker",
+      "Testing unitario con Vitest",
+      "JSON local como fuente de datos",
+    ],
+    stack: "Frontend",
+    imagen: "/img/portada-hotel.png",
+    enlace: [
+      {
+        tipo: "Frontend",
+        url: "https://github.com/JaumeEsquerdo/hotel-six-senses-typescript",
+      },
+    ],
+    deploy: "https://hotel-six-senses.vercel.app/",
+    destacado: "Rediseño visual minimalista inspirado en efecto Masonry",
+  },
+  {
+    id: 2,
+    numero: "02",
+    titulo: "LA (2) SILLA",
+    subtitulo: "Digitalización y Sistema de Reservas para Peluquería",
+    descripcion:
+      "Proyecto desarrollado para una peluquería local en Valencia con el fin de digitalizar su sistema de reservas. Se implementó una SPA (Single Page Application) que prioriza la experiencia de usuario joven, con animaciones fluidas, diseño mobile-first y una lógica de navegación que sincroniza el router con el scroll de forma eficiente.",
+    herramientas: [
+      "React 18",
+      "Vite",
+      "CSS3",
+      "React Router v6",
+      "Responsive Design",
+      "WebP/Lazy Loading",
+    ],
+    stack: "Frontend",
+    imagen: "/img/portada-la2silla.png",
+    enlace: [
+      {
+        tipo: "Frontend",
+        url: "https://github.com/JaumeEsquerdo/peluqueria-la-silla-2",
+      },
+    ],
+    deploy: "https://la-2-silla.vercel.app/",
+    destacado:
+      "Proyecto colaborativo enfocado en el alto rendimiento visual mediante animaciones y una arquitectura de navegación fluida entre secciones y página de reservas.",
+  },
+  {
+    id: 3,
+    numero: "03",
     titulo: "Turistea Villajoyosa",
     subtitulo: "Planificador de Actividades Turísticas",
     descripcion:
@@ -33,36 +88,8 @@ const listaProyectos = [
   },
 
   {
-    id: 2,
-    numero: "02",
-    titulo: "Hotel Six Senses",
-    subtitulo: "Rediseño web y experiencia de reserva",
-    descripcion:
-      "Rediseño conceptual de la web de un hotel vacacional inspirado en Six Senses Ibiza. La aplicación simula una experiencia completa de reserva: exploración de habitaciones e instalaciones, detalle individual, selección de fechas y formulario de reserva con cálculo dinámico, priorizando una UI minimalista, responsive y orientada a experiencia de usuario.",
-    herramientas: [
-      "React (Vite)",
-      "TypeScript",
-      "Node.js",
-      "CSS (SUIT CSS)",
-      "React Router DOM",
-      "React Datepicker",
-      "Testing unitario con Vitest",
-      "JSON local como fuente de datos",
-    ],
-    stack: "Frontend",
-    imagen: "/img/portada-hotel.png",
-    enlace: [
-      {
-        tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/hotel-six-senses-typescript",
-      },
-    ],
-    deploy: "https://hotel-six-senses.vercel.app/",
-    destacado: "Rediseño visual minimalista inspirado en efecto Masonry",
-  },
-  {
-    id: 3,
-    numero: "03",
+    id: 4,
+    numero: "04",
     titulo: "BEARS",
     subtitulo: "Experiencia web sobre ética y vida salvaje",
     descripcion:
@@ -90,8 +117,8 @@ const listaProyectos = [
   },
 
   {
-    id: 4,
-    numero: "04",
+    id: 5,
+    numero: "05",
     titulo: "Sushiro",
     subtitulo: "Carta de restaurante interactiva",
     descripcion:
@@ -127,8 +154,8 @@ const listaProyectos = [
   },
 
   {
-    id: 5,
-    numero: "05",
+    id: 6,
+    numero: "06",
     titulo: "Modernidad Mediterránea",
     subtitulo: "Revista digital de arquitectura",
     descripcion:
@@ -143,8 +170,8 @@ const listaProyectos = [
     destacado: "Primer proyecto desplegado",
   },
   {
-    id: 6,
-    numero: "06",
+    id: 7,
+    numero: "07",
     titulo: "Brava",
     subtitulo: "Diseño UX/UI de E-commerce de Bebidas Funcionales",
     descripcion:
