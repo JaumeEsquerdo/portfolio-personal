@@ -30,33 +30,6 @@ const listaProyectos = [
   {
     id: 2,
     numero: "02",
-    titulo: "LA (2) SILLA",
-    subtitulo: "Digitalización y Sistema de Reservas para Peluquería",
-    descripcion:
-      "Proyecto desarrollado para una peluquería local en Valencia con el fin de digitalizar su sistema de reservas. Se implementó una SPA (Single Page Application) que prioriza la experiencia de usuario joven, con animaciones fluidas, diseño mobile-first y una lógica de navegación que sincroniza el router con el scroll de forma eficiente.",
-    herramientas: [
-      "React 18",
-      "Vite",
-      "CSS3",
-      "React Router v6",
-      "Responsive Design",
-      "WebP/Lazy Loading",
-    ],
-    stack: "Frontend",
-    imagen: "/img/portada-la2silla.png",
-    enlace: [
-      {
-        tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/peluqueria-la-silla-2",
-      },
-    ],
-    deploy: "https://la-2-silla.vercel.app/",
-    destacado:
-      "Proyecto colaborativo enfocado en el alto rendimiento visual mediante animaciones y una arquitectura de navegación fluida entre secciones y página de reservas.",
-  },
-  {
-    id: 3,
-    numero: "03",
     titulo: "Turistea Villajoyosa",
     subtitulo: "Planificador de Actividades Turísticas",
     descripcion:
@@ -86,7 +59,35 @@ const listaProyectos = [
     destacado:
       "Proyecto de mayor complejidad técnica con integración completa de API REST y base de datos",
   },
-
+  {
+    id: 3,
+    numero: "03",
+    titulo: "LA (2) SILLA",
+    subtitulo: "Digitalización y Sistema de Reservas para peluquería",
+    descripcion:
+      "Proyecto desarrollado para una peluquería local en Valencia con el fin de digitalizar su sistema de reservas. Se implementó una SPA (Single Page Application) que prioriza la experiencia de usuario joven, con animaciones fluidas, diseño mobile-first y una lógica de navegación que sincroniza el router con el scroll de forma eficiente.",
+    herramientas: [
+      "React (Vite)",
+      "CSS3",
+      "React Router v6",
+      "Framer Motion",
+      "Responsive Design",
+      "WebP/Lazy Loading",
+      "Context API",
+      "Custom Hooks (Gallery swap)",
+    ],
+    stack: "Frontend",
+    imagen: "/img/portada-la2silla.png",
+    enlace: [
+      {
+        tipo: "Frontend",
+        url: "https://github.com/JaumeEsquerdo/peluqueria-la-silla-2",
+      },
+    ],
+    deploy: "https://la-2-silla.vercel.app/",
+    destacado:
+      "Proyecto colaborativo enfocado en el alto rendimiento visual mediante animaciones y una arquitectura de navegación fluida entre secciones y página de reservas.",
+  },
   {
     id: 4,
     numero: "04",
@@ -156,22 +157,6 @@ const listaProyectos = [
   {
     id: 6,
     numero: "06",
-    titulo: "Modernidad Mediterránea",
-    subtitulo: "Revista digital de arquitectura",
-    descripcion:
-      "Revista digital interactiva sobre arquitectura moderna mediterránea, desarrollada como proyecto final del módulo de Diseño Web con HTML, CSS y JS en CEI Valencia. La web simula una experiencia editorial, con secciones dedicadas a casas, materiales y referencias visuales, priorizando un diseño limpio, estructurado y orientado a contenido.",
-    herramientas: ["HTML", "CSS (SUIT CSS)", "JavaScript (vanilla)"],
-    stack: "Frontend",
-    imagen: "/img/portada-modernidad.png",
-    enlace:
-      "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
-    deploy:
-      "https://jaumeesquerdo.github.io/Modernidad-Mediterranea---revista/index.html",
-    destacado: "Primer proyecto desplegado",
-  },
-  {
-    id: 7,
-    numero: "07",
     titulo: "Brava",
     subtitulo: "Diseño UX/UI de E-commerce de Bebidas Funcionales",
     descripcion:
@@ -187,6 +172,22 @@ const listaProyectos = [
     deploy:
       "https://dribbble.com/shots/26962652-Brava-Dise-o-UX-UI-para-Refrescos-Saludables-App-M-vil",
     destacado: "Proyecto final del módulo UX/UI de CEI Valencia",
+  },
+  {
+    id: 7,
+    numero: "07",
+    titulo: "Modernidad Mediterránea",
+    subtitulo: "Revista digital de arquitectura",
+    descripcion:
+      "Revista digital interactiva sobre arquitectura moderna mediterránea, desarrollada como proyecto final del módulo de Diseño Web con HTML, CSS y JS en CEI Valencia. La web simula una experiencia editorial, con secciones dedicadas a casas, materiales y referencias visuales, priorizando un diseño limpio, estructurado y orientado a contenido.",
+    herramientas: ["HTML", "CSS (SUIT CSS)", "JavaScript (vanilla)"],
+    stack: "Frontend",
+    imagen: "/img/portada-modernidad.png",
+    enlace:
+      "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
+    deploy:
+      "https://jaumeesquerdo.github.io/Modernidad-Mediterranea---revista/index.html",
+    destacado: "Primer proyecto desplegado",
   },
 ];
 
