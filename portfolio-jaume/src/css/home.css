@@ -13,6 +13,7 @@
   /* bloqueos por la animacion de barra roja q sobresale */
 }
 
+/* linea rojaanimada para cuando entra el mouse en la pantalla */
 .Portfolio-home::before {
   content: "";
   position: absolute;
@@ -50,14 +51,14 @@
 .PortfolioPresentation-h1 {
   color: var(--color-text);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .PortfolioPresentation-h3 {
   color: var(--color-text-sec);
   padding: 8px 0;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .PortfolioPresentation-nav {
@@ -296,3 +297,21 @@
 }
 
 /* @media (max-width: 480px) {} */
+
+@media (min-width: 2400px) {
+  .PortfolioPresentation-link {
+    font-size: 10rem;
+  }
+  .PortfolioPresentation-h1 {
+    font-size: 2.25rem;
+  }
+  .PortfolioPresentation-h3 {
+    font-size: 1.5rem;
+  }
+  .HomeAside-ul {
+    font-size: 1.5rem;
+  }
+  .Proyecto-panel--media {
+    justify-content: space-around;
+  }
+}
