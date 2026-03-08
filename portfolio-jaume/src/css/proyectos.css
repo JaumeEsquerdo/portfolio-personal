@@ -200,6 +200,12 @@
   width: fit-content;
 }
 
+.Proyecto-a--responsive {
+  transition: color 0.2s ease-in-out;
+}
+.Proyecto-a--responsive:hover {
+  color: var(--color-a-hover);
+}
 .MotionDiv-oculto {
   position: absolute;
   inset: 0;
