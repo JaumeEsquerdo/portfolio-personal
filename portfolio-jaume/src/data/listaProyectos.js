@@ -2,8 +2,9 @@ const listaProyectos = [
   {
     id: 1,
     numero: "01",
-    titulo: "findJob — Dashboard de Empleo Tech",
-    subtitulo: "Visualización de datos y búsqueda de empleo en tiempo real",
+    titulo: "findJob",
+    subtitulo:
+      "Dashboard de Empleo Tech - visualización de datos y búsqueda de empleo en tiempo real",
     descripcion:
       "Desarrollé un dashboard interactivo que consume la API de Empllo para analizar el mercado laboral tecnológico. La aplicación implementa una arquitectura limpia en Next.js mediante el uso de API Routes como proxy, validación de datos en runtime con Zod y un sistema de 'mappers' para normalizar la información externa. Incluye visualización de métricas (KPIs) y gráficos dinámicos con Recharts, además de un flujo de onboarding guiado para mejorar la retención del usuario.",
     herramientas: [
