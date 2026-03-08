@@ -6,7 +6,7 @@ const listaProyectos = [
     subtitulo:
       "Dashboard de Empleo Tech con visualización de datos y búsqueda de empleo en tiempo real",
     descripcion:
-      "Desarrollé un dashboard interactivo que consume la API de Empllo para analizar el mercado laboral tecnológico. La aplicación implementa una arquitectura limpia en Next.js mediante el uso de API Routes como proxy, validación de datos en runtime con Zod y un sistema de 'mappers' para normalizar la información externa. Incluye visualización de métricas (KPIs) y gráficos dinámicos con Recharts, además de un flujo de onboarding guiado para mejorar la retención del usuario.",
+      "Desarrollé un dashboard interactivo que consume la API de Empllo para analizar el mercado laboral tecnológico. La aplicación implementa una arquitectura limpia en Next.js mediante el uso de API Routes como proxy para evitar problemas de CORS, validación de datos en runtime con Zod y un sistema de 'mappers' para normalizar la información externa. Incluye visualización de métricas (KPIs) y gráficos dinámicos con Recharts, además de un flujo de onboarding guiado para mejorar la retención del usuario.",
     herramientas: [
       "Next.js 16 (App Router)",
       "React 19",
