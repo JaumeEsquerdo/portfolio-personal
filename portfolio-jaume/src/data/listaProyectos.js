@@ -2,6 +2,35 @@ const listaProyectos = [
   {
     id: 1,
     numero: "01",
+    titulo: "findJob — Dashboard de Empleo Tech",
+    subtitulo: "Visualización de datos y búsqueda de empleo en tiempo real",
+    descripcion:
+      "Desarrollé un dashboard interactivo que consume la API de Empllo para analizar el mercado laboral tecnológico. La aplicación implementa una arquitectura limpia en Next.js mediante el uso de API Routes como proxy, validación de datos en runtime con Zod y un sistema de 'mappers' para normalizar la información externa. Incluye visualización de métricas (KPIs) y gráficos dinámicos con Recharts, además de un flujo de onboarding guiado para mejorar la retención del usuario.",
+    herramientas: [
+      "Next.js 16 (App Router)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Recharts (Gráficos)",
+      "Zod (Validación API)",
+      "Framer Motion",
+      "API Routes & Proxying",
+    ],
+    stack: "Fullstack",
+    imagen: "/img/portada-findJob.png",
+    enlace: [
+      {
+        tipo: "Fullstack",
+        url: "https://github.com/JaumeEsquerdo/dashboard-findJob",
+      },
+    ],
+    deploy: "https://find-job-dashboard.vercel.app/",
+    destacado:
+      "Arquitectura robusta con validación de esquemas en runtime y transformación de datos (Mappers) para asegurar la integridad del frontend",
+  },
+  {
+    id: 2,
+    numero: "02",
     titulo: "Hotel Six Senses",
     subtitulo: "Rediseño web y experiencia de reserva",
     descripcion:
@@ -28,8 +57,8 @@ const listaProyectos = [
     destacado: "Rediseño visual minimalista inspirado en efecto Masonry",
   },
   {
-    id: 2,
-    numero: "02",
+    id: 3,
+    numero: "03",
     titulo: "Turistea Villajoyosa",
     subtitulo: "Planificador de Actividades Turísticas",
     descripcion:
@@ -60,8 +89,8 @@ const listaProyectos = [
       "Proyecto de mayor complejidad técnica con integración completa de API REST y base de datos",
   },
   {
-    id: 3,
-    numero: "03",
+    id: 4,
+    numero: "04",
     titulo: "LA (2) SILLA",
     subtitulo: "Digitalización y Sistema de Reservas para peluquería",
     descripcion:
@@ -89,8 +118,8 @@ const listaProyectos = [
       "Proyecto colaborativo enfocado en el alto rendimiento visual mediante animaciones y una arquitectura de navegación fluida entre secciones y página de reservas.",
   },
   {
-    id: 4,
-    numero: "04",
+    id: 5,
+    numero: "05",
     titulo: "BEARS",
     subtitulo: "Experiencia web sobre ética y vida salvaje",
     descripcion:
@@ -118,8 +147,8 @@ const listaProyectos = [
   },
 
   {
-    id: 5,
-    numero: "05",
+    id: 6,
+    numero: "06",
     titulo: "Sushiro",
     subtitulo: "Carta de restaurante interactiva",
     descripcion:
@@ -155,8 +184,8 @@ const listaProyectos = [
   },
 
   {
-    id: 6,
-    numero: "06",
+    id: 7,
+    numero: "07",
     titulo: "Brava",
     subtitulo: "Diseño UX/UI de E-commerce de Bebidas Funcionales",
     descripcion:
@@ -174,8 +203,8 @@ const listaProyectos = [
     destacado: "Proyecto final del módulo UX/UI de CEI Valencia",
   },
   {
-    id: 7,
-    numero: "07",
+    id: 8,
+    numero: "08",
     titulo: "Modernidad Mediterránea",
     subtitulo: "Revista digital de arquitectura",
     descripcion:
