@@ -60,34 +60,30 @@ const listaProyectos = [
   {
     id: 3,
     numero: "03",
-    titulo: "Turistea Villajoyosa",
-    subtitulo: "Planificador de Actividades Turísticas",
+    titulo: "BEARS",
+    subtitulo: "Experiencia web sobre ética y vida salvaje",
     descripcion:
-      "Desarrollé una arquitectura robusta que permite a los usuarios personalizar itinerarios sobre su estancia en Villajoyosa mediante un calendario dinámico y a los administradores gestionar contenidos en tiempo real. Enfocado en la escalabilidad del código y una navegación fluida, integrando lógica de backend",
+      "Navegación conceptual que reflexiona sobre los límites éticos entre humanos y vida salvaje. Inspirada en encuentros reales documentados en Grizzly Man y Bear-Like, la aplicación propone un recorrido narrativo y educativo dividido en dos capas: Historia (relato filosófico) y Sobre Ellos (información estructurada sobre el oso grizzly).",
     herramientas: [
       "React (Vite)",
-      "Node.js",
-      "CSS (SUIT CSS)",
-      "React Router DOM",
-      "Express",
-      "MongoDB",
-      "React Calendar",
+      "TypeScript",
+      "TailwindCSS v4",
+      "React Router",
+      "Framer Motion",
+      "Context API",
+      "Custom hooks (preload)",
     ],
-    stack: "Fullstack",
-    imagen: "/img/portada-turistea.png",
+    stack: "Frontend",
+    imagen: "/img/portada-bears.png",
     enlace: [
       {
         tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/front-proyecto-final-fullstack",
-      },
-      {
-        tipo: "Backend",
-        url: "https://github.com/JaumeEsquerdo/backend-proyecto-final-fullstack",
+        url: "https://github.com/JaumeEsquerdo/bears-web",
       },
     ],
-    deploy: "https://turistea-villajoyosa.vercel.app/",
+    deploy: "https://bears-conceptual.vercel.app/",
     destacado:
-      "Proyecto de mayor complejidad técnica con integración completa de API REST y base de datos",
+      "Proyecto conceptual centrado en animación, narrativa interactiva y reflexión ética: precarga de imágenes, puertas animadas y navegación por secciones con transiciones fluidas.",
   },
   {
     id: 4,
@@ -118,35 +114,39 @@ const listaProyectos = [
     destacado:
       "Proyecto colaborativo enfocado en el alto rendimiento visual mediante animaciones y una arquitectura de navegación fluida entre secciones y página de reservas.",
   },
+
   {
     id: 5,
     numero: "05",
-    titulo: "BEARS",
-    subtitulo: "Experiencia web sobre ética y vida salvaje",
+    titulo: "Turistea Villajoyosa",
+    subtitulo: "Planificador de Actividades Turísticas",
     descripcion:
-      "Navegación conceptual que reflexiona sobre los límites éticos entre humanos y vida salvaje. Inspirada en encuentros reales documentados en Grizzly Man y Bear-Like, la aplicación propone un recorrido narrativo y educativo dividido en dos capas: Historia (relato filosófico) y Sobre Ellos (información estructurada sobre el oso grizzly).",
+      "Desarrollé una arquitectura robusta que permite a los usuarios personalizar itinerarios sobre su estancia en Villajoyosa mediante un calendario dinámico y a los administradores gestionar contenidos en tiempo real. Enfocado en la escalabilidad del código y una navegación fluida, integrando lógica de backend",
     herramientas: [
       "React (Vite)",
-      "TypeScript",
-      "TailwindCSS v4",
-      "React Router",
-      "Framer Motion",
-      "Context API",
-      "Custom hooks (preload)",
+      "Node.js",
+      "CSS (SUIT CSS)",
+      "React Router DOM",
+      "Express",
+      "MongoDB",
+      "React Calendar",
     ],
-    stack: "Frontend",
-    imagen: "/img/portada-bears.png",
+    stack: "Fullstack",
+    imagen: "/img/portada-turistea.png",
     enlace: [
       {
         tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/bears-web",
+        url: "https://github.com/JaumeEsquerdo/front-proyecto-final-fullstack",
+      },
+      {
+        tipo: "Backend",
+        url: "https://github.com/JaumeEsquerdo/backend-proyecto-final-fullstack",
       },
     ],
-    deploy: "https://bears-conceptual.vercel.app/",
+    deploy: "https://turistea-villajoyosa.vercel.app/",
     destacado:
-      "Proyecto conceptual centrado en animación, narrativa interactiva y reflexión ética: precarga de imágenes, puertas animadas y navegación por secciones con transiciones fluidas.",
+      "Proyecto de mayor complejidad técnica con integración completa de API REST y base de datos",
   },
-
   {
     id: 6,
     numero: "06",
