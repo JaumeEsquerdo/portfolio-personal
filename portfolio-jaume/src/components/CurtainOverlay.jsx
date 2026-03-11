@@ -4,6 +4,8 @@ import { usePageTransition } from "@/context/TransitionContext";
 export const CurtainOverlay = () => {
   const { transitioning } = usePageTransition();
   return (
+    // AnimatePresence detecta cuando transitioning pasa a false
+    // y ejecuta la animación exit antes de desmontar el panel
     <AnimatePresence>
       {transitioning && (
         <motion.div

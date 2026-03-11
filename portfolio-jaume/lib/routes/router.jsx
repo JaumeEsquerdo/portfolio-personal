@@ -14,6 +14,7 @@ import { RootLayout } from "@/RootLayout";
 
 const router = createBrowserRouter([
   {
+    // RootLayout envuelve TODA la app — aquí viven el contexto y la cortina
     element: <RootLayout />,
     children: [
       {
