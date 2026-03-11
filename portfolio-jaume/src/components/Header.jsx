@@ -5,6 +5,7 @@ import "../css/header.css";
 import { usePageTransition } from "@/context/TransitionContext";
 
 const Header = () => {
+  /* open para abrir aside de navegación */
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null); // referencia al botón hamburguesa -> evita que al hacer clic en él se dispare el "clic fuera" y se cierre el menú
@@ -33,6 +34,11 @@ const Header = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [open]);
+
+  const handleNav = (path) => {
+    setOpen(false);
+    goTo(path);
+  };
 
   return (
     <header className="Header">
@@ -73,7 +79,7 @@ const Header = () => {
       >
         <ul className="Menu-ul">
           <li className="Menu-li">
-            <button onClick={() => goTo("/")} className={`Menu-navlink `}>
+            <button onClick={() => handleNav("/")} className={`Menu-navlink `}>
               Home
             </button>
           </li>
@@ -82,7 +88,7 @@ const Header = () => {
               to="/proyectos"
               onClick={(e) => {
                 e.preventDefault();
-                goTo("/proyectos");
+                handleNav("/proyectos");
               }}
               className={({ isActive }) =>
                 `Menu-navlink ${isActive ? "Active" : ""}`
@@ -97,7 +103,7 @@ const Header = () => {
               to="/habilidades"
               onClick={(e) => {
                 e.preventDefault();
-                goTo("/habilidades");
+                handleNav("/habilidades");
               }}
               className={({ isActive }) =>
                 `Menu-navlink ${isActive ? "Active" : ""}`
@@ -112,7 +118,7 @@ const Header = () => {
               to="/sobre-mi"
               onClick={(e) => {
                 e.preventDefault();
-                goTo("/sobre-mi");
+                handleNav("/sobre-mi");
               }}
               className={({ isActive }) =>
                 `Menu-navlink ${isActive ? "Active" : ""}`
@@ -127,7 +133,7 @@ const Header = () => {
               to="/contacto"
               onClick={(e) => {
                 e.preventDefault();
-                goTo("/contacto");
+                handleNav("/contacto");
               }}
               className={({ isActive }) =>
                 `Menu-navlink ${isActive ? "Active" : ""}`
