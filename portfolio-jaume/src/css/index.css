@@ -55,3 +55,7 @@ button {
   cursor: pointer;
   /* Asegura que el cursor sea un puntero cuando se pase por encima */
 }
+
+::-webkit-scrollbar {
+  display: none;
+} /* Chrome, Safari */

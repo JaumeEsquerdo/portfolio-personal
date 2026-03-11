@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FramerMagnetic } from "@/components/FramerMagnetic";
+import { usePageTransition } from "@/context/TransitionContext";
 
 export const Home = () => {
+  const { goTo } = usePageTransition();
   return (
     <main className="Portfolio-home">
       <div className="HomeWrapper">
@@ -54,24 +56,36 @@ export const Home = () => {
 
       <nav className="PortfolioPresentation-nav">
         <FramerMagnetic>
-          <Link to="/proyectos" className="PortfolioPresentation-link">
+          <button
+            onClick={() => goTo("/proyectos")}
+            className="PortfolioPresentation-link"
+          >
             PROYECTOS
-          </Link>
+          </button>
         </FramerMagnetic>
         <FramerMagnetic>
-          <Link to="/habilidades" className="PortfolioPresentation-link">
+          <button
+            onClick={() => goTo("/habilidades")}
+            className="PortfolioPresentation-link"
+          >
             HABILIDADES / ESTUDIOS
-          </Link>
+          </button>
         </FramerMagnetic>
         <FramerMagnetic>
-          <Link to="/sobre-mi" className="PortfolioPresentation-link">
+          <button
+            onClick={() => goTo("/sobre-mi")}
+            className="PortfolioPresentation-link"
+          >
             SOBRE MÍ
-          </Link>
+          </button>
         </FramerMagnetic>
         <FramerMagnetic>
-          <Link to="/contacto" className="PortfolioPresentation-link">
+          <button
+            onClick={() => goTo("/contacto")}
+            className="PortfolioPresentation-link"
+          >
             CONTACTO
-          </Link>
+          </button>
         </FramerMagnetic>
       </nav>
     </main>
