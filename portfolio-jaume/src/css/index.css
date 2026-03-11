@@ -4,6 +4,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  scrollbar-width: none; /* para ocultar barra en firefox */
 }
 
 html,
@@ -56,6 +57,7 @@ button {
   /* Asegura que el cursor sea un puntero cuando se pase por encima */
 }
 
+/*  ocultar barrra scroll en Chrome, Safari */
 ::-webkit-scrollbar {
   display: none;
-} /* Chrome, Safari */
+}
