@@ -80,6 +80,10 @@ const Header = () => {
           <li className="Menu-li">
             <NavLink
               to="/proyectos"
+              onClick={(e) => {
+                e.preventDefault();
+                goTo("/proyectos");
+              }}
               className={({ isActive }) =>
                 `Menu-navlink ${isActive ? "Active" : ""}`
               }
@@ -91,6 +95,10 @@ const Header = () => {
           <li className="Menu-li">
             <NavLink
               to="/habilidades"
+              onClick={(e) => {
+                e.preventDefault();
+                goTo("/habilidades");
+              }}
               className={({ isActive }) =>
                 `Menu-navlink ${isActive ? "Active" : ""}`
               }
@@ -102,6 +110,10 @@ const Header = () => {
           <li className="Menu-li">
             <NavLink
               to="/sobre-mi"
+              onClick={(e) => {
+                e.preventDefault();
+                goTo("/sobre-mi");
+              }}
               className={({ isActive }) =>
                 `Menu-navlink ${isActive ? "Active" : ""}`
               }
@@ -113,6 +125,10 @@ const Header = () => {
           <li className="Menu-li">
             <NavLink
               to="/contacto"
+              onClick={(e) => {
+                e.preventDefault();
+                goTo("/contacto");
+              }}
               className={({ isActive }) =>
                 `Menu-navlink ${isActive ? "Active" : ""}`
               }
