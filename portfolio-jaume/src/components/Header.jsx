@@ -4,6 +4,19 @@ import { animate, motion } from "framer-motion";
 import "../css/header.css";
 import { usePageTransition } from "@/context/TransitionContext";
 
+/* 
+    El ul controla el estado de animación.
+    Al tener initial="initial" y animate="animate", 
+    Framer Motion pasa esos estados a los hijos.
+
+    Los motion.li que tengan variants buscarán en su objeto
+    variants las claves "initial" y "animate" y aplicarán esas
+    animaciones automáticamente.
+
+    Cada hijo puede tener su propio transition (duración, delay, etc.)
+    aunque el estado de animación venga del padre.
+  */
+
 const Header = () => {
   /* open para abrir aside de navegación */
   const [open, setOpen] = useState(false);
