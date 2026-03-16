@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { animate, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import "../css/header.css";
 import { usePageTransition } from "@/context/TransitionContext";
 
@@ -28,6 +28,7 @@ const Header = () => {
   const variantsItem = {
     initial: { x: "100%", opacity: 0 },
     animate: { x: 0, opacity: 1 },
+    exit: { x: "100%", opacity: 0 },
   };
 
   useEffect(() => {
@@ -90,97 +91,104 @@ const Header = () => {
         transition={{ type: "spring", stiffness: 45 }}
         /* stiffness es la rigidez de la transicion */
       >
-        {open && (
-          <motion.ul className="Menu-ul" initial="initial" animate="animate">
-            <motion.li
-              variants={variantsItem}
-              className="Menu-li"
-              transition={{ duration: 0.6, ease: "easeInOut" }}
+        <AnimatePresence>
+          {open && (
+            <motion.ul
+              className="Menu-ul"
+              initial="initial"
+              animate="animate"
+              exit="exit"
             >
-              <button
-                onClick={() => handleNav("/")}
-                className={`Menu-navlink `}
+              <motion.li
+                variants={variantsItem}
+                className="Menu-li"
+                transition={{ duration: 0.6, ease: "easeInOut" }}
               >
-                Home
-              </button>
-            </motion.li>
-            <motion.li
-              variants={variantsItem}
-              className="Menu-li"
-              transition={{ duration: 0.8, ease: "easeInOut" }}
-            >
-              <NavLink
-                to="/proyectos"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNav("/proyectos");
-                }}
-                className={({ isActive }) =>
-                  `Menu-navlink ${isActive ? "Active" : ""}`
-                }
+                <button
+                  onClick={() => handleNav("/")}
+                  className={`Menu-navlink `}
+                >
+                  Home
+                </button>
+              </motion.li>
+              <motion.li
+                variants={variantsItem}
+                className="Menu-li"
+                transition={{ duration: 0.8, ease: "easeInOut" }}
               >
-                Proyectos
-              </NavLink>
-            </motion.li>
+                <NavLink
+                  to="/proyectos"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav("/proyectos");
+                  }}
+                  className={({ isActive }) =>
+                    `Menu-navlink ${isActive ? "Active" : ""}`
+                  }
+                >
+                  Proyectos
+                </NavLink>
+              </motion.li>
 
-            <motion.li
-              variants={variantsItem}
-              className="Menu-li"
-              transition={{ duration: 1, ease: "easeInOut" }}
-            >
-              <NavLink
-                to="/habilidades"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNav("/habilidades");
-                }}
-                className={({ isActive }) =>
-                  `Menu-navlink ${isActive ? "Active" : ""}`
-                }
+              <motion.li
+                variants={variantsItem}
+                className="Menu-li"
+                transition={{ duration: 1, ease: "easeInOut" }}
               >
-                Habilidades / estudios
-              </NavLink>
-            </motion.li>
+                <NavLink
+                  to="/habilidades"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav("/habilidades");
+                  }}
+                  className={({ isActive }) =>
+                    `Menu-navlink ${isActive ? "Active" : ""}`
+                  }
+                >
+                  Habilidades / estudios
+                </NavLink>
+              </motion.li>
 
-            <motion.li
-              variants={variantsItem}
-              className="Menu-li"
-              transition={{ duration: 1.2, ease: "easeInOut" }}
-            >
-              <NavLink
-                to="/sobre-mi"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNav("/sobre-mi");
-                }}
-                className={({ isActive }) =>
-                  `Menu-navlink ${isActive ? "Active" : ""}`
-                }
+              <motion.li
+                variants={variantsItem}
+                className="Menu-li"
+                transition={{ duration: 1.2, ease: "easeInOut" }}
               >
-                Sobre mí
-              </NavLink>
-            </motion.li>
+                <NavLink
+                  to="/sobre-mi"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav("/sobre-mi");
+                  }}
+                  className={({ isActive }) =>
+                    `Menu-navlink ${isActive ? "Active" : ""}`
+                  }
+                >
+                  Sobre mí
+                </NavLink>
+              </motion.li>
 
-            <motion.li
-              variants={variantsItem}
-              className="Menu-li"
-              transition={{ duration: 1.4, ease: "easeInOut" }}
-            >
-              <NavLink
-                to="/contacto"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNav("/contacto");
-                }}
-                className={({ isActive }) =>
-                  `Menu-navlink ${isActive ? "Active" : ""}`
-                }
+              <motion.li
+                variants={variantsItem}
+                className="Menu-li"
+                transition={{ duration: 1.4, ease: "easeInOut" }}
               >
-                Contacto
-              </NavLink>
-            </motion.li>
-          </motion.ul>
-        )}
+                <NavLink
+                  to="/contacto"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav("/contacto");
+                  }}
+                  className={({ isActive }) =>
+                    `Menu-navlink ${isActive ? "Active" : ""}`
+                  }
+                >
+                  Contacto
+                </NavLink>
+              </motion.li>
+            </motion.ul>
+          )}
+        </AnimatePresence>
       </motion.nav>
     </header>
   );
