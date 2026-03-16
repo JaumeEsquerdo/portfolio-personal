@@ -57,12 +57,7 @@ const Header = () => {
           className="line"
         />
         <motion.span
-          animate={open ? { opacity: 0 } : { opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="line"
-        />
-        <motion.span
-          animate={open ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+          animate={open ? { rotate: -45, y: -16 } : { rotate: 0, y: 0 }}
           transition={{ duration: 0.5 }}
           className="line"
         />
