@@ -13,7 +13,7 @@ const Proyectos = () => {
   const { container, item } = useFramerAnimations();
 
   return (
-    <motion.section
+    <motion.main
       className="ProyectosWrapper"
       variants={container}
       initial="hidden"
@@ -50,7 +50,7 @@ const Proyectos = () => {
           </motion.div>
         ))}
       </motion.div>
-    </motion.section>
+    </motion.main>
   );
 };
 

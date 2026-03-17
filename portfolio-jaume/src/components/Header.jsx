@@ -85,6 +85,7 @@ const Header = () => {
         ref={buttonRef}
         className="Hamburguesa"
         onClick={() => setOpen(!open)}
+        aria-label="Abrir menú de navegación"
       >
         <motion.span
           animate={open ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
