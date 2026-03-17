@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, delay, motion } from "framer-motion";
 import "../css/header.css";
 import { usePageTransition } from "@/context/TransitionContext";
+import { Curve } from "./Curve";
 
 /* 
     El ul controla el estado de animación.
@@ -25,10 +26,25 @@ const Header = () => {
 
   const { goTo } = usePageTransition();
 
+  const navVariants = {
+    initial: { x: "calc(100% + 100px)" },
+    enter: {
+      x: open ? 0 : "calc(100% + 100px)",
+      transition: {
+        type: "spring",
+        stiffness: 45,
+      } /* stiffness es la rigidez de la transicion */,
+    },
+    exit: {
+      x: "calc(100% + 100px)",
+      transition: { delay: 0.8, duration: 0.5 }, // espera al curve
+    },
+  };
+
   const variantsItem = {
     initial: { x: "100%", opacity: 0 },
     animate: { x: 0, opacity: 1 },
-    exit: { x: "100%", opacity: 0 },
+    // exit: { x: "100%", opacity: 0, transition: { duration: 1.6 } },
   };
 
   useEffect(() => {
@@ -83,21 +99,23 @@ const Header = () => {
       </button>
 
       {/* Menú desplegable */}
-      <motion.nav
-        ref={menuRef}
-        className="Menu"
-        initial={{ x: "100%" }}
-        animate={{ x: open ? 0 : "100%" }}
-        transition={{ type: "spring", stiffness: 45 }}
-        /* stiffness es la rigidez de la transicion */
-      >
-        <AnimatePresence>
-          {open && (
+      <AnimatePresence>
+        {open && (
+          <motion.nav
+            ref={menuRef}
+            variants={navVariants}
+            className="Menu"
+            initial="initial"
+            animate="enter"
+            exit="exit"
+          >
+            <Curve key="curve" />
+
             <motion.ul
+              key="menu-ul"
               className="Menu-ul"
               initial="initial"
               animate="animate"
-              exit="exit"
             >
               <motion.li
                 variants={variantsItem}
@@ -187,9 +205,9 @@ const Header = () => {
                 </NavLink>
               </motion.li>
             </motion.ul>
-          )}
-        </AnimatePresence>
-      </motion.nav>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
