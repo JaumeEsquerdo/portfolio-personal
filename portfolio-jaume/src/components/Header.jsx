@@ -6,6 +6,17 @@ import { usePageTransition } from "@/context/TransitionContext";
 import { Curve } from "./Curve";
 
 /* 
+  EFECTO DE "MÁSCARA / BORDE DINÁMICO" del DESPLEGABLE
+  - El Curve actúa como el borde animado del menú.
+  - Está justo al lado del ul porque visualmente es parte del mismo bloque.
+  - No es contenido, es “decoración funcional” del contenedor.
+  - Al estar dentro del motion.nav, comparte el ciclo de vida de AnimatePresence.
+  - Cuando el nav hace exit:
+      - el Curve puede animar su path (d)
+      - luego el nav se desliza (con delay)
+  
+
+    APRECIACIONES:
     El ul controla el estado de animación.
     Al tener initial="initial" y animate="animate", 
     Framer Motion pasa esos estados a los hijos.
