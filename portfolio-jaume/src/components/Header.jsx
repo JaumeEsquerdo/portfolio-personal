@@ -29,7 +29,7 @@ const Header = () => {
   const navVariants = {
     initial: { x: "calc(100% + 100px)" },
     enter: {
-      x: open ? 0 : "calc(100% + 100px)",
+      x: 0,
       transition: {
         type: "spring",
         stiffness: 45,
