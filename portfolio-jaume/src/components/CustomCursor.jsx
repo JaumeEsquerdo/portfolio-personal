@@ -3,21 +3,38 @@ import { useLocation } from "react-router-dom";
 import { motion, useSpring, useMotionValue } from "framer-motion";
 
 export default function CustomCursor() {
+  // Estado para saber si el cursor debe estar expandido (hover sobre links/botones)
   const [isHovered, setIsHovered] = useState(false);
   const { pathname } = useLocation(); // Escuchar el cambio de página
 
+  /**
+   * useMotionValue: Valores numéricos que Framer Motion maneja fuera del ciclo de vida de React.
+   * Se inicializan en -100 para que el cursor no aparezca en la esquina (0,0) al cargar la web.
+   * Actualizar estos valores NO provoca un re-render del componente
+   */
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
+  /**
+   * useSpring: Crea un valor que "persigue" al MotionValue original con física de muelle.
+   * stiffness (rigidez): Qué tan fuerte vuelve el muelle a su posición.
+   * damping (amortiguación): Qué tanta resistencia hay para evitar que rebote infinitamente.
+   * Se usa para el círculo exterior para crear ese efecto de "persecución" o delay elegante.
+   */
   const springConfig = { damping: 25, stiffness: 250 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
-  // RESET 1: Cuando cambia la URL, forzamos el tamaño normal
-  useEffect(() => {
+  /**
+   * RESET POR NAVEGACIÓN:
+   * Si el usuario clica en un link, la página cambia. A veces el elemento desaparece
+   * antes de que el ratón "salga" de él. Esto fuerza al cursor a volver a su tamaño
+   * normal al detectar el cambio de ruta.
+   */ useEffect(() => {
     setIsHovered(false);
   }, [pathname]);
 
+  // Actualiza la posición real del ratón en los MotionValues
   useEffect(() => {
     const moveCursor = (e) => {
       cursorX.set(e.clientX);
@@ -25,6 +42,7 @@ export default function CustomCursor() {
     };
 
     const handleMouseOver = (e) => {
+      // Detecta si el elemento bajo el ratón es un link, botón o input
       if (e.target.closest("a, button, .link, input, textarea")) {
         setIsHovered(true);
       } else {
@@ -32,7 +50,8 @@ export default function CustomCursor() {
       }
     };
 
-    // RESET 2: Cuando clicamos, también reseteamos (por si el click cambia el DOM)
+    // RESET POR CLIC: Al pulsar el botón del ratón, el cursor se encoge.
+    // Proporciona feedback táctil y evita que se quede grande tras un clic.
     const handleMouseDown = () => setIsHovered(false);
 
     window.addEventListener("mousemove", moveCursor);
@@ -48,6 +67,10 @@ export default function CustomCursor() {
 
   return (
     <>
+      {/* CÍRCULO EXTERIOR: 
+        Usa x/y vinculados a los 'Springs' para tener ese retraso suave.
+        Animate gestiona el cambio de tamaño (width/height) de forma fluida.
+      */}
       <motion.div
         style={{
           position: "fixed",
@@ -70,6 +93,10 @@ export default function CustomCursor() {
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       />
 
+      {/* PUNTO CENTRAL: 
+        Usa x/y directos del 'MotionValue' (sin delay) para que el usuario 
+        sienta que el puntero es 100% preciso y rápido.
+      */}
       <motion.div
         style={{
           position: "fixed",
