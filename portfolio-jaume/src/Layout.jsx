@@ -1,5 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 
+import CustomCursor from "./components/CustomCursor";
+
 import Header from "./components/Header";
 
 function Layout() {
@@ -7,6 +9,7 @@ function Layout() {
 
   return (
     <>
+      <CustomCursor key={location.pathname} />
       {location.pathname !== "/" && <Header />}
       <Outlet />
     </>
