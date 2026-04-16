@@ -15,13 +15,14 @@ export const RootLayout = () => {
       document.body.classList.remove("custom-cursor-active");
     };
   }, []);
+
   return (
     /* TransitionProvider expone goTo() y transitioning a toda la app */
     <TransitionProvider>
       {/* cortina en cada navegación */}
       <CurtainOverlay />
       {/* renderizar la página activa */}
-      <CustomCursor key={location.pathname} />
+      <CustomCursor />
       <Outlet />
     </TransitionProvider>
   );

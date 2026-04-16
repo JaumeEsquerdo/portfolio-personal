@@ -1,35 +1,42 @@
-"use client";
-import AnimatedCursor from "react-animated-cursor";
+import { useEffect, useState } from "react";
 
 export default function CustomCursor() {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    const moveCursor = (e) => setPosition({ x: e.clientX, y: e.clientY });
+
+    // Detectar si estamos sobre algo clickable para agrandarlo
+    const handleMouseOver = (e) => {
+      if (e.target.closest("a, button, .link")) setIsHovered(true);
+      else setIsHovered(false);
+    };
+
+    window.addEventListener("mousemove", moveCursor);
+    window.addEventListener("mouseover", handleMouseOver);
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+      window.removeEventListener("mouseover", handleMouseOver);
+    };
+  }, []);
+
   return (
-    <AnimatedCursor
-      innerSize={10} // El puntito del centro
-      outerSize={32} // El círculo de afuera
-      innerScale={1}
-      outerScale={1.8} // Cuánto se agranda al hacer hover
-      outerAlpha={0} // Ponemos el fondo del círculo externo transparente...
-      outerStyle={{
-        border: "2px solid #999", // ...para que solo se vea el borde
-        // mixBlendMode: "difference",
+    <div
+      style={{
+        position: "fixed",
+        top: position.y,
+        left: position.x,
+        width: isHovered ? "50px" : "30px", // Cambio de tamaño simple
+        height: isHovered ? "50px" : "30px",
+        border: "2px solid #999",
+        borderRadius: "50%",
+        transform: "translate(-50%, -50%)",
+        pointerEvents: "none", // ¡Importante! Para que no interfiera con los clicks
+        transition: "width 0.2s, height 0.2s", // La animación suave
+        zIndex: 9999,
       }}
-      innerStyle={{
-        backgroundColor: "#333",
-      }}
-      // Aquí se define sobre qué elementos quieres que reaccione el cursor
-      clickables={[
-        "a",
-        'input[type="text"]',
-        'input[type="email"]',
-        'input[type="number"]',
-        'input[type="submit"]',
-        'input[type="image"]',
-        "label[for]",
-        "select",
-        "textarea",
-        "button",
-        ".link",
-      ]}
     />
   );
 }
