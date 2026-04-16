@@ -1,18 +1,7 @@
 "use client";
 import AnimatedCursor from "react-animated-cursor";
-import { useEffect } from "react";
 
 export default function CustomCursor() {
-  useEffect(() => {
-    // Cuando el componente se monta (JS funciona), añadimos la clase
-    document.body.classList.add("custom-cursor-active");
-
-    return () => {
-      // Si el componente se desmonta, devolvemos el cursor normal
-      document.body.classList.remove("custom-cursor-active");
-    };
-  }, []);
-
   return (
     <AnimatedCursor
       innerSize={10} // El puntito del centro
