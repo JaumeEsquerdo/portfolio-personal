@@ -13,23 +13,19 @@ body {
   overflow-y: auto;
 }
 
-/* Solo ocultamos el cursor si JS ha añadido la clase con éxito */
-/* Solo para dispositivos con ratón */
-@media (pointer: fine) {
-  /* Ocultamos el cursor en el body y en ABSOLUTAMENTE todo lo que haya dentro */
-  .custom-cursor-active,
-  .custom-cursor-active * {
-    cursor: none !important;
-  }
+/* Esto es vital */
+html,
+body,
+#root {
+  cursor: none !important;
 }
 
-/* Si es táctil, cursor normal */
-@media (pointer: coarse) {
-  .custom-cursor-active {
-    cursor: auto !important;
-  }
+/* Y esto asegura que los enlaces tampoco muestren la "manita" */
+a,
+button,
+.link {
+  cursor: none !important;
 }
-
 /* 
 * {
   outline: 1px solid rgba(0, 255, 0, 0.2);
