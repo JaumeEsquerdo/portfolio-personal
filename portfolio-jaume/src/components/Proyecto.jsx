@@ -11,7 +11,7 @@ const Proyecto = ({
   numero,
   titulo,
   subtitulo,
-  descripcion,
+  detalles,
   imagen,
   herramientas,
   stack,
@@ -19,6 +19,7 @@ const Proyecto = ({
   destacado,
   deploy,
 }) => {
+  const { problema, solucion } = detalles;
   const isDesktop = useIsDesktop();
 
   return (
@@ -47,13 +48,18 @@ const Proyecto = ({
           )}
           <h4 className="Proyecto-subtitulo">{subtitulo}</h4>
 
-          <p className="Proyecto-texto Proyecto-texto--primero">
-            {descripcion}
-          </p>
+          <div className="Proyecto-detalles">
+            <p className="Proyecto-texto">
+              <strong>Problema:</strong> {problema}
+            </p>
+            <p className="Proyecto-texto">
+              <strong>Solución:</strong> {solucion}
+            </p>
+          </div>
 
-          <p className="Proyecto-texto">
+          {/* <p className="Proyecto-texto">
             <strong>Destacado:</strong> {destacado}
-          </p>
+          </p> */}
           <p className="Proyecto-texto">
             <strong>Herramientas:</strong> {herramientas.join(", ")}
           </p>

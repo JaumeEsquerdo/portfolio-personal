@@ -4,18 +4,22 @@ const listaProyectos = [
     numero: "01",
     titulo: "findJob",
     subtitulo:
-      "Dashboard de Empleo Tech con visualización de datos y búsqueda de empleo en tiempo real",
-    descripcion:
-      "Desarrollé un dashboard interactivo que consume la API de Empllo para analizar el mercado laboral tecnológico. La aplicación implementa una arquitectura limpia en Next.js mediante el uso de API Routes como proxy para evitar problemas de CORS, validación de datos en runtime con Zod y un sistema de 'mappers' para normalizar la información externa. Incluye visualización de métricas (KPIs) y gráficos dinámicos con Recharts, además de un flujo de onboarding guiado para mejorar la retención del usuario.",
+      "Dashboard de Empleo Tech con visualización de datos en tiempo real",
+    detalles: {
+      problema:
+        "Analizar el mercado laboral tecnológico es tedioso; las ofertas están dispersas y es difícil detectar de un vistazo qué tecnologías se piden más o cuáles son los salarios reales.",
+      solucion:
+        "Esta plataforma transforma ese caos de datos en un panel visual intuitivo. El foco principal es la claridad: los gráficos se actualizan para mostrar lo que realmente importa, permitiendo que cualquier profesional entienda el mercado de un vistazo gracias a una estructura técnica que prioriza la limpieza y velocidad de la información.",
+    },
     herramientas: [
-      "Next.js 16 (App Router)",
+      "Next.js 16",
       "React 19",
       "TypeScript",
       "Tailwind CSS v4",
-      "Recharts (Gráficos)",
-      "Zod (Validación API)",
+      "Recharts",
+      "Zod",
       "Framer Motion",
-      "API Routes & Proxying",
+      "API Routes",
     ],
     stack: "Fullstack",
     imagen: "/img/portada-findJob.png",
@@ -26,25 +30,27 @@ const listaProyectos = [
       },
     ],
     deploy: "https://find-job-dashboard.vercel.app/",
-    destacado:
-      "Arquitectura robusta con validación de esquemas en runtime y transformación de datos (Mappers) para asegurar la integridad del frontend",
   },
   {
     id: 2,
     numero: "02",
     titulo: "Hotel Six Senses",
-    subtitulo: "Rediseño web y experiencia de reserva",
-    descripcion:
-      "Rediseño conceptual de la web de un hotel vacacional inspirado en Six Senses Ibiza. La aplicación simula una experiencia completa de reserva: exploración de habitaciones e instalaciones, detalle individual, selección de fechas y formulario de reserva con cálculo dinámico, priorizando una UI minimalista, responsive y orientada a experiencia de usuario.",
+    subtitulo: "Rediseño web y flujo de experiencia de reserva",
+    detalles: {
+      problema:
+        "Las webs hoteleras suelen ser plantillas rígidas y visualmente genéricas que no logran transmitir la exclusividad del alojamiento ni facilitan un proceso de reserva fluido.",
+      solucion:
+        "La experiencia de usuario se eleva mediante una navegación inmersiva que organiza el contenido de forma elegante. El sistema de reservas funciona como un asistente silencioso que calcula costes y gestiona fechas sin recargas de página, logrando que el salto entre la exploración de habitaciones y la confirmación sea instantáneo y natural.",
+    },
     herramientas: [
       "React (Vite)",
       "TypeScript",
-      "Node.js",
-      "CSS (SUIT CSS)",
       "React Router DOM",
+      "Context API",
+      "CSS (SUIT CSS)",
       "React Datepicker",
-      "Testing unitario con Vitest",
-      "JSON local como fuente de datos",
+      "Testing (Vitest)",
+      "JSON Data Management",
     ],
     stack: "Frontend",
     imagen: "/img/portada-hotel.png",
@@ -55,23 +61,26 @@ const listaProyectos = [
       },
     ],
     deploy: "https://hotel-six-senses.vercel.app/",
-    destacado: "Rediseño visual minimalista inspirado en efecto Masonry",
   },
   {
     id: 3,
     numero: "03",
     titulo: "BEARS",
-    subtitulo: "Experiencia web sobre ética y vida salvaje",
-    descripcion:
-      "Navegación conceptual que reflexiona sobre los límites éticos entre humanos y vida salvaje. Inspirada en encuentros reales documentados en Grizzly Man y Bear-Like, la aplicación propone un recorrido narrativo y educativo dividido en dos capas: Historia (relato filosófico) y Sobre Ellos (información estructurada sobre el oso grizzly).",
+    subtitulo: "Experiencia web interactiva sobre ética y vida salvaje",
+    detalles: {
+      problema:
+        "La divulgación ética y ambiental suele pecar de ser demasiado estática, perdiendo la oportunidad de conectar emocionalmente con el usuario a través de la narrativa digital.",
+      solucion:
+        "El resultado es una experiencia interactiva que divide el contenido en dos partes: un relato reflexivo y una guía educativa. Para que el usuario se sienta dentro de la historia, implementé un sistema de 'puertas' animadas y transiciones suaves que cargan al instante, permitiendo navegar entre la filosofía y los datos científicos de forma fluida, sin interrupciones y con un ritmo visual constante.",
+    },
     herramientas: [
       "React (Vite)",
       "TypeScript",
       "TailwindCSS v4",
-      "React Router",
       "Framer Motion",
+      "React Router",
       "Context API",
-      "Custom hooks (preload)",
+      "Custom Hooks (Preload)",
     ],
     stack: "Frontend",
     imagen: "/img/portada-bears.png",
@@ -82,25 +91,26 @@ const listaProyectos = [
       },
     ],
     deploy: "https://bears-conceptual.vercel.app/",
-    destacado:
-      "Proyecto conceptual centrado en animación, narrativa interactiva y reflexión ética: precarga de imágenes, puertas animadas y navegación por secciones con transiciones fluidas.",
   },
   {
     id: 4,
     numero: "04",
     titulo: "LA (2) SILLA",
-    subtitulo: "Digitalización y Sistema de Reservas para peluquería",
-    descripcion:
-      "Proyecto desarrollado para una peluquería local en Valencia con el fin de digitalizar su sistema de reservas. Se implementó una SPA (Single Page Application) que prioriza la experiencia de usuario joven, con animaciones fluidas, diseño mobile-first y una lógica de navegación que sincroniza el router con el scroll de forma eficiente.",
+    subtitulo: "Digitalización y Sistema de Reservas para peluquería local",
+    detalles: {
+      problema:
+        "Las peluquerías dependen casi siempre de desarrollos externos de reservas donde, además de pagar comisiones, se sacrifica por completo la identidad visual y la trascendencia de marca.",
+      solucion:
+        "Esta plataforma recupera el control total del negocio y su imagen. La prioridad es una web mobile-first que no solo elimina intermediarios, sino que ofrece una navegación ultra rápida y fluida. Al optimizar cada recurso visual, se consigue que exista una unión entre lo que transmite la propia web de la peluquería como el proceso de reservar una cita.",
+    },
     herramientas: [
-      "React (Vite)",
-      "CSS3",
+      "React 18 (Vite)",
       "React Router v6",
+      "CSS3 Vanilla",
       "Framer Motion",
-      "Responsive Design",
-      "WebP/Lazy Loading",
       "Context API",
-      "Custom Hooks (Gallery swap)",
+      "WebP / Lazy Loading",
+      "Responsive Design (Mobile-first)",
     ],
     stack: "Frontend",
     imagen: "/img/portada-la2silla.png",
@@ -111,25 +121,27 @@ const listaProyectos = [
       },
     ],
     deploy: "https://la-2-silla.vercel.app/",
-    destacado:
-      "Proyecto colaborativo enfocado en el alto rendimiento visual mediante animaciones y una arquitectura de navegación fluida entre secciones y página de reservas.",
   },
 
   {
     id: 5,
     numero: "05",
     titulo: "Turistea Villajoyosa",
-    subtitulo: "Planificador de Actividades Turísticas",
-    descripcion:
-      "Desarrollé una arquitectura robusta que permite a los usuarios personalizar itinerarios sobre su estancia en Villajoyosa mediante un calendario dinámico y a los administradores gestionar contenidos en tiempo real. Enfocado en la escalabilidad del código y una navegación fluida, integrando lógica de backend",
+    subtitulo: "Planificador de Itinerarios Turísticos",
+    detalles: {
+      problema:
+        "La mayoría de guías turísticas son informativas pero no funcionales, obligando al viajero a usar herramientas externas para planificar su estancia y fragmentando su experiencia.",
+      solucion:
+        "La clave aquí es la centralización: un planificador inteligente que permite guardar itinerarios tanto predeterminados como propios personalizados que persisten en el tiempo. El sistema gestiona con seguridad tanto el acceso de los turistas como un panel de control para que los administradores mantengan la oferta cultural actualizada en tiempo real sin complicaciones técnicas.",
+    },
     herramientas: [
+      "MongoDB & Mongoose",
+      "Express",
       "React (Vite)",
       "Node.js",
-      "CSS (SUIT CSS)",
-      "React Router DOM",
-      "Express",
-      "MongoDB",
+      "JWT Authentication",
       "React Calendar",
+      "SUIT CSS",
     ],
     stack: "Fullstack",
     imagen: "/img/portada-turistea.png",
@@ -144,80 +156,86 @@ const listaProyectos = [
       },
     ],
     deploy: "https://turistea-villajoyosa.vercel.app/",
-    destacado:
-      "Proyecto de mayor complejidad técnica con integración completa de API REST y base de datos",
   },
+  // {
+  //   id: 6,
+  //   numero: "06",
+  //   titulo: "Sushiro",
+  //   subtitulo: "Carta de restaurante interactiva",
+  //   descripcion:
+  //     "Aplicación para un restaurante con selector de mesa, menú interactivo, carrito y zona admin para login y subida de imágenes. Proyecto Fullstack completo con cliente sin login basado en mesa y sesión.",
+  //   herramientas: [
+  //     "React (Vite)",
+  //     "Node.js",
+  //     "CSS (SUIT CSS)",
+  //     "React Router DOM",
+  //     "Framer Motion",
+  //     "Express",
+  //     "MongoDB/Mongoose",
+  //     "JWT",
+  //     "Multer",
+  //     "dotenv",
+  //     "CORS",
+  //   ],
+  //   stack: "Fullstack",
+  //   imagen: "/img/portada-sushiro.png",
+  //   enlace: [
+  //     {
+  //       tipo: "Frontend",
+  //       url: "https://github.com/JaumeEsquerdo/Sushiro-frontend",
+  //     },
+  //     {
+  //       tipo: "Backend",
+  //       url: "https://github.com/JaumeEsquerdo/Sushiro-backend",
+  //     },
+  //   ],
+  //   deploy: "https://sushiro-frontend.vercel.app/",
+  //   destacado:
+  //     "Fullstack con login en mesa e integración de API para la relación con los productos/compras.",
+  // },
+
   {
     id: 6,
     numero: "06",
-    titulo: "Sushiro",
-    subtitulo: "Carta de restaurante interactiva",
-    descripcion:
-      "Aplicación para un restaurante con selector de mesa, menú interactivo, carrito y zona admin para login y subida de imágenes. Proyecto Fullstack completo con cliente sin login basado en mesa y sesión.",
-    herramientas: [
-      "React (Vite)",
-      "Node.js",
-      "CSS (SUIT CSS)",
-      "React Router DOM",
-      "Framer Motion",
-      "Express",
-      "MongoDB/Mongoose",
-      "JWT",
-      "Multer",
-      "dotenv",
-      "CORS",
-    ],
-    stack: "Fullstack",
-    imagen: "/img/portada-sushiro.png",
-    enlace: [
-      {
-        tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/Sushiro-frontend",
-      },
-      {
-        tipo: "Backend",
-        url: "https://github.com/JaumeEsquerdo/Sushiro-backend",
-      },
-    ],
-    deploy: "https://sushiro-frontend.vercel.app/",
-    destacado:
-      "Fullstack con login en mesa e integración de API para la relación con los productos/compras.",
-  },
-
-  {
-    id: 7,
-    numero: "07",
     titulo: "Brava",
     subtitulo: "Diseño UX/UI de E-commerce de Bebidas Funcionales",
-    descripcion:
-      "Diseño integral de una plataforma móvil para una marca de bebidas saludables, desarrollada como Trabajo Final de Máster (TFM). El proyecto destaca por un proceso profundo de UX Research, validando una propuesta visual inspirada en la esencia mediterránea de Valencia que equilibra bienestar, transparencia y un estilo de vida activo.",
+    detalles: {
+      problema:
+        "El sector de las bebidas saludables a menudo presenta interfaces genéricas que no logran comunicar el equilibrio entre el bienestar y un estilo de vida activo, fallando en generar confianza.",
+      solucion:
+        "El diseño nace de un proceso de investigación con usuarios para garantizar que cada elemento visual aporte claridad. El prototipo final prioriza la transparencia de los ingredientes y una arquitectura de compra simplificada, logrando una estética mediterránea que se siente premium pero que resulta extremadamente fácil de usar.",
+    },
     herramientas: [
       "Figma",
       "UX Research",
-      "User Testing",
       "Prototipado Interactivo",
+      "User Testing",
+      "Design Systems",
+      "Arquitectura de Información",
     ],
     stack: "UX/UI Design",
     imagen: "/img/portada-brava.png",
     deploy:
       "https://dribbble.com/shots/26962652-Brava-Dise-o-UX-UI-para-Refrescos-Saludables-App-M-vil",
-    destacado: "Proyecto final del módulo UX/UI de CEI Valencia",
   },
   {
-    id: 8,
-    numero: "08",
+    id: 7,
+    numero: "07",
     titulo: "Modernidad Mediterránea",
-    subtitulo: "Revista digital de arquitectura",
-    descripcion:
-      "Revista digital interactiva sobre arquitectura moderna mediterránea, desarrollada como proyecto final del módulo de Diseño Web con HTML, CSS y JS en CEI Valencia. La web simula una experiencia editorial, con secciones dedicadas a casas, materiales y referencias visuales, priorizando un diseño limpio, estructurado y orientado a contenido.",
-    herramientas: ["HTML", "CSS (SUIT CSS)", "JavaScript (vanilla)"],
+    subtitulo: "Revista digital interactiva de arquitectura",
+    detalles: {
+      problema:
+        "Las revistas de arquitectura digital a menudo sacrifican la estética editorial en favor de layouts web genéricos, perdiendo la esencia visual y el ritmo de lectura que caracteriza a las publicaciones de diseño premium.",
+      solucion:
+        "El proyecto traslada la esencia del papel al entorno digital mediante una maquetación limpia y equilibrada. La estructura permite que el contenido visual respire, logrando una experiencia de lectura pausada donde la jerarquía tipográfica y la organización de los materiales imitan la calidad de una publicación de lujo de forma nativa y ágil.",
+    },
+    herramientas: ["HTML5", "CSS3 (SUIT CSS)", "JavaScript (Vanilla)"],
     stack: "Frontend",
     imagen: "/img/portada-modernidad.png",
     enlace:
       "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
     deploy:
       "https://jaumeesquerdo.github.io/Modernidad-Mediterranea---revista/index.html",
-    destacado: "Primer proyecto desplegado",
   },
 ];
 
