@@ -52,7 +52,7 @@ const listaProyectos = [
       "Custom Hooks",
     ],
     stack: "Frontend",
-    imagen: "/img/portada-costereta.png",
+    imagen: "/img/portada-costereta.webp",
     enlace: [
       {
         tipo: "Frontend",
