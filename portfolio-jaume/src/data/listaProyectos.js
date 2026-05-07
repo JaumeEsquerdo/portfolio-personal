@@ -34,6 +34,36 @@ const listaProyectos = [
   {
     id: 2,
     numero: "02",
+    titulo: "COSTERETA n1",
+    subtitulo:
+      "Landing page de alto rendimiento y embudo SEO para alojamiento turístico",
+    detalles: {
+      problema:
+        "En las plataformas de reserva, los alojamientos pierden su esencia y se ven todos iguales. Es difícil transmitir los detalles y el encanto que hacen especial a un lugar cuando dependes de un formato estándar.",
+      solucion:
+        "Una web independiente que destaca la personalidad única del alojamiento a través de una narrativa visual cuidada. La web funciona como un puente: permite al huésped conocer cada rincón con detalle para luego redirigirlo, mediante botones de reserva, al portal de gestión oficial de forma fluida.",
+    },
+    herramientas: [
+      "Next.js 16",
+      "React 19",
+      "Tailwind CSS v4",
+      "Framer Motion",
+      "SEO Técnico",
+      "Custom Hooks",
+    ],
+    stack: "Frontend / Freelance",
+    imagen: "/img/portada-costereta.png",
+    enlace: [
+      {
+        tipo: "Frontend",
+        url: "https://github.com/JaumeEsquerdo/costera-n1",
+      },
+    ],
+    deploy: "https://costera-n1.vercel.app/es",
+  },
+  {
+    id: 3,
+    numero: "03",
     titulo: "Hotel Six Senses",
     subtitulo: "Rediseño web y flujo de experiencia de reserva",
     detalles: {
@@ -63,8 +93,8 @@ const listaProyectos = [
     deploy: "https://hotel-six-senses.vercel.app/",
   },
   {
-    id: 3,
-    numero: "03",
+    id: 4,
+    numero: "04",
     titulo: "BEARS",
     subtitulo: "Experiencia web interactiva sobre ética y vida salvaje",
     detalles: {
@@ -93,8 +123,8 @@ const listaProyectos = [
     deploy: "https://bears-conceptual.vercel.app/",
   },
   {
-    id: 4,
-    numero: "04",
+    id: 5,
+    numero: "05",
     titulo: "LA (2) SILLA",
     subtitulo: "Digitalización y Sistema de Reservas para peluquería local",
     detalles: {
@@ -124,8 +154,8 @@ const listaProyectos = [
   },
 
   {
-    id: 5,
-    numero: "05",
+    id: 6,
+    numero: "06",
     titulo: "Turistea Villajoyosa",
     subtitulo: "Planificador de Itinerarios Turísticos",
     detalles: {
@@ -195,8 +225,8 @@ const listaProyectos = [
   // },
 
   {
-    id: 6,
-    numero: "06",
+    id: 7,
+    numero: "07",
     titulo: "Brava",
     subtitulo: "Diseño UX/UI de E-commerce de Bebidas Funcionales",
     detalles: {
@@ -219,8 +249,8 @@ const listaProyectos = [
       "https://dribbble.com/shots/26962652-Brava-Dise-o-UX-UI-para-Refrescos-Saludables-App-M-vil",
   },
   {
-    id: 7,
-    numero: "07",
+    id: 8,
+    numero: "08",
     titulo: "Modernidad Mediterránea",
     subtitulo: "Revista digital interactiva de arquitectura",
     detalles: {
