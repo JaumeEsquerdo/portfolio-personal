@@ -51,7 +51,7 @@ const listaProyectos = [
       "SEO Técnico",
       "Custom Hooks",
     ],
-    stack: "Frontend / Freelance",
+    stack: "Frontend",
     imagen: "/img/portada-costereta.png",
     enlace: [
       {
