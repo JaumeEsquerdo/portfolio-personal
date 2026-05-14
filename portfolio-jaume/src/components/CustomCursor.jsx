@@ -7,6 +7,9 @@ export default function CustomCursor() {
   const [isHovered, setIsHovered] = useState(false);
   const { pathname } = useLocation(); // Escuchar el cambio de página
 
+  // detectar mobile/tablet
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
   /**
    * useMotionValue: Valores numéricos que Framer Motion maneja fuera del ciclo de vida de React.
    * Se inicializan en -100 para que el cursor no aparezca en la esquina (0,0) al cargar la web.
@@ -25,6 +28,23 @@ export default function CustomCursor() {
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
+  // Detectar touch o pantallas pequeñas
+  useEffect(() => {
+    const checkDevice = () => {
+      const isTouch =
+        window.matchMedia("(pointer: coarse)").matches ||
+        window.innerWidth <= 1024;
+
+      setIsTouchDevice(isTouch);
+    };
+
+    checkDevice();
+
+    window.addEventListener("resize", checkDevice);
+
+    return () => window.removeEventListener("resize", checkDevice);
+  }, []);
+
   /**
    * RESET POR NAVEGACIÓN:
    * Si el usuario clica en un link, la página cambia. A veces el elemento desaparece
@@ -36,6 +56,8 @@ export default function CustomCursor() {
 
   // Actualiza la posición real del ratón en los MotionValues
   useEffect(() => {
+    if (isTouchDevice) return;
+
     const moveCursor = (e) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
@@ -64,6 +86,9 @@ export default function CustomCursor() {
       window.removeEventListener("mousedown", handleMouseDown);
     };
   }, [cursorX, cursorY]);
+
+  // OCULTAR completamente en mobile/tablet
+  if (isTouchDevice) return null;
 
   return (
     <>
