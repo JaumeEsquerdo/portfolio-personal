@@ -66,6 +66,9 @@ const Proyecto = ({
           <p className="Proyecto-texto">
             <strong>Tipo:</strong> {stack}
           </p>
+          <p className="Proyecto-texto">
+            <strong>Tipo:</strong> {stack}
+          </p>
 
           <div className="Proyecto-enlacesContainer">
             {enlace &&
