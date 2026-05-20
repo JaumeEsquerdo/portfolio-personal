@@ -46,6 +46,7 @@ const Proyectos = () => {
               enlace={proyecto.enlace}
               destacado={proyecto.destacado}
               deploy={proyecto.deploy}
+              año={proyecto.año}
             />
           </motion.div>
         ))}

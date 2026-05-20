@@ -16,7 +16,7 @@ const Proyecto = ({
   herramientas,
   stack,
   enlace,
-  destacado,
+  año,
   deploy,
 }) => {
   const { problema, solucion } = detalles;
@@ -67,7 +67,7 @@ const Proyecto = ({
             <strong>Tipo:</strong> {stack}
           </p>
           <p className="Proyecto-texto">
-            <strong>Tipo:</strong> {stack}
+            <strong>Año:</strong> {año}
           </p>
 
           <div className="Proyecto-enlacesContainer">

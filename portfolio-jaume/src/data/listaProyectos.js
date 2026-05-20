@@ -22,6 +22,7 @@ const listaProyectos = [
       "API Routes",
     ],
     stack: "Fullstack",
+    año: "2026",
     imagen: "/img/portada-findJob.png",
     enlace: [
       {
@@ -52,6 +53,7 @@ const listaProyectos = [
       "Custom Hooks",
     ],
     stack: "Frontend",
+    año: "2026",
     imagen: "/img/portada-costereta.webp",
     enlace: [
       {
@@ -64,33 +66,33 @@ const listaProyectos = [
   {
     id: 3,
     numero: "03",
-    titulo: "Hotel Six Senses",
-    subtitulo: "Rediseño web y flujo de experiencia de reserva",
+    titulo: "LA (2) SILLA",
+    subtitulo: "Digitalización y Sistema de Reservas para peluquería local",
     detalles: {
       problema:
-        "Las webs hoteleras suelen ser plantillas rígidas y visualmente genéricas que no logran transmitir la exclusividad del alojamiento ni facilitan un proceso de reserva fluido.",
+        "Las peluquerías dependen casi siempre de desarrollos externos de reservas donde, además de pagar comisiones, se sacrifica por completo la identidad visual y la trascendencia de marca.",
       solucion:
-        "La experiencia de usuario se eleva mediante una navegación inmersiva que organiza el contenido de forma elegante. El sistema de reservas funciona como un asistente silencioso que calcula costes y gestiona fechas sin recargas de página, logrando que el salto entre la exploración de habitaciones y la confirmación sea instantáneo y natural.",
+        "Esta plataforma recupera el control total del negocio y su imagen. La prioridad es una web mobile-first que no solo elimina intermediarios, sino que ofrece una navegación ultra rápida y fluida. Al optimizar cada recurso visual, se consigue que exista una unión entre lo que transmite la propia web de la peluquería como el proceso de reservar una cita.",
     },
     herramientas: [
-      "React (Vite)",
-      "TypeScript",
-      "React Router DOM",
+      "React 18 (Vite)",
+      "React Router v6",
+      "CSS3 Vanilla",
+      "Framer Motion",
       "Context API",
-      "CSS (SUIT CSS)",
-      "React Datepicker",
-      "Testing (Vitest)",
-      "JSON Data Management",
+      "WebP / Lazy Loading",
+      "Responsive Design (Mobile-first)",
     ],
     stack: "Frontend",
-    imagen: "/img/portada-hotel.png",
+    año: "2026",
+    imagen: "/img/portada-la2silla.png",
     enlace: [
       {
         tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/hotel-six-senses-typescript",
+        url: "https://github.com/JaumeEsquerdo/peluqueria-la-silla-2",
       },
     ],
-    deploy: "https://hotel-six-senses.vercel.app/",
+    deploy: "https://la-2-silla.vercel.app/",
   },
   {
     id: 4,
@@ -113,6 +115,7 @@ const listaProyectos = [
       "Custom Hooks (Preload)",
     ],
     stack: "Frontend",
+    año: "2026",
     imagen: "/img/portada-bears.png",
     enlace: [
       {
@@ -125,32 +128,34 @@ const listaProyectos = [
   {
     id: 5,
     numero: "05",
-    titulo: "LA (2) SILLA",
-    subtitulo: "Digitalización y Sistema de Reservas para peluquería local",
+    titulo: "Hotel Six Senses",
+    subtitulo: "Rediseño web y flujo de experiencia de reserva",
     detalles: {
       problema:
-        "Las peluquerías dependen casi siempre de desarrollos externos de reservas donde, además de pagar comisiones, se sacrifica por completo la identidad visual y la trascendencia de marca.",
+        "Las webs hoteleras suelen ser plantillas rígidas y visualmente genéricas que no logran transmitir la exclusividad del alojamiento ni facilitan un proceso de reserva fluido.",
       solucion:
-        "Esta plataforma recupera el control total del negocio y su imagen. La prioridad es una web mobile-first que no solo elimina intermediarios, sino que ofrece una navegación ultra rápida y fluida. Al optimizar cada recurso visual, se consigue que exista una unión entre lo que transmite la propia web de la peluquería como el proceso de reservar una cita.",
+        "La experiencia de usuario se eleva mediante una navegación inmersiva que organiza el contenido de forma elegante. El sistema de reservas funciona como un asistente silencioso que calcula costes y gestiona fechas sin recargas de página, logrando que el salto entre la exploración de habitaciones y la confirmación sea instantáneo y natural.",
     },
     herramientas: [
-      "React 18 (Vite)",
-      "React Router v6",
-      "CSS3 Vanilla",
-      "Framer Motion",
+      "React (Vite)",
+      "TypeScript",
+      "React Router DOM",
       "Context API",
-      "WebP / Lazy Loading",
-      "Responsive Design (Mobile-first)",
+      "CSS (SUIT CSS)",
+      "React Datepicker",
+      "Testing (Vitest)",
+      "JSON Data Management",
     ],
     stack: "Frontend",
-    imagen: "/img/portada-la2silla.png",
+    año: "2025",
+    imagen: "/img/portada-hotel.png",
     enlace: [
       {
         tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/peluqueria-la-silla-2",
+        url: "https://github.com/JaumeEsquerdo/hotel-six-senses-typescript",
       },
     ],
-    deploy: "https://la-2-silla.vercel.app/",
+    deploy: "https://hotel-six-senses.vercel.app/",
   },
 
   {
@@ -174,6 +179,7 @@ const listaProyectos = [
       "SUIT CSS",
     ],
     stack: "Fullstack",
+    año: "2025",
     imagen: "/img/portada-turistea.png",
     enlace: [
       {
@@ -244,6 +250,7 @@ const listaProyectos = [
       "Arquitectura de Información",
     ],
     stack: "UX/UI Design",
+    año: "2025",
     imagen: "/img/portada-brava.png",
     deploy:
       "https://dribbble.com/shots/26962652-Brava-Dise-o-UX-UI-para-Refrescos-Saludables-App-M-vil",
@@ -261,6 +268,7 @@ const listaProyectos = [
     },
     herramientas: ["HTML5", "CSS3 (SUIT CSS)", "JavaScript (Vanilla)"],
     stack: "Frontend",
+    año: "2024",
     imagen: "/img/portada-modernidad.png",
     enlace:
       "https://github.com/JaumeEsquerdo/Modernidad-Mediterranea---revista",
