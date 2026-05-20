@@ -50,8 +50,7 @@ export const Home = () => {
         <h3 className="PortfolioPresentation-h3">
           Dedicado desde 2024 a la creación de experiencias web intuitivas,
           atractivas y responsive. Especializado en Desarrollo Frontend con
-          React, con base Fullstack y UX/UI, cuido las buenas prácticas y pienso
-          en la escalabilidad.
+          React, con base Fullstack y UX/UI.
         </h3>
       </div>
 
