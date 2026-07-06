@@ -89,7 +89,9 @@ const Header = () => {
   return (
     <header className="Header">
       <h1 className="Header-h1">
-        Portfolio <span className="Header-name">Jaume Esquerdo Ramis</span>
+        <a href="/" rel="home">
+          Portfolio <span className="Header-name">Jaume Esquerdo Ramis</span>
+        </a>
       </h1>
       {/* Botón Hamburguesa */}
       <button
@@ -163,6 +165,25 @@ const Header = () => {
               <motion.li
                 variants={variantsItem}
                 className="Menu-li"
+                transition={{ duration: 1.2, ease: "easeInOut" }}
+              >
+                <NavLink
+                  to="/sobre-mi"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav("/tarifas");
+                  }}
+                  className={({ isActive }) =>
+                    `Menu-navlink ${isActive ? "Active" : ""}`
+                  }
+                >
+                  Tarifas
+                </NavLink>
+              </motion.li>
+
+              <motion.li
+                variants={variantsItem}
+                className="Menu-li"
                 transition={{ duration: 1, ease: "easeInOut" }}
               >
                 <NavLink
@@ -176,25 +197,6 @@ const Header = () => {
                   }
                 >
                   Habilidades / estudios
-                </NavLink>
-              </motion.li>
-
-              <motion.li
-                variants={variantsItem}
-                className="Menu-li"
-                transition={{ duration: 1.2, ease: "easeInOut" }}
-              >
-                <NavLink
-                  to="/sobre-mi"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNav("/sobre-mi");
-                  }}
-                  className={({ isActive }) =>
-                    `Menu-navlink ${isActive ? "Active" : ""}`
-                  }
-                >
-                  Sobre mí
                 </NavLink>
               </motion.li>
 

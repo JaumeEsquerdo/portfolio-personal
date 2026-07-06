@@ -63,6 +63,16 @@ export const Home = () => {
             PROYECTOS
           </button>
         </FramerMagnetic>
+
+        <FramerMagnetic>
+          <button
+            onClick={() => goTo("/tarifas")}
+            className="PortfolioPresentation-link"
+          >
+            TARIFAS
+          </button>
+        </FramerMagnetic>
+
         <FramerMagnetic>
           <button
             onClick={() => goTo("/habilidades")}
@@ -71,14 +81,7 @@ export const Home = () => {
             HABILIDADES / ESTUDIOS
           </button>
         </FramerMagnetic>
-        <FramerMagnetic>
-          <button
-            onClick={() => goTo("/sobre-mi")}
-            className="PortfolioPresentation-link"
-          >
-            SOBRE MÍ
-          </button>
-        </FramerMagnetic>
+
         <FramerMagnetic>
           <button
             onClick={() => goTo("/contacto")}

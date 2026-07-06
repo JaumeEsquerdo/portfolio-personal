@@ -4,7 +4,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "@/pages/Home";
 import Proyectos from "@/pages/Proyectos";
 import Habilidades from "@/pages/Habilidades";
-import SobreMi from "@/pages/SobreMi";
+import Tarifas from "@/pages/Tarifas";
 import Contacto from "@/pages/Contacto";
 import ErrorPage from "@/pages/ErrorPage";
 
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
         element: <Layout />, // Header especial
         children: [
           { path: "proyectos", element: <Proyectos /> },
+          { path: "tarifas", element: <Tarifas /> },
           { path: "habilidades", element: <Habilidades /> },
-          { path: "sobre-mi", element: <SobreMi /> },
           { path: "contacto", element: <Contacto /> },
         ],
       },
