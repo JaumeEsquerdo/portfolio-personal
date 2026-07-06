@@ -16,7 +16,7 @@ const Tarifas = () => {
         viewport={{ once: true, margin: "-100px" }}
       >
         <motion.div className="Tarifas-block" variants={item}>
-          <h2 className="Tarifas-title">Tarifas</h2>
+          <h2 className="Tarifas-title">Tarifas freelance</h2>
           <div className="Tarifas-containerTitle">
             <h3 className="Tarifas-subtitle">
               Precios transparentes, soluciones a medida
