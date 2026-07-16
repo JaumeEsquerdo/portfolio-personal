@@ -2,6 +2,37 @@ const listaProyectos = [
   {
     id: 1,
     numero: "01",
+    titulo: "COSTERETA n1",
+    subtitulo:
+      "Landing page de alto rendimiento y embudo SEO para alojamiento turístico",
+    detalles: {
+      problema:
+        "En las plataformas de reserva, los alojamientos pierden su esencia y se ven todos iguales. Es difícil transmitir los detalles y el encanto que hacen especial a un lugar cuando dependes de un formato estándar.",
+      solucion:
+        "Una web independiente que destaca la personalidad única del alojamiento a través de una narrativa visual cuidada. La web funciona como un puente: permite al huésped conocer cada rincón con detalle para luego redirigirlo, mediante botones de reserva, al portal de gestión oficial de forma fluida.",
+    },
+    herramientas: [
+      "Next.js 16",
+      "React 19",
+      "Tailwind CSS v4",
+      "Framer Motion",
+      "SEO Técnico",
+      "Custom Hooks",
+    ],
+    stack: "Frontend",
+    año: "2026",
+    imagen: "/img/portada-costereta.webp",
+    enlace: [
+      {
+        tipo: "Frontend",
+        url: "https://github.com/JaumeEsquerdo/costera-n1",
+      },
+    ],
+    deploy: "https://costera-n1.vercel.app/es",
+  },
+  {
+    id: 2,
+    numero: "02",
     titulo: "findJob",
     subtitulo:
       "Dashboard de Empleo Tech con visualización de datos en tiempo real",
@@ -31,37 +62,6 @@ const listaProyectos = [
       },
     ],
     deploy: "https://find-job-dashboard.vercel.app/",
-  },
-  {
-    id: 2,
-    numero: "02",
-    titulo: "COSTERETA n1",
-    subtitulo:
-      "Landing page de alto rendimiento y embudo SEO para alojamiento turístico",
-    detalles: {
-      problema:
-        "En las plataformas de reserva, los alojamientos pierden su esencia y se ven todos iguales. Es difícil transmitir los detalles y el encanto que hacen especial a un lugar cuando dependes de un formato estándar.",
-      solucion:
-        "Una web independiente que destaca la personalidad única del alojamiento a través de una narrativa visual cuidada. La web funciona como un puente: permite al huésped conocer cada rincón con detalle para luego redirigirlo, mediante botones de reserva, al portal de gestión oficial de forma fluida.",
-    },
-    herramientas: [
-      "Next.js 16",
-      "React 19",
-      "Tailwind CSS v4",
-      "Framer Motion",
-      "SEO Técnico",
-      "Custom Hooks",
-    ],
-    stack: "Frontend",
-    año: "2026",
-    imagen: "/img/portada-costereta.webp",
-    enlace: [
-      {
-        tipo: "Frontend",
-        url: "https://github.com/JaumeEsquerdo/costera-n1",
-      },
-    ],
-    deploy: "https://costera-n1.vercel.app/es",
   },
   {
     id: 3,
