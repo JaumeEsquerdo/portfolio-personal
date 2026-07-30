@@ -67,7 +67,7 @@ const Proyecto = ({
             <strong>Tipo:</strong> {stack}
           </p>
           <p className="Proyecto-texto">
-            <strong>Año:</strong> {año}
+            <strong className="Proyecto-año">{año}</strong>
           </p>
 
           <div className="Proyecto-enlacesContainer">

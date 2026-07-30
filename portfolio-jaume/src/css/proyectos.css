@@ -125,6 +125,10 @@
   transform: scale(1.05);
 }
 
+.Proyecto-año {
+  font-style: italic;
+}
+
 .Overlay {
   position: absolute;
   top: 0;
